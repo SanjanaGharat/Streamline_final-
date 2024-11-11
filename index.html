@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streamline</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+       
+</head>
+<body>
+<header>
+<!-- Top Bar -->
+<div class="brand-dark-background text-white py-4 px-6 flex flex-col md:flex-row justify-between items-center w-full h-auto">
+    <div class="top-bar-icons flex flex-col md:flex-row items-start w-full md:w-auto">
+        <div class="flex items-center mb-2 md:mb-0">
+            <img src="https://img.icons8.com/?size=100&id=53439&format=png&color=FFFFFF" alt="Phone Icon" class="w-5 h-5 mr-2"/>
+            <a href="tel:817-701-8920" class="hoverTEXT-brand-light-bg text-sm md:text-base">(817) 701-8920</a>
+        </div>
+        <div class="flex items-center mb-2 md:mb-0 md:ml-4">
+            <img src="https://img.icons8.com/?size=100&id=7891&format=png&color=FFFFFF" alt="Location Icon" class="w-5 h-5 mr-2"/>
+            <a href="https://www.google.com/maps?q=6516+Colleyville+Blvd,+Colleyville,+TX+76034" target="_blank" class="text-sm md:text-base hoverTEXT-brand-light-bg">
+                6516 Colleyville Blvd, Colleyville, TX 76034
+            </a>
+        </div>
+        
+    </div>
+    <a href="pages/contact.html" class="bg-white brand-green px-4 py-1 rounded hoverBG-brand-light-bg mt-2 md:mt-0 hidden md:block">
+        GET MY RATES
+    </a>
+    
+</div>
+
+
+
+    <!-- Navigation -->
+<nav class="bg-black  text-white py-4  w-full ">
+    <div class="container mx-auto flex justify-between items-center px-4">
+        <div class="text-2xl font-bold">STREAMLINE</div>
+        <div class="navbar-menu hidden md:flex items-center space-x-6 text-white relative">
+            <a href="#" class="hoverTEXT-brand-color">Home</a>
+            <div class="relative inline-block">
+                <a href="#" onclick="toggleDropdown('landscapingDropdown'); event.stopPropagation();" class="flex items-center hoverTEXT-brand-color">
+                    Landscaping
+                    <img src="https://img.icons8.com/?size=100&id=99977&format=png&color=FFFFFF" class="w-4 h-4 ml-2 align-middle" alt="Icon" />
+                </a>
+                <ul id="landscapingDropdown" class="dropdown-content absolute bg-black text-white py-2 mt-1 rounded shadow-lg px-2">
+                    <li class="flex items-center py-1">
+                        <!-- <img src="https://img.icons8.com/material-outlined/24/FFFFFF/landscape.png" alt="Landscape Icon" class="w-5 h-5 mr-2"/> -->
+                        <a href="#" class="block hover:bg-gray-600 px-4 py-1">Landscape Design</a>
+                    </li>
+                    <li class="flex items-center py-1">
+                        <!-- <img src="https://img.icons8.com/material-outlined/24/FFFFFF/lamp.png" alt="Lighting Icon" class="w-5 h-5 mr-2"/> -->
+                        <a href="#" class="block hover:bg-gray-600 px-4 py-1">Landscape Lighting</a>
+                    </li>
+                    <li class="flex items-center py-1">
+                        <!-- <img src="https://img.icons8.com/material-outlined/24/FFFFFF/plant.png" alt="Plant Icon" class="w-5 h-5 mr-2"/> -->
+                        <a href="#" class="block hover:bg-gray-600 px-4 py-1">Plant Installation</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="relative inline-block">
+                <a href="#" onclick="toggleDropdown('drainageDropdown'); event.stopPropagation();" class="flex items-center hoverTEXT-brand-color">
+                    Drainage
+                    <img src="https://img.icons8.com/?size=100&id=99977&format=png&color=FFFFFF" class="w-4 h-4 ml-2 align-middle" alt="Icon" />
+                </a>
+                <ul id="drainageDropdown" class="dropdown-content absolute bg-black text-white py-2 mt-1 rounded shadow-lg px-2">
+                    <li class="flex items-center py-1">
+                        <!-- <img src="https://img.icons8.com/material-outlined/24/FFFFFF/drainage.png" alt="Drainage Icon" class="w-5 h-5 mr-2"/> -->
+                        <a href="#" class="block hover:bg-gray-600 px-4 py-1">French Drains</a>
+                    </li>
+                    <li class="flex items-center py-1">
+                        <!-- <img src="https://img.icons8.com/material-outlined/24/FFFFFF/drain.png" alt="Channel Icon" class="w-5 h-5 mr-2"/> -->
+                        <a href="#" class="block hover:bg-gray-600 px-4 py-1">Channel Drains</a>
+                    </li>
+                    <li class="flex items-center py-1">
+                        <!-- <img src="https://img.icons8.com/material-outlined/24/FFFFFF/sump-pump.png" alt="Sump Pump Icon" class="w-5 h-5 mr-2"/> -->
+                        <a href="#" class="block hover:bg-gray-600 px-4 py-1">Sump Pumps</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="relative inline-block">
+                <a href="#" onclick="toggleDropdown('irrigationDropdown'); event.stopPropagation();" class="flex items-center hoverTEXT-brand-color">
+                    Sprinkler & Irrigation
+                    <img src="https://img.icons8.com/?size=100&id=99977&format=png&color=FFFFFF" class="w-4 h-4 ml-2 align-middle" alt="Icon" />
+                </a>
+                <ul id="irrigationDropdown" class="dropdown-content absolute bg-black text-white py-2 mt-1 rounded shadow-lg px-2">
+                    <li class="flex items-center py-1">
+                        <!-- <img src="https://img.icons8.com/material-outlined/24/FFFFFF/sprinkler.png" alt="Sprinkler Icon" class="w-5 h-5 mr-2"/> -->
+                        <a href="#" class="block hover:bg-gray-600 px-4 py-1">Sprinkler Installation</a>
+                    </li>
+                    <li class="flex items-center py-1">
+                        <!-- <img src="https://img.icons8.com/material-outlined/24/FFFFFF/water-sprinkler.png" alt="Irrigation Icon" class="w-5 h-5 mr-2"/> -->
+                        <a href="#" class="block hover:bg-gray-600 px-4 py-1">Irrigation Maintenance</a>
+                    </li>
+                    <li class="flex items-center py-1">
+                        <!-- <img src="https://img.icons8.com/material-outlined/24/FFFFFF/winter.png" alt="Winter Icon" class="w-5 h-5 mr-2"/> -->
+                        <a href="#" class="block hover:bg-gray-600 px-4 py-1">Winterization</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="relative inline-block">
+                <a href="#" onclick="toggleDropdown('aboutDropdown'); event.stopPropagation();" class="flex items-center hoverTEXT-brand-color">
+                    About
+                    <img src="https://img.icons8.com/?size=100&id=99977&format=png&color=FFFFFF" class="w-4 h-4 ml-2 align-middle" alt="Icon" />
+                </a>
+                <ul id="aboutDropdown" class="dropdown-content absolute bg-black text-white py-2 mt-1 rounded shadow-lg px-2">
+                    <li class="flex items-center py-1">
+                        <a href="../pages/gallery.html" class="block hover:bg-gray-600 px-4 py-1">Our Gallery</a>
+                    </li>
+                    <li class="flex items-center py-1">
+                        <a href="#" class="block hover:bg-gray-600 px-4 py-1">Our Team</a>
+                    </li>
+                    <li class="flex items-center py-1">
+                        <a href="#" class="block hover:bg-gray-600 px-4 py-1">Testimonials</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="relative inline-block">
+                <a href="#" onclick="toggleDropdown('contactDropdown'); event.stopPropagation();" class="flex items-center hoverTEXT-brand-color">
+                    Contact
+                    <img src="https://img.icons8.com/?size=100&id=99977&format=png&color=FFFFFF" class="w-4 h-4 ml-2 align-middle" alt="Icon" />
+                </a>
+                <ul id="contactDropdown" class="dropdown-content absolute bg-black text-white py-2 mt-1 rounded shadow-lg px-2">
+                    <li class="flex items-center py-1">
+                        <a href="#" class="block hover:bg-gray-600 px-4 py-1">Get in Touch</a>
+                    </li>
+                    <li class="flex items-center py-1">
+                        <a href="#" class="block hover:bg-gray-600 px-4 py-1">FAQ</a>
+                    </li>
+                    <li class="flex items-center py-1">
+                        <a href="#" class="block hover:bg-gray-600 px-4 py-1">Support</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <button class="navbar-button brand-dark-background text-white px-4 py-2 rounded-3xl hoverBG-brand-color ml-4" onclick="window.location.href='tel:8177018920';">
+                Call (817)701-8920
+            </button>
+            
+        </div>
+        <button class="hamburger md:hidden text-white" onclick="toggleNavbar()">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+        </button>
+    </div>
+</nav>
+
+
+    <!-- Sidebar for small screens -->
+    <div id="sidebar" class="sidebar">
+        <button class="absolute top-4 right-4 text-white" onclick="toggleNavbar()">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+        <div class="flex flex-col p-4 text-white ml-2"> 
+            <a href="#" class="py-3 text-lg hoverTEXT-brand-color mb-2">Home</a> 
+            <div class="relative mb-4">
+                <a href="#" onclick="toggleDropdown('landscapingDropdownSidebar'); event.stopPropagation();" class="flex items-center py-3 text-lg hoverTEXT-brand-color mb-2">
+                    Landscaping
+                    <img src="https://img.icons8.com/?size=100&id=99977&format=png&color=FFFFFF" class="w-4 h-4 ml-2 align-middle" alt="Icon" />
+                </a>
+                <ul id="landscapingDropdownSidebar" class="dropdown-content bg-black text-white py-2 mt-1 rounded shadow-lg px-2">
+                    <li class="flex items-center py-1">
+                        <!-- <img src="https://img.icons8.com/material-outlined/24/FFFFFF/landscape.png" alt="Landscape Icon" class="w-5 h-5 mr-2"/> -->
+                        <a href="#" class="block hover:bg-gray-600 px-4 py-1">Landscape Design</a>
+                    </li>
+                    <li class="flex items-center py-1">
+                        <!-- <img src="https://img.icons8.com/material-outlined/24/FFFFFF/lamp.png" alt="Lighting Icon" class="w-5 h-5 mr-2"/> -->
+                        <a href="#" class="block hover:bg-gray-600 px-4 py-1">Landscape Lighting</a>
+                    </li>
+                    <li class="flex items-center py-1">
+                        <!-- <img src="https://img.icons8.com/material-outlined/24/FFFFFF/plant.png" alt="Plant Icon" class="w-5 h-5 mr-2"/> -->
+                        <a href="#" class="block hover:bg-gray-600 px-4 py-1">Plant Installation</a>
+                    </li>
+                </ul>
+            </div>
+            
+            
+            <div class="relative mb-2">
+                <a href="#" onclick="toggleDropdown('drainageDropdownSidebar'); event.stopPropagation();" class="flex items-center py-3 text-lg hoverTEXT-brand-color mb-2">
+                    Drainage
+                    <img src="https://img.icons8.com/?size=100&id=99977&format=png&color=FFFFFF" class="w-4 h-4 ml-2 align-middle" alt="Icon" />
+                </a>
+                <ul id="drainageDropdownSidebar" class="dropdown-content bg-black text-white py-2 mt-1 rounded shadow-lg px-2">
+                    <li class="flex items-center py-1">
+                        <!-- <img src="https://img.icons8.com/material-outlined/24/FFFFFF/drainage.png" alt="Drainage Icon" class="w-5 h-5 mr-2"/> -->
+                        <a href="#" class="block hover:bg-gray-600 px-4 py-1">French Drains</a>
+                    </li>
+                    <li class="flex items-center py-1">
+                        <!-- <img src="https://img.icons8.com/material-outlined/24/FFFFFF/drain.png" alt="Channel Icon" class="w-5 h-5 mr-2"/> -->
+                        <a href="#" class="block hover:bg-gray-600 px-4 py-1">Channel Drains</a>
+                    </li>
+                    <li class="flex items-center py-1">
+                        <!-- <img src="https://img.icons8.com/material-outlined/24/FFFFFF/sump-pump.png" alt="Sump Pump Icon" class="w-5 h-5 mr-2"/> -->
+                        <a href="#" class="block hover:bg-gray-600 px-4 py-1">Sump Pumps</a>
+                    </li>
+                </ul>
+            </div>
+            
+            
+            <div class="relative mb-2">
+                <a href="#" onclick="toggleDropdown('irrigationDropdownSidebar'); event.stopPropagation();" class="flex items-center py-3 text-lg hoverTEXT-brand-color mb-2">
+                    Sprinkler & Irrigation
+                    <img src="https://img.icons8.com/?size=100&id=99977&format=png&color=FFFFFF" class="w-4 h-4 ml-2 align-middle" alt="Icon" />
+                </a>
+                <ul id="irrigationDropdownSidebar" class="dropdown-content bg-black text-white py-2 mt-1 rounded shadow-lg px-2">
+                    <li class="flex items-center py-1">
+                        <!-- <img src="https://img.icons8.com/material-outlined/24/FFFFFF/sprinkler.png" alt="Sprinkler Icon" class="w-5 h-5 mr-2"/> -->
+                        <a href="#" class="block hover:bg-gray-600 px-4 py-1">Sprinkler Installation</a>
+                    </li>
+                    <li class="flex items-center py-1">
+                        <!-- <img src="https://img.icons8.com/material-outlined/24/FFFFFF/water-sprinkler.png" alt="Irrigation Icon" class="w-5 h-5 mr-2"/> -->
+                        <a href="#" class="block hover:bg-gray-600 px-4 py-1">Irrigation Maintenance</a>
+                    </li>
+                    <li class="flex items-center py-1">
+                        <!-- <img src="https://img.icons8.com/material-outlined/24/FFFFFF/winter.png" alt="Winter Icon" class="w-5 h-5 mr-2"/> -->
+                        <a href="#" class="block hover:bg-gray-600 px-4 py-1">Winterization</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="relative mb-2">
+                <a href="#" onclick="toggleDropdown('contactDropdownSidebar'); event.stopPropagation();" class="flex items-center py-3 text-lg hoverTEXT-brand-color mb-2">
+                    Contact
+                    <img src="https://img.icons8.com/?size=100&id=99977&format=png&color=FFFFFF" class="w-4 h-4 ml-2 align-middle" alt="Icon" />
+                </a>
+                <ul id="contactDropdownSidebar" class="dropdown-content bg-black text-white py-2 mt-1 rounded shadow-lg px-2">
+                    <li class="flex items-center py-1">
+                        <!-- <img src="https://img.icons8.com/material-outlined/24/FFFFFF/phone.png" alt="Phone Icon" class="w-5 h-5 mr-2"/> -->
+                        <a href="../pages/contact.html" class="block hover:bg-gray-600 px-4 py-1">Get in touch</a>
+                    </li>
+                    <li class="flex items-center py-1">
+                        <!-- <img src="https://img.icons8.com/material-outlined/24/FFFFFF/email.png" alt="Email Icon" class="w-5 h-5 mr-2"/> -->
+                        <a href="#" class="block hover:bg-gray-600 px-4 py-1">FAQ</a>
+                    </li>
+                    <li class="flex items-center py-1">
+                        <!-- <img src="https://img.icons8.com/material-outlined/24/FFFFFF/location.png" alt="Location Icon" class="w-5 h-5 mr-2"/> -->
+                        <a href="#" class="block hover:bg-gray-600 px-4 py-1">Support</a>
+                    </li>
+                </ul>
+            </div>
+            
+            
+            <div class="relative mb-2">
+                <a href="#" onclick="toggleDropdown('aboutDropdownSidebar'); event.stopPropagation();" class="flex items-center py-3 text-lg hoverTEXT-brand-color mb-2">
+                    About
+                    <img src="https://img.icons8.com/?size=100&id=99977&format=png&color=FFFFFF" class="w-4 h-4 ml-2 align-middle" alt="Icon" />
+                </a>
+                <ul id="aboutDropdownSidebar" class="dropdown-content bg-black text-white py-2 mt-1 rounded shadow-lg px-2">
+                    <li class="flex items-center py-1">
+                        <!-- <img src="https://img.icons8.com/material-outlined/24/FFFFFF/info.png" alt="Info Icon" class="w-5 h-5 mr-2"/> -->
+                        <a href="../pages/gallery.html" class="block hover:bg-gray-600 px-4 py-1">Our Gallery</a>
+                    </li>
+                    <li class="flex items-center py-1">
+                        <!-- <img src="https://img.icons8.com/material-outlined/24/FFFFFF/team.png" alt="Team Icon" class="w-5 h-5 mr-2"/> -->
+                        <a href="#" class="block hover:bg-gray-600 px-4 py-1">Meet the Team</a>
+                    </li>
+                    <li class="flex items-center py-1">
+                        <!-- <img src="https://img.icons8.com/material-outlined/24/FFFFFF/mission.png" alt="Mission Icon" class="w-5 h-5 mr-2"/> -->
+                        <a href="#" class="block hover:bg-gray-600 px-4 py-1">Our Mission</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+        
+        <a href="tel:8177018920" class="navbar-button brand-dark-background text-white px-4 py-2 rounded-3xl hoverBG-brand-color mt-4 ml-4">
+            Call (817)701-8920
+        </a>
+        
+    </div>
+
+<!-- hero section -->
+<section class="hero relative flex flex-col pb-10 pt-20">
+    <img src="https://media.istockphoto.com/id/1254871777/photo/modern-minimalist-family-villa.webp?a=1&b=1&s=612x612&w=0&k=20&c=jh9BiVRnvxs_bm2UIlHdxOLpNl5kwOq9nxKOUAATBqc=" alt="Modern home with landscaping" class="object-cover w-full h-screen" />
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-30"></div>
+    
+    <div class="container mx-auto px-4 relative z-10 flex flex-col justify-center items-center">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
+            <!-- Left Content -->
+            <div class="text-white pt-5 md:pt-0 flex flex-col justify-center items-center md:items-start">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4 text-center md:text-left">Built Differently</h1>
+                <h2 class="text-2xl md:text-3xl mb-6 text-center md:text-left">
+                    <span class="text-white">A </span>
+                    <span class="brand-green text-transition active">Professional </span>
+                    <span class="text-white">Approach To Your Outdoor Needs</span>
+                </h2>
+                <a href="pages/contact.html">
+                    <button class="schedule-button w-72 h-10 bg-white brand-green  py-3 rounded-full hoverTEXT-brand-dark-background transition duration-300 flex items-center justify-center">
+                        Schedule An On-Site Assessment
+                    </button>
+                </a>                
+            </div>
+
+            <!-- Right Form -->
+            <div class="p-6 rounded-lg shadow-lg flex items-center justify-center form-container">
+                <form id="contactForm" class="space-y-4 w-full">
+                    <input type="text" placeholder="Name" class="w-full p-3 border rounded-2xl" />
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <input type="tel" placeholder="Phone" class="w-full p-3 border rounded-2xl" />
+                        <input type="email" placeholder="Email" class="w-full p-3 border rounded-2xl" />
+                    </div>
+                    <input type="text" placeholder="Address" class="w-full p-3 border rounded-2xl" />
+                    <select class="w-full p-3 border rounded-2xl">
+                        <option>Yes, I'm a potential new customer</option>
+                        <option>Existing customer</option>
+                    </select>
+                    <select class="w-full p-3 border rounded-2xl">
+                        <option>Sprinklers</option>
+                        <option>Landscaping</option>
+                        <option>Drainage</option>
+                    </select>
+                    <button type="submit" class="w-full brand-dark-background text-white py-3 rounded-2xl hoverBG-brand-color transition duration-300">
+                        Get In Touch Today
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+</header>
+
+<!-- Services Section -->
+<section id="service-section" class="flex flex-col items-center justify-start bg-white mb-8 mt-4">
+<div id="service-container" class="container mx-auto px-6">
+  <h2 id="service-heading" class="text-3xl font-bold text-center mb-4">OUR SERVICES</h2>
+  <!-- Swiper Container -->
+  <div id="service-swiper-container" class="swiper-container">
+    <div class="swiper-wrapper mt-2" id="service-swiper-wrapper">
+      <!-- Cards will be dynamically injected here -->
+    </div>
+    <div class="swiper-pagination service-swiper-pagination"></div>
+  </div>
+</div>
+</section>
+<!-- end of service section -->
+<!-- landing section -->
+    <section id="landing-section" class="relative w-screen h-auto overflow-hidden">
+        <img id="landing-bg-image" src="../images/bg.png" alt="Full Width Test Image" class="w-full h-full object-cover object-left">
+        <div id="landing-content" class="absolute inset-0 flex flex-col justify-center items-center text-center brand-green z-10 px-4">
+            <h1 id="landing-heading" class="text-3xl sm:text-4xl md:text-5xl lg:text-5xl mb-2 pb-2">We Handle Everything For You!</h1>
+            <hr id="landing-divider-top" class="w-2/4 mx-auto border-1 brand-border">
+            <p id="landing-description" class="text-black text-base sm:text-lg mt-4 mx-2">Streamline Designs offers custom professional landscaping services in the Greater Dallas Fort Worth Metroplex.</p>
+            <div id="landing-years" class="mt-6">
+                <span class="font-bold text-4xl sm:text-5xl md:text-6xl">30</span><br>
+            </div>
+            <div id="landing-years-text" class="mt-2">
+                <span class="font-bold text-2xl sm:text-3xl md:text-4xl">Plus Years</span>
+            </div>
+            <hr id="landing-divider-bottom" class="mt-4 w-1/4 mx-auto border-1 brand-border">
+            
+            <div id="landing-experience" class="mt-8">
+                <h2 id="landing-experience-heading" class="text-black font-bold text-base sm:text-lg md:text-xl">Experience</h2>
+                <p id="landing-experience-text" class="text-black text-sm sm:text-base mt-2 mx-2 mb-2">Service crews are hired for year-round service.</p>
+                <h2 id="landing-location-heading" class="text-black font-bold text-base sm:text-lg md:text-xl">In The DFW Metroplex</h2>
+                <p id="landing-location-text" class="text-black text-sm sm:text-base mt-2 mx-2">Creating professional landscaping services and outdoor needs.</p>
+            </div>
+        </div>
+        <div id="landing-overlay" class="absolute top-0 left-0 w-full h-full bg-white bg-opacity-30 z-5"></div>
+    </section>
+    
+     <!-- landing section ends   -->
+      <!-- Gallery Section -->
+      <section id="image-modal-gallery-section" class="py-12">
+        <div class="text-center mb-8">
+          <h1 class="text-2xl font-bold text-green-600">Recent Projects</h1>
+        </div>
+      
+        <div id="image-modal-gallery" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-6xl mx-auto px-4">
+          <!-- Images will be dynamically loaded here -->
+        </div>
+      
+        <!-- View More Button -->
+        <a href="../pages/gallery.html" class="view-more-btn brand-green">View More</a>
+      </section>
+      
+      <!-- Image Modal Section -->
+      <div id="image-modal-container" class="flex items-center justify-center">
+        <button id="image-modal-close-btn" class="image-modal-close-btn">
+          <img src="https://img.icons8.com/?size=100&id=7703&format=png&color=FFFFFF" class="w-8 h-8" alt="Close">
+        </button>
+      
+        <!-- Zoom Controls -->
+        <div id="image-modal-zoom-controls" class="space-x-4 hidden">
+          <button id="image-modal-zoomInBtn" class="text-white bg-black bg-opacity-50 rounded-full p-3 cursor-pointer">
+            <img src="https://img.icons8.com/?size=100&id=CK0gy7bke7NT&format=png&color=FFFFFF" class="w-8 h-8" alt="Zoom In">
+          </button>
+          <button id="image-modal-zoomOutBtn" class="text-white bg-black bg-opacity-50 rounded-full p-3 cursor-pointer">
+            <img src="https://img.icons8.com/?size=100&id=s4gg8ZRiclIf&format=png&color=FFFFFF" class="w-8 h-8 rotate-180" alt="Zoom Out">
+          </button>
+        </div>
+      
+        <!-- Image Display -->
+        <div class="relative max-w-5xl mx-auto p-4 flex flex-col items-center">
+          <img id="image-modal-image" src="" class="image-modal-image-container opacity-0">
+        </div>
+      
+        <!-- Modal Navigation Arrows -->
+        <button id="image-modal-prevBtn" class="image-modal-arrow-button image-modal-arrow-left">
+          <img src="https://img.icons8.com/?size=100&id=SgKf9u814Pci&format=png&color=FFFFFF" class="w-8 h-8" alt="Left Arrow">
+        </button>
+        <button id="image-modal-nextBtn" class="image-modal-arrow-button image-modal-arrow-right">
+          <img src="https://img.icons8.com/?size=100&id=SgKf9u814Pci&format=png&color=FFFFFF" class="w-8 h-8" alt="Right Arrow">
+        </button>
+      </div>
+      
+  <!-- end of gallery section    -->
+      
+   <!-- Why Choose Us Section -->
+<section class="max-w-6xl mx-auto mt-16 mb-12 px-6">
+    <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row group hover:shadow-xl hover:transform hover:scale-105 transition-all duration-300">
+  
+      <!-- Left Column -->
+      <div class="p-8 flex-1 relative bg-cover bg-center flex items-center justify-center order-2 md:order-1 why-choose-us-left" style="background-image: url('https://images.pexels.com/photos/4587828/pexels-photo-4587828.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); min-height: 350px;">
+          <div class="absolute inset-0 bg-black bg-opacity-10"></div>
+          <div class="relative z-10 text-center text-black">
+              <h2 class="text-3xl font-bold mb-4 brand-green">Why choose us?</h2>
+              <p class="font-semibold mb-4 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet accumsan arcu. Integer id libero non purus convallis tincidunt. Nam vel velit id lorem vestibulum consequat.</p>
+              <p class="mb-4 text-justify">Nulla facilisi. Vivamus sit amet eros sed leo vehicula tincidunt. Ut varius ipsum non lorem maximus fermentum. Aenean nec magna auctor, venenatis erat ut, feugiat orci.</p>
+              <p class="mb-4 text-justify">Donec ac arcu in justo vestibulum ullamcorper. Maecenas a orci felis. Curabitur id metus urna. Ut aliquam libero vel elit fermentum, nec fermentum erat volutpat.</p>
+          </div>
+      </div>
+  
+      <!-- Right Column -->
+      <div class="relative bg-cover bg-center flex-1 min-h-[350px] md:min-h-[550px] order-1 md:order-2 why-choose-us-right" style="background-image: url('https://images.pexels.com/photos/5486155/pexels-photo-5486155.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
+          <div class="absolute inset-0 bg-black bg-opacity-70"></div> 
+          <div class="absolute inset-0 flex items-center justify-center text-white">
+              <h3 class="text-3xl font-bold text-center">STREAMLINE LANDSCAPE</h3>
+          </div>
+      </div>
+  
+    </div>
+  </section>
+  <!-- Why choose us ends here -->
+   <!-- craftsmanship-section starts here --> 
+  <hr class="my-8 border-t-1 border-gray-300 mx-72 sm:mx-48 md:mx-32 lg:mx-72">
+
+  <div class="container mx-auto p-5">
+    <div class="flex flex-col md:flex-row bg-white rounded-lg shadow-lg overflow-hidden max-w-6xl mx-auto">
+        <!-- Craftsmanship Section (Left Section with Hover) -->
+        <div id="craftsmanship-section" class="w-full md:w-2/5 p-6 text-white">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4 ">Craftsmanship</h2>
+            <p class="mb-4 text-sm md:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat ex at nisi suscipit, sit amet viverra lectus malesuada. Nulla facilisi. Curabitur blandit risus vel facilisis volutpat. Cras a leo augue. Maecenas in arcu arcu. Donec consequat, arcu nec fermentum dapibus, elit est tristique nisi, sit amet malesuada erat nisl sit amet turpis.</p>
+            <button id="craftsmanship" class="bg-white text-sm md:text-base inline-block px-4 py-2 rounded border-2 border-[var(--brand-color)] hover:bg-[var(--brand-dark-green)] hover:text-white transition-colors duration-300 ease-in-out" onclick="window.location.href='/about-us.html';">
+                How We Work
+            </button>
+            
+            
+        </div>
+
+        <!-- Info Section (Right Section without Hover) -->
+        <div id="info-section" class="w-full md:w-3/5 p-6">
+            <div id="dfw-metroplex" class="flex-1">
+                <h2 class="text-2xl md:text-2xl font-bold mb-4 brand-green">Greater DFW Metroplex</h2>
+                <p class="mb-4 text-sm md:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.</p>
+                <p class="text-sm md:text-base">Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+            </div>
+            <div id="our-founder" class="flex-1">
+                <h2 class="text-2xl md:text-2xl font-bold mb-4 brand-green">Our Founder</h2>
+                <p class="mb-4 text-sm md:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
+                <p class="text-sm md:text-base">Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+            </div>
+        </div>
+    </div>
+</div>
+ <!-- craftsmanship-section ends here --> 
+
+ <!-- Footer Section at the End of the Page -->
+<footer class="bg-offwhite text-center py-10">
+    <div class="max-w-screen-xl mx-auto px-4">
+      <!-- Footer Grid Layout -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+        
+        <!-- Brand Section -->
+        <div class="text-center sm:text-left">
+          <h3 class="text-2xl font-bold brand-green">STREAMLINE</h3>
+          <p class="mt-2 text-sm text-brand-dark-green">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras molestie vitae nulla sed porttitor. Nulla tristique ante sit amet sem tristique faucibus. </p>
+        </div>
+  
+        <!-- Quick Links Section -->
+        <div class="text-center sm:text-left">
+          <h4 class="text-lg font-semibold brand-green">Quick Links</h4>
+          <ul class="mt-2 space-y-2 text-brand-dark-green">
+            <li><a href="index.html" class="hoverTEXT-brand-dark-background hover:underline">Home</a></li>
+            <li><a href="#" class="hoverTEXT-brand-dark-background hover:underline">About</a></li>
+            <li><a href="#" class="hoverTEXT-brand-dark-background hover:underline">Services</a></li>
+            <li><a href="../pages/contact.html" class="hoverTEXT-brand-dark-background hover:underline">Contact</a></li>
+          </ul>
+        </div>
+  
+        <!-- Contact Us Section -->
+        <div class="text-center sm:text-left">
+          <h4 class="text-lg font-semibold brand-green">Contact Us</h4>
+          <p class="mt-2 text-sm text-black">123 Main Street, Suite 500</p>
+          <p class="mt-2 text-sm text-black">City, State, ZIP</p>
+          <p class="mt-2 text-sm text-black">Email: <a href="mailto:contact@brand.com" class="text-brand-color hover:underline">contact@brand.com</a></p>
+          <p class="mt-2 text-sm text-black">Phone: +1 (123) 456-7890</p>
+        </div>
+  
+        <!-- Social Media Section -->
+        <div class="text-center sm:text-left">
+          <h5 class="text-lg font-semibold brand-green">Follow Us</h5>
+          <div class="mt-4 flex justify-center sm:justify-start space-x-6">
+            <a href="https://facebook.com" target="_blank" class="brand-green hoverTEXT-brand-dark-background hover:underline">
+              <i class="fab fa-facebook-square text-3xl"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" class="brand-green hoverTEXT-brand-dark-background hover:underline">
+              <i class="fab fa-twitter-square text-3xl"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="brand-green hoverTEXT-brand-dark-background hover:underline">
+              <i class="fab fa-linkedin text-3xl"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" class="brand-green hoverTEXT-brand-dark-background hover:underline">
+              <i class="fab fa-instagram-square text-3xl"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Footer Bottom Section -->
+      <div class="border-t border-brand-dark-green pt-4">
+        <p class="text-sm brand-darkgreen">© 2024 Brand Name. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script src="script/script.js"></script>
+
+</body>
+</html>

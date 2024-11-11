@@ -170,12 +170,18 @@ const swiper = new Swiper('#service-swiper-container', {
 
 // gallery section 
 (function() {
-const imageModalImages = [
-'../images/image1.jpg', '../images/image2.jpg', '../images/image3.jpg',
-'../images/image4.jpg', '../images/image5.jpg', '../images/image6.jpg',
-'../images/image7.jpg', '../images/image8.jpg', '../images/image9.jpg'
-];
-
+  const imageModalImages = [
+    'https://media.istockphoto.com/id/1499019570/photo/roof-garden.jpg?s=612x612&w=0&k=20&c=RZgcJAPvFJpWCnPofWSdLbypePbPvqPB46vnU3bBnYQ=',
+    'https://media.istockphoto.com/id/1802417528/photo/top-view-of-a-modern-school-with-sloped-terraces-and-roof-gardens.jpg?s=612x612&w=0&k=20&c=B14qBvR-43_npggPcCsmsTcsyqA-hZitM4uAXsfwBA0=',
+    'https://media.istockphoto.com/id/1318519526/photo/green-building.jpg?s=612x612&w=0&k=20&c=7rD6NQB7dmHqGV_sDxquaZ4ehA0hv0qAJIXcx80lrso=',
+    'https://media.istockphoto.com/id/2158823214/photo/duplex-house-swmming-pool-exterior-design-3d-rendering-interior-design.jpg?s=612x612&w=0&k=20&c=MDbjDJHClBQtEcZjsoCTF7lteX1zL6bqWZfydYwxw2Q=',
+    'https://media.istockphoto.com/id/1408135287/photo/aerial-shot-of-rooftop-garden.jpg?s=612x612&w=0&k=20&c=lK70nGJinV2ltzSJU8cNA5hX7e3uRiM1P4q9iexndaQ=',
+    'https://media.istockphoto.com/id/1329757808/photo/green-building.jpg?s=612x612&w=0&k=20&c=aP9hDI9b1rQPArU_AS7v96DIrpyaRcW9nz7jO0lLHfM=',
+    'https://media.istockphoto.com/id/1365678881/photo/green-buildings.jpg?s=612x612&w=0&k=20&c=HAbi74mkR3hRor-fR2B4qqDFcG3DnK-WKVEUpTwuHX4=',
+    'https://media.istockphoto.com/id/2148894060/photo/modern-green-building.jpg?s=612x612&w=0&k=20&c=oum3a-jSgcJOvC7vHmaorodPgrYiklzSe1GQCcOrCzk=',
+    'https://media.istockphoto.com/id/1445285707/photo/modern-eco-house-with-solar-panels-and-windmills-to-use-alternative-energy.jpg?s=612x612&w=0&k=20&c=pYYOZufg2oE3rzFg2RhvvRudIncappPcJlIDwE5acDw='
+  ];
+  
 const galleryElement = document.getElementById('image-modal-gallery');
 imageModalImages.forEach((src, index) => {
 const imgElement = document.createElement('img');

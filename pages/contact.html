@@ -11,6 +11,7 @@
        
 </head>
 <body>
+
 <header>
 <!-- Top Bar -->
 <div class="brand-dark-background text-white py-4 px-6 flex flex-col md:flex-row justify-between items-center w-full h-auto">
@@ -290,7 +291,7 @@
                         <!-- Left Content -->
                         <div class="hero-section flex items-center justify-center text-white">
                             <div class="text-center">
-                                <h2 class="text-4xl md:text-6xl font-bold mb-2">Contact Us</h2> 
+                                <h1 class="text-4xl md:text-6xl font-bold mb-2">Contact Us</h1> 
                                 <p class="text-lg md:text-xl mb-4"> 
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Curabitur venenatis, velit et ultrices volutpat, lorem eros interdum enim, a tincidunt elit nisi vel augue. Nam tristique bibendum arcu.
                                 </p>
@@ -304,7 +305,130 @@
         
     </section>
 </header>
+ <!-- Contact Section -->
+ <section id="contact-section" class="max-w-6xl mx-auto p-6">
+    <div class="text-center mb-12">
+      <h2 id="contact-title" class="text-3xl font-bold brand-green">Contact StreamLine Landscape</h2>
+    </div>
+
+    <!-- Contact and Estimate Form -->
+    <div id="contact-form-container" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+      <!-- Contact Information -->
+      <div id="contact-info">
+        <h3 class="text-xl font-semibold brand-green mb-4">Have A Question?</h3>
+        
+        <!-- Phone Number -->
+        <div id="phone-info" class="mb-4 flex items-center">
+          <img src="https://img.icons8.com/ios-filled/50/007f3e/phone.png" alt="Phone Icon" class="w-6 h-6 mr-4">
+          <a href="tel:+18177019202" id="phone-number" class="text-gray-800 hover:underline">(817) 701-9202</a>
+        </div>
+        <hr class="border-t-2 border-gray-200 my-4">
+
+        <!-- Address -->
+        <div id="address-info" class="mb-4 flex items-center">
+          <img src="https://img.icons8.com/ios-filled/50/007f3e/address.png" alt="Address Icon" class="w-6 h-6 mr-4">
+          <a href="https://www.google.com/maps/place/6815+Colleyville+Blvd,+Colleyville,+TX+76034" target="_blank" id="address" class="text-gray-800 hover:underline">
+            6815 Colleyville Blvd,<br>Colleyville, TX 76034
+          </a>
+        </div>
+        <hr class="border-t-2 border-gray-200 my-4">
+
+        <!-- Hours of Operation -->
+        <div id="hours-info" class="mb-4 flex items-center">
+          <img src="https://img.icons8.com/ios-filled/50/007f3e/time.png" alt="Time Icon" class="w-6 h-6 mr-4">
+          <span>Monday-Saturday 8am-5pm</span>
+        </div>
+        <hr class="border-t-2 border-gray-200 my-4">
+
+        <p id="intro-text" class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut varius, massa facilisis condimentum blandit, purus lorem tempus lacus, vitae molestie nulla libero id metus. Morbi elit lectus, molestie sed nisi vitae, vulputate suscipit nibh.</p>
+        <hr class="border-t-2 border-gray-200 my-4">
+
+        <!-- Email -->
+        <div id="email-info" class="flex items-center mb-4">
+          <img src="https://img.icons8.com/ios-filled/50/007f3e/email.png" alt="Email Icon" class="w-6 h-6 mr-4">
+          <a href="mailto:sales@streamlinel.com" id="email" class="brand-green">sales@streamlinel.com</a>
+        </div>
+        <hr class="border-t-2 border-gray-200 my-4">
+      </div>
+
+      <!-- Estimate Form -->
+      <div id="estimate-form">
+        <h3 class="text-xl font-semibold brand-green mb-4">Request An Estimate</h3>
+        
+        <form id="estimate-form" onsubmit="handleSubmit(event)" class="space-y-4">
+          <!-- Property Type -->
+          <select id="property-type" class="w-full px-3 py-2 border rounded brand-border" required>
+            <option value="" disabled selected>My Property</option>
+            <option>Residential</option>
+            <option>Commercial</option>
+          </select>
+          
+          <!-- Services Interested -->
+          <select id="services-interested" class="w-full px-3 py-2 border rounded brand-border" required>
+            <option value="" disabled selected>What services are you interested in?</option>
+            <option>Sprinklers</option>
+            <option>Landscaping</option>
+            <option>Outdoor Lighting</option>
+            <option>Drainage</option>
+          </select>
+
+          <!-- What type of project -->
+          <select id="project-type" class="w-full px-3 py-2 border rounded brand-border" required>
+            <option value="" disabled selected>What type of project are you interested in?</option>
+            <option>One-Time Project</option>
+            <option>Recurring Service</option>
+          </select>
+
+          <!-- What is your budget range -->
+          <select id="budget-range" class="w-full px-3 py-2 border rounded brand-border" required>
+            <option value="" disabled selected>What is your budget range for this project?</option>
+            <option value="under-5000">$0 - $5,000</option>
+            <option value="5000-10000">$5,000 - $10,000</option>
+            <option value="10000-25000">$10,000 - $25,000</option>
+            <option value="25000-50000">$25,000 - $50,000</option>
+            <option value="over-50000">Over $50,000</option>
+          </select>
+
+          <!-- Name and Contact -->
+          <div id="contact-details" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <input id="name" type="text" placeholder="Name" class="w-full px-3 py-2 border rounded brand-border" required>
+            <input id="phone" type="tel" placeholder="Phone" class="w-full px-3 py-2 border rounded brand-border" required>
+            <input id="email-input" type="email" placeholder="Email" class="w-full px-3 py-2 border rounded brand-border" required>
+            <input id="address-input" type="text" placeholder="Address" class="w-full px-3 py-2 border rounded brand-border" required>
+          </div>
+
+          <!-- Preferred Contact Method -->
+          <select id="contact-method" class="w-full px-3 py-2 border rounded brand-border" required>
+            <option value="" disabled selected>How would you prefer to be contacted?</option>
+            <option>Phone</option>
+            <option>Email</option>
+          </select>
+
+          <!-- Hear About Us -->
+          <select id="hear-about-us" class="w-full px-3 py-2 border rounded brand-border" required>
+            <option value="" disabled selected>How did you hear about us?</option>
+            <option>Internet Search</option>
+            <option>Social Media</option>
+            <option>Friend or Family</option>
+            <option>Online Advertisement</option>
+            <option>Event or Trade Show</option>
+            <option>Other</option>
+          </select>
+
+          <!-- Submit Button -->
+          <button type="submit" id="submit-btn" class="w-full py-2 mt-6 text-white brand-background  hoverBG-brand-dark-background rounded">
+            Get In Touch Today
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
 <script>
+    function handleSubmit(event) {
+      event.preventDefault(); 
+      alert("Form submitted");
+    }
     let activeDropdown = null;
 
     function toggleDropdown(id) {
@@ -361,64 +485,67 @@
     });
 </script>
 
-<!-- Footer Section at the End of the Page -->
-<footer class="bg-offwhite text-center py-10">
-    <div class="max-w-screen-xl mx-auto px-4">
-      <!-- Footer Grid Layout -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
-        
-        <!-- Brand Section -->
-        <div class="text-center sm:text-left">
-          <h3 class="text-2xl font-bold brand-green">STREAMLINE</h3>
-          <p class="mt-2 text-sm text-brand-dark-green">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras molestie vitae nulla sed porttitor. Nulla tristique ante sit amet sem tristique faucibus. </p>
-        </div>
+<div class="flex flex-col">
+
+    <!-- Footer Section at the End of the Page -->
+    <footer class="brand-background text-center py-10">
+      <div class="max-w-screen-xl mx-auto px-4">
+        <!-- Footer Grid Layout -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+          
+          <!-- Brand Section -->
+          <div class="text-center sm:text-left">
+            <h3 class="text-2xl font-bold text-white">STREAMLINE</h3>
+            <p class="mt-2 text-sm text-white">Empowering your business with innovative solutions.</p>
+          </div>
   
-        <!-- Quick Links Section -->
-        <div class="text-center sm:text-left">
-          <h4 class="text-lg font-semibold brand-green">Quick Links</h4>
-          <ul class="mt-2 space-y-2 text-brand-dark-green">
-            <li><a href="../index.html" class="hoverTEXT-brand-dark-background hover:underline">Home</a></li>
-            <li><a href="#" class="hoverTEXT-brand-dark-background hover:underline">About</a></li>
-            <li><a href="#" class="hoverTEXT-brand-dark-background hover:underline">Services</a></li>
-            <li><a href="#" class="hoverTEXT-brand-dark-background hover:underline">Contact</a></li>
-          </ul>
-        </div>
+          <!-- Quick Links Section -->
+          <div class="text-center sm:text-left text-white">
+            <h4 class="text-lg font-semibold text-white">Quick Links</h4>
+            <ul class="mt-2 space-y-2">
+              <li><a href="../index.html" class="hoverTEXT-brand-light-bg">Home</a></li>
+              <li><a href="#" class="hoverTEXT-brand-light-bg">About</a></li>
+              <li><a href="#" class="hoverTEXT-brand-light-bg">Services</a></li>
+              <li><a href="#" class="hoverTEXT-brand-light-bg">Contact</a></li>
+            </ul>
+          </div>
   
-        <!-- Contact Us Section -->
-        <div class="text-center sm:text-left">
-          <h4 class="text-lg font-semibold brand-green">Contact Us</h4>
-          <p class="mt-2 text-sm text-black">123 Main Street, Suite 500</p>
-          <p class="mt-2 text-sm text-black">City, State, ZIP</p>
-          <p class="mt-2 text-sm text-black">Email: <a href="mailto:contact@brand.com" class="text-brand-color hover:underline">contact@brand.com</a></p>
-          <p class="mt-2 text-sm text-black">Phone: +1 (123) 456-7890</p>
-        </div>
+          <!-- Contact Us Section -->
+          <div class="text-center sm:text-left text-white">
+            <h4 class="text-lg font-semibold text-white">Contact Us</h4>
+            <p class="mt-2 text-sm">123 Main Street, Suite 500</p>
+            <p class="mt-2 text-sm">City, State, ZIP</p>
+            <p class="mt-2 text-sm">Email: <a href="mailto:contact@brand.com" class="text-brand-light-green">contact@brand.com</a></p>
+            <p class="mt-2 text-sm">Phone: +1 (123) 456-7890</p>
+          </div>
   
-        <!-- Social Media Section -->
-        <div class="text-center sm:text-left">
-          <h5 class="text-lg font-semibold brand-green">Follow Us</h5>
-          <div class="mt-4 flex justify-center sm:justify-start space-x-6">
-            <a href="https://facebook.com" target="_blank" class="brand-green hoverTEXT-brand-dark-background hover:underline">
-              <i class="fab fa-facebook-square text-3xl"></i>
-            </a>
-            <a href="https://twitter.com" target="_blank" class="brand-green hoverTEXT-brand-dark-background hover:underline">
-              <i class="fab fa-twitter-square text-3xl"></i>
-            </a>
-            <a href="https://linkedin.com" target="_blank" class="brand-green hoverTEXT-brand-dark-background hover:underline">
-              <i class="fab fa-linkedin text-3xl"></i>
-            </a>
-            <a href="https://instagram.com" target="_blank" class="brand-green hoverTEXT-brand-dark-background hover:underline">
-              <i class="fab fa-instagram-square text-3xl"></i>
-            </a>
+          <!-- Social Media Section -->
+          <div class="text-center sm:text-left text-white">
+            <h5 class="text-lg font-semibold text-white">Follow Us</h5>
+            <div class="mt-4 flex justify-center sm:justify-start space-x-6">
+              <a href="https://facebook.com" target="_blank" class="social-icon">
+                <i class="fab fa-facebook-square text-3xl social-logo"></i>
+              </a>
+              <a href="https://twitter.com" target="_blank" class="social-icon">
+                <i class="fab fa-twitter-square text-3xl social-logo"></i>
+              </a>
+              <a href="https://linkedin.com" target="_blank" class="social-icon">
+                <i class="fab fa-linkedin text-3xl social-logo"></i>
+              </a>
+              <a href="https://instagram.com" target="_blank" class="social-icon">
+                <i class="fab fa-instagram-square text-3xl social-logo"></i>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
   
-      <!-- Footer Bottom Section -->
-      <div class="border-t border-brand-dark-green pt-4">
-        <p class="text-sm brand-darkgreen">© 2024 Brand Name. All rights reserved.</p>
+        <!-- Footer Bottom Section -->
+        <div class="border-t border-brand-light-green pt-4">
+          <p class="text-sm text-white">© 2024 Brand Name. All rights reserved.</p>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
+  </div>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
  
 <script src="../script/script.js"></script>

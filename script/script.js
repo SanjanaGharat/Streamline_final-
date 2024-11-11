@@ -88,14 +88,14 @@ const serviceData = [
   { 
     id: 2, 
     title: 'Service2', 
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer est urna, convallis eu leo id, feugiat laoreet justo. Morbi enim libero, aliquam non maximus non, finibus id nunc.', 
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Morbi enim libero, aliquam non maximus non, finibus id nunc.', 
     image: 'https://img.icons8.com/?size=100&id=2171&format=png&color=2f855a', 
     link: 'pipe-repair.html' 
   },
   { 
     id: 3, 
     title: 'Service3', 
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer est urna, convallis eu leo id, feugiat laoreet justo. Morbi enim libero, aliquam non maximus non, finibus id nunc.', 
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Morbi enim libero, aliquam non maximus non, finibus id nunc.', 
     image: 'https://img.icons8.com/?size=100&id=SIK-MaQikAy4&format=png&color=2f855a', 
     link: 'water-heater-services.html' 
   },
@@ -116,7 +116,7 @@ const serviceData = [
   { 
     id: 6, 
     title: 'Service6', 
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer est urna, convallis eu leo id, feugiat laoreet justo. Morbi enim libero, aliquam non maximus non, finibus id nunc.', 
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ', 
     image: 'https://img.icons8.com/?size=100&id=OrcIpbU7fPgZ&format=png&color=2f855a', 
     link: 'water-filtration.html' 
   },
@@ -196,7 +196,7 @@ let currentZoomLevel = 1;
 
 function openImageModal(index) {
 currentImageIndex = index;
-currentZoomLevel = 1; // Reset zoom level
+currentZoomLevel = 1; 
 const modal = document.getElementById('image-modal-container');
 const modalImage = document.getElementById('image-modal-image');
 const zoomControls = document.getElementById('image-modal-zoom-controls');
@@ -212,9 +212,8 @@ modalImage.classList.add('opacity-100');
 
 document.addEventListener('keydown', handleKeyboardNavigation);
 
-// Close modal when clicking outside of the image
 modal.addEventListener('click', (event) => {
-if (event.target === modal) {  // If clicked on the background (outside the image)
+if (event.target === modal) { 
     closeImageModal();
 }
 });
@@ -291,5 +290,101 @@ document.getElementById('image-modal-zoomOutBtn').onclick = zoomOutImage;
 })();
 
 
+// review section 
 
- 
+const reviews = [
+    { name: "Julie Urubek", date: "24 August 2024", rating: "⭐⭐⭐⭐⭐", text: "The most AMAZING job we ever had! Streamline went above and beyond to make sure everything was perfect. They were professional, prompt, and very detailed in their work. Thank you again! God bless you and your company!" },
+    { name: "Omar Ahmad", date: "23 August 2024", rating: "⭐⭐⭐⭐", text: "Great experience, but a little room for improvement. Streamline's team was highly professional, and they completed the job in record time. I wish they had provided more detail on maintenance, but overall, I am very satisfied!" },
+    { name: "Larry Bergstrom", date: "21 August 2024", rating: "⭐⭐⭐⭐⭐", text: "Streamline Landscape provides exceptional service for big commercial buildings. They took care of all our landscaping needs and made sure everything was pristine. I would definitely recommend them for any large-scale project." },
+    { name: "Shelly Nichols", date: "14 August 2024", rating: "⭐⭐⭐", text: "Good work but there was a delay in scheduling. While the team did a fantastic job on our lawn, I wish they were a bit more responsive to follow-up queries. Overall, satisfied with the service." },
+    { name: "Rafael Rivera", date: "5 April 2024", rating: "⭐⭐⭐⭐⭐", text: "Jesus, Marco, and Eustacio were a great team! They explained everything in detail, and their professionalism was top-notch. I'm thrilled with the results, and the landscaping looks fantastic." },
+    { name: "Michael Tamer", date: "21 July 2024", rating: "⭐⭐⭐⭐", text: "Quick response and good service. They arrived on time, got the work done efficiently, and left the area clean. A few issues arose, but they resolved them quickly. Happy with the overall experience." },
+    { name: "Sonia R.", date: "30 June 2024", rating: "⭐⭐⭐⭐⭐", text: "Streamline's team was incredibly efficient and knowledgeable. They completed the project well before the deadline, and the quality of work was impeccable. I would recommend them to anyone looking for reliable service." },
+    { name: "Elena Gomez", date: "2 June 2024", rating: "⭐⭐⭐⭐⭐", text: "Exceeded my expectations! The team worked meticulously to ensure everything was perfect. My lawn looks stunning, and I've received so many compliments from neighbors." },
+    { name: "Chris White", date: "5 May 2024", rating: "⭐⭐⭐⭐", text: "Solid work! They were very thorough, and any issues that came up were resolved promptly. I would definitely hire them again for future projects." },
+    { name: "Patricia Black", date: "15 March 2024", rating: "⭐⭐⭐⭐⭐", text: "Streamline is absolutely fantastic. Their dedication to quality and customer satisfaction is clear in their work. My garden has never looked better, and I'm so grateful for their expertise." },
+    { name: "Lucas Hernandez", date: "10 April 2024", rating: "⭐⭐⭐⭐", text: "Overall great experience. I wish they had offered a little more in-depth consultation before the project began, but the end result was impressive. Highly recommend their landscaping services." },
+    { name: "Julia Gomez", date: "1 May 2024", rating: "⭐⭐⭐⭐⭐", text: "The team went above and beyond. They made sure everything was just as I envisioned, and even offered some excellent suggestions to improve the design. Couldn't be happier with their service." },
+    { name: "Paul Denson", date: "12 February 2024", rating: "⭐⭐⭐⭐", text: "Reliable, efficient, and professional. They worked fast, cleaned up well, and their work was high-quality. I'm pleased with how my landscaping turned out." }
+];
+let currentIndex = 0;
+
+function toggleReadMore(button) {
+    const textContainer = button.previousElementSibling;
+    textContainer.classList.toggle('expanded');
+    button.textContent = textContainer.classList.contains('expanded') ? 'Read Less' : 'Read More';
+}
+
+function loadReviews() {
+    const reviewContainer = document.getElementById('reviews');
+    for (let i = currentIndex; i < currentIndex + 4 && i < reviews.length; i++) {
+        const review = reviews[i];
+        const card = document.createElement('div');
+        card.classList.add('card');
+        card.innerHTML = `
+            <img src="https://img.icons8.com/color/48/google-logo.png" alt="google-logo" class="google-logo">
+            <p class="font-semibold">${review.name}</p>
+            <p class="text-sm text-gray-600">${review.date}</p>
+            <p class="text-yellow-500">${review.rating}</p>
+            <div class="text-container">${review.text}</div>
+            <span class="read-more-button" onclick="toggleReadMore(this)">Read More</span>
+        `;
+        reviewContainer.appendChild(card);
+    }
+    currentIndex += 4;
+    if (currentIndex >= reviews.length) {
+        document.getElementById('loadMoreButton').style.display = 'none';
+    }
+}
+
+document.getElementById('loadMoreButton').addEventListener('click', loadReviews);
+
+
+loadReviews();
+
+// heroend-section
+
+const textArray = ["Professional", "Expert", "Skilled", "Qualified"];
+let index = 0;
+const dynamicTextElement = document.getElementById('dynamic-text');
+
+function updateText() {
+    fadeOut(() => {
+        index = (index + 1) % textArray.length;
+        dynamicTextElement.textContent = textArray[index];
+        fadeIn();
+    });
+}
+
+function fadeOut(callback) {
+    let opacity = 1;
+
+    function decreaseOpacity() {
+        opacity -= 0.05;
+        dynamicTextElement.style.opacity = opacity;
+
+        if (opacity <= 0) {
+            callback(); 
+            return;
+        }
+        requestAnimationFrame(decreaseOpacity);
+    }
+    decreaseOpacity();
+}
+
+function fadeIn() {
+    let opacity = 0;
+
+    function increaseOpacity() {
+        opacity += 0.05;
+        dynamicTextElement.style.opacity = opacity;
+
+        if (opacity >= 1) return;
+
+        requestAnimationFrame(increaseOpacity);
+    }
+
+    increaseOpacity();
+}
+
+setInterval(updateText, 3000); 

@@ -1,5 +1,27 @@
 // NAV--BAR STARTS
-   
+// Only apply this for screens smaller than or equal to 391px
+function toggleDropdown(dropdownId) {
+  const dropdown = document.getElementById(dropdownId);
+  const hr = dropdown.nextElementSibling; 
+
+  
+  dropdown.classList.toggle('hidden');
+
+
+  if (!dropdown.classList.contains('hidden')) {
+      dropdown.appendChild(hr);
+  } else {
+      dropdown.parentNode.insertBefore(hr, dropdown.nextElementSibling);
+  }
+}
+window.addEventListener('resize', function() {
+  const screenWidth = window.innerWidth;
+  const hrs = document.querySelectorAll('.dynamic-hr');
+
+  hrs.forEach(hr => {
+      hr.style.display = screenWidth <= 391 ? 'block' : 'none';
+  });
+});
        function toggleDropdown(id) {
            const dropdownToToggle = document.getElementById(id);
            if (activeDropdown && activeDropdown !== dropdownToToggle) {

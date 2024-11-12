@@ -37,7 +37,7 @@
 
     <!-- Navigation -->
 <nav class="bg-black  text-white py-4  w-full ">
-    <div class="container mx-auto flex justify-between items-center px-4">
+    <div class="container mx-auto flex justify-between px-4">
         <div class="text-2xl font-bold">STREAMLINE</div>
         <div class="navbar-menu hidden md:flex items-center space-x-6 text-white relative">
             <a href="#" class="hoverTEXT-brand-color">Home</a>
@@ -111,11 +111,12 @@
                 </a>
                 <ul id="aboutDropdown" class="dropdown-content absolute bg-black text-white py-2 mt-1 rounded shadow-lg px-2">
                     <li class="flex items-center py-1">
-                        <a href="../pages/gallery.html" class="block hover:bg-gray-600 px-4 py-1">Our Gallery</a>
+                        <a href="../pages/about.html" class="block hover:bg-gray-600 px-4 py-1">About us</a>
                     </li>
                     <li class="flex items-center py-1">
-                        <a href="#" class="block hover:bg-gray-600 px-4 py-1">Our Team</a>
+                        <a href="../pages/gallery.html" class="block hover:bg-gray-600 px-4 py-1">Our Gallery</a>
                     </li>
+                    
                     <li class="flex items-center py-1">
                         <a href="#" class="block hover:bg-gray-600 px-4 py-1">Testimonials</a>
                     </li>
@@ -162,7 +163,7 @@
             </svg>
         </button>
         <div class="flex flex-col p-4 text-white ml-2"> 
-            <a href="index.html" class="py-3 text-lg hoverTEXT-brand-color mb-2">Home</a> 
+            <a href="index.html" class="py-3 text-lg hoverTEXT-brand-color mb-2 problem-creator">Home</a> <hr class="dynamic-hr mb-2" />
             <div class="relative mb-4">
                 <a href="#" onclick="toggleDropdown('landscapingDropdownSidebar'); event.stopPropagation();" class="flex items-center py-3 text-lg hoverTEXT-brand-color mb-2">
                     Landscaping
@@ -182,6 +183,7 @@
                         <a href="#" class="block hover:bg-gray-600 px-4 py-1">Plant Installation</a>
                     </li>
                 </ul>
+                <hr class="dynamic-hr mb-2" />
             </div>
             
             
@@ -204,6 +206,7 @@
                         <a href="#" class="block hover:bg-gray-600 px-4 py-1">Sump Pumps</a>
                     </li>
                 </ul>
+                <hr class="dynamic-hr mb-2" />
             </div>
             
             
@@ -226,6 +229,7 @@
                         <a href="#" class="block hover:bg-gray-600 px-4 py-1">Winterization</a>
                     </li>
                 </ul>
+                <hr class="dynamic-hr mb-2" />
             </div>
             
             <div class="relative mb-2">
@@ -247,6 +251,7 @@
                         <a href="#" class="block hover:bg-gray-600 px-4 py-1">Support</a>
                     </li>
                 </ul>
+                <hr class="dynamic-hr mb-2" />
             </div>
             
             
@@ -257,23 +262,24 @@
                 </a>
                 <ul id="aboutDropdownSidebar" class="dropdown-content bg-black text-white py-2 mt-1 rounded shadow-lg px-2">
                     <li class="flex items-center py-1">
+                        <!-- <img src="https://img.icons8.com/material-outlined/24/FFFFFF/team.png" alt="Team Icon" class="w-5 h-5 mr-2"/> -->
+                        <a href="../pages/about.html" class="block hover:bg-gray-600 px-4 py-1">About us</a>
+                    </li>
+                    <li class="flex items-center py-1">
                         <!-- <img src="https://img.icons8.com/material-outlined/24/FFFFFF/info.png" alt="Info Icon" class="w-5 h-5 mr-2"/> -->
                         <a href="../pages/gallery.html" class="block hover:bg-gray-600 px-4 py-1">Our Gallery</a>
                     </li>
-                    <li class="flex items-center py-1">
-                        <!-- <img src="https://img.icons8.com/material-outlined/24/FFFFFF/team.png" alt="Team Icon" class="w-5 h-5 mr-2"/> -->
-                        <a href="#" class="block hover:bg-gray-600 px-4 py-1">Meet the Team</a>
-                    </li>
+                    
                     <li class="flex items-center py-1">
                         <!-- <img src="https://img.icons8.com/material-outlined/24/FFFFFF/mission.png" alt="Mission Icon" class="w-5 h-5 mr-2"/> -->
                         <a href="#" class="block hover:bg-gray-600 px-4 py-1">Our Mission</a>
                     </li>
                 </ul>
             </div>
-            
+            <hr class="dynamic-hr mb-2" />
         </div>
         
-        <a href="tel:8177018920" class="navbar-button brand-dark-background text-white px-4 py-2 rounded-3xl hoverBG-brand-color mt-4 ml-4">
+        <a href="tel:8177018920" class="navbar-button brand-dark-background text-white px-4 py-2 rounded-3xl hoverBG-brand-color mt-4 ml-4 problem-creator">
             Call (817)701-8920
         </a>
         
@@ -331,7 +337,7 @@
 </header>
 
 <!-- Services Section -->
-<section id="service-section" class="flex flex-col items-center justify-start bg-white mb-8 mt-4">
+<section id="service-section" class="flex flex-col items-center justify-start bg-white mb-16 mt-4">
 <div id="service-container" class="container mx-auto px-6">
   <h2 id="service-heading" class="text-3xl font-bold text-center mb-4">OUR SERVICES</h2>
   <!-- Swiper Container -->
@@ -348,7 +354,7 @@
     <section id="landing-section" class="relative w-screen h-auto overflow-hidden">
         <img id="landing-bg-image" src="bg.png" alt="Full Width Test Image" class="w-full h-full object-cover object-left">
         <div id="landing-content" class="absolute inset-0 flex flex-col justify-center items-center text-center brand-green z-10 px-4">
-            <h1 id="landing-heading" class="text-3xl sm:text-4xl md:text-5xl lg:text-5xl mb-2 pb-2">We Handle Everything For You!</h1>
+            <h2 id="landing-heading" class="text-3xl sm:text-4xl md:text-5xl lg:text-5xl mb-2 pb-2">We Handle Everything For You!</h2>
             <hr id="landing-divider-top" class="w-2/4 mx-auto border-1 brand-border">
             <p id="landing-description" class="text-black text-base sm:text-lg mt-4 mx-2">Streamline Designs offers custom professional landscaping services in the Greater Dallas Fort Worth Metroplex.</p>
             <div id="landing-years" class="mt-6">
@@ -360,9 +366,9 @@
             <hr id="landing-divider-bottom" class="mt-4 w-1/4 mx-auto border-1 brand-border">
             
             <div id="landing-experience" class="mt-8">
-                <h2 id="landing-experience-heading" class="text-black font-bold text-base sm:text-lg md:text-xl">Experience</h2>
+                <h3 id="landing-experience-heading" class="text-black font-bold text-base sm:text-lg md:text-xl">Experience</h3>
                 <p id="landing-experience-text" class="text-black text-sm sm:text-base mt-2 mx-2 mb-2">Service crews are hired for year-round service.</p>
-                <h2 id="landing-location-heading" class="text-black font-bold text-base sm:text-lg md:text-xl">In The DFW Metroplex</h2>
+                <h3 id="landing-location-heading" class="text-black font-bold text-base sm:text-lg md:text-xl">In The DFW Metroplex</h3>
                 <p id="landing-location-text" class="text-black text-sm sm:text-base mt-2 mx-2">Creating professional landscaping services and outdoor needs.</p>
             </div>
         </div>
@@ -373,7 +379,7 @@
       <!-- Gallery Section -->
       <section id="image-modal-gallery-section" class="py-12">
         <div class="text-center mb-8">
-          <h1 class="text-2xl font-bold text-green-600">Recent Projects</h1>
+          <h2 class="text-2xl font-bold text-green-600">Recent Projects</h2>
         </div>
       
         <div id="image-modal-gallery" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-6xl mx-auto px-4">
@@ -451,7 +457,7 @@
         <div id="craftsmanship-section" class="w-full md:w-2/5 p-6 text-white">
             <h2 class="text-2xl md:text-3xl font-bold mb-4 ">Craftsmanship</h2>
             <p class="mb-4 text-sm md:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat ex at nisi suscipit, sit amet viverra lectus malesuada. Nulla facilisi. Curabitur blandit risus vel facilisis volutpat. Cras a leo augue. Maecenas in arcu arcu. Donec consequat, arcu nec fermentum dapibus, elit est tristique nisi, sit amet malesuada erat nisl sit amet turpis.</p>
-            <button id="craftsmanship" class="bg-white text-sm md:text-base inline-block px-4 py-2 rounded border-2 border-[var(--brand-color)] hover:bg-[var(--brand-dark-green)] hover:text-white transition-colors duration-300 ease-in-out" onclick="window.location.href='/about-us.html';">
+            <button id="craftsmanship" class="bg-white text-sm md:text-base inline-block px-4 py-2 rounded border-2 border-[var(--brand-color)] hover:bg-[var(--brand-dark-green)] hover:text-white transition-colors duration-300 ease-in-out" onclick="window.location.href='../pages/about.html';">
                 How We Work
             </button>
             
@@ -483,7 +489,7 @@
             <img src="https://img.icons8.com/?size=100&id=QYjZm4NoXdJ0&format=png&color=2f855a" alt="" class="w-12 h-12">
         </div>
         
-        <h3 class="text-3xl font-bold">Our Reviews</h3>
+        <h2 class="text-3xl font-bold">Our Reviews</h2>
         <p class="text-gray-700 mx-auto mt-2">Our clients rave about the exceptional quality of Streamline's sprinkler, drainage & landscaping services. <span class="font-semibold">Our team has an unwavering commitment to customer satisfaction.</span></p>
     </div>
 </section>

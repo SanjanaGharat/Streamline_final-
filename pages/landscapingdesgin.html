@@ -1,0 +1,1441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Streamline</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+    <style>
+        body, html {
+          overflow-x: hidden; /* Prevent horizontal scrolling */
+          margin: 0; /* Ensure no margin around the body */
+          padding: 0; /* Remove any default padding */
+        }
+      </style>
+<header>
+<!-- Top Bar -->
+<div class="brand-dark-background text-white py-4 px-6 flex flex-col md:flex-row justify-between items-center w-full h-auto">
+    <div class="top-bar-icons flex flex-col md:flex-row items-start w-full md:w-auto">
+        <div class="flex items-center mb-2 md:mb-0">
+            <img src="https://img.icons8.com/?size=100&id=53439&format=png&color=FFFFFF" alt="Phone Icon" class="w-5 h-5 mr-2"/>
+            <a href="tel:817-701-8920" class="hoverTEXT-brand-light-bg text-sm md:text-base">(817) 701-8920</a>
+        </div>
+        <div class="flex items-center mb-2 md:mb-0 md:ml-4">
+            <img src="https://img.icons8.com/?size=100&id=7891&format=png&color=FFFFFF" alt="Location Icon" class="w-5 h-5 mr-2"/>
+            <a href="https://www.google.com/maps?q=6516+Colleyville+Blvd,+Colleyville,+TX+76034" target="_blank" class="text-sm md:text-base hoverTEXT-brand-light-bg">
+                6516 Colleyville Blvd, Colleyville, TX 76034
+            </a>
+        </div>
+        
+    </div>
+    <a href="../pages/contact.html" class="bg-white brand-green px-4 py-1 rounded hoverBG-brand-light-bg mt-2 md:mt-0 hidden md:block">
+        GET MY RATES
+    </a>
+    
+</div>
+
+
+
+    <!-- Navigation -->
+<nav class="bg-black  text-white py-4  w-full ">
+    <div class="container mx-auto flex justify-between  px-4">
+        <div class="text-2xl font-bold">STREAMLINE</div>
+        <div class="navbar-menu hidden md:flex items-center space-x-6 text-white relative">
+            <a href="../index.html" class="hoverTEXT-brand-color">Home</a>
+            <div class="relative inline-block">
+                <a href="#" onclick="toggleDropdown('landscapingDropdown'); event.stopPropagation();" class="flex items-center hoverTEXT-brand-color">
+                    Landscaping
+                    <img src="https://img.icons8.com/?size=100&id=99977&format=png&color=FFFFFF" class="w-4 h-4 ml-2 align-middle" alt="Icon" />
+                </a>
+                <ul id="landscapingDropdown" class="dropdown-content absolute bg-black text-white py-2 mt-1 rounded shadow-lg px-2">
+                    <li class="flex items-center py-1">
+                        <!-- <img src="https://img.icons8.com/material-outlined/24/FFFFFF/landscape.png" alt="Landscape Icon" class="w-5 h-5 mr-2"/> -->
+                        <a href="#" class="block hover:bg-gray-600 px-4 py-1">Landscape Design</a>
+                    </li>
+                    <li class="flex items-center py-1">
+                        <!-- <img src="https://img.icons8.com/material-outlined/24/FFFFFF/lamp.png" alt="Lighting Icon" class="w-5 h-5 mr-2"/> -->
+                        <a href="#" class="block hover:bg-gray-600 px-4 py-1">Landscape Lighting</a>
+                    </li>
+                    <li class="flex items-center py-1">
+                        <!-- <img src="https://img.icons8.com/material-outlined/24/FFFFFF/plant.png" alt="Plant Icon" class="w-5 h-5 mr-2"/> -->
+                        <a href="#" class="block hover:bg-gray-600 px-4 py-1">Plant Installation</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="relative inline-block">
+                <a href="#" onclick="toggleDropdown('drainageDropdown'); event.stopPropagation();" class="flex items-center hoverTEXT-brand-color">
+                    Drainage
+                    <img src="https://img.icons8.com/?size=100&id=99977&format=png&color=FFFFFF" class="w-4 h-4 ml-2 align-middle" alt="Icon" />
+                </a>
+                <ul id="drainageDropdown" class="dropdown-content absolute bg-black text-white py-2 mt-1 rounded shadow-lg px-2">
+                    <li class="flex items-center py-1">
+                        <!-- <img src="https://img.icons8.com/material-outlined/24/FFFFFF/drainage.png" alt="Drainage Icon" class="w-5 h-5 mr-2"/> -->
+                        <a href="#" class="block hover:bg-gray-600 px-4 py-1">French Drains</a>
+                    </li>
+                    <li class="flex items-center py-1">
+                        <!-- <img src="https://img.icons8.com/material-outlined/24/FFFFFF/drain.png" alt="Channel Icon" class="w-5 h-5 mr-2"/> -->
+                        <a href="#" class="block hover:bg-gray-600 px-4 py-1">Channel Drains</a>
+                    </li>
+                    <li class="flex items-center py-1">
+                        <!-- <img src="https://img.icons8.com/material-outlined/24/FFFFFF/sump-pump.png" alt="Sump Pump Icon" class="w-5 h-5 mr-2"/> -->
+                        <a href="#" class="block hover:bg-gray-600 px-4 py-1">Sump Pumps</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="relative inline-block">
+                <a href="#" onclick="toggleDropdown('irrigationDropdown'); event.stopPropagation();" class="flex items-center hoverTEXT-brand-color">
+                    Sprinkler & Irrigation
+                    <img src="https://img.icons8.com/?size=100&id=99977&format=png&color=FFFFFF" class="w-4 h-4 ml-2 align-middle" alt="Icon" />
+                </a>
+                <ul id="irrigationDropdown" class="dropdown-content absolute bg-black text-white py-2 mt-1 rounded shadow-lg px-2">
+                    <li class="flex items-center py-1">
+                        <!-- <img src="https://img.icons8.com/material-outlined/24/FFFFFF/sprinkler.png" alt="Sprinkler Icon" class="w-5 h-5 mr-2"/> -->
+                        <a href="#" class="block hover:bg-gray-600 px-4 py-1">Sprinkler Installation</a>
+                    </li>
+                    <li class="flex items-center py-1">
+                        <!-- <img src="https://img.icons8.com/material-outlined/24/FFFFFF/water-sprinkler.png" alt="Irrigation Icon" class="w-5 h-5 mr-2"/> -->
+                        <a href="#" class="block hover:bg-gray-600 px-4 py-1">Irrigation Maintenance</a>
+                    </li>
+                    <li class="flex items-center py-1">
+                        <!-- <img src="https://img.icons8.com/material-outlined/24/FFFFFF/winter.png" alt="Winter Icon" class="w-5 h-5 mr-2"/> -->
+                        <a href="#" class="block hover:bg-gray-600 px-4 py-1">Winterization</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="relative inline-block">
+                <a href="#" onclick="toggleDropdown('aboutDropdown'); event.stopPropagation();" class="flex items-center hoverTEXT-brand-color">
+                    About
+                    <img src="https://img.icons8.com/?size=100&id=99977&format=png&color=FFFFFF" class="w-4 h-4 ml-2 align-middle" alt="Icon" />
+                </a>
+                <ul id="aboutDropdown" class="dropdown-content absolute bg-black text-white py-2 mt-1 rounded shadow-lg px-2">
+                    <li class="flex items-center py-1">
+                        <a href="./about.html" class="block hover:bg-gray-600 px-4 py-1">About us</a>
+                    </li>
+                    <li class="flex items-center py-1">
+                        <a href="../pages/gallery.html" class="block hover:bg-gray-600 px-4 py-1">Our Gallery</a>
+                    </li>
+                    
+                    <li class="flex items-center py-1">
+                        <a href="./tipsandtrick.html" class="block hover:bg-gray-600 px-4 py-1">Tips&Tricks</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="relative inline-block">
+                <a href="#" onclick="toggleDropdown('contactDropdown'); event.stopPropagation();" class="flex items-center hoverTEXT-brand-color">
+                    Contact
+                    <img src="https://img.icons8.com/?size=100&id=99977&format=png&color=FFFFFF" class="w-4 h-4 ml-2 align-middle" alt="Icon" />
+                </a>
+                <ul id="contactDropdown" class="dropdown-content absolute bg-black text-white py-2 mt-1 rounded shadow-lg px-2">
+                    <li class="flex items-center py-1">
+                        <a href="../pages/contact.html" class="block hover:bg-gray-600 px-4 py-1">Get in Touch</a>
+                    </li>
+                    <li class="flex items-center py-1">
+                        <a href="#" class="block hover:bg-gray-600 px-4 py-1">FAQ</a>
+                    </li>
+                    <li class="flex items-center py-1">
+                        <a href="#" class="block hover:bg-gray-600 px-4 py-1">Support</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <button class="navbar-button brand-dark-background text-white px-4 py-2 rounded-3xl hoverBG-brand-color ml-4" onclick="window.location.href='tel:8177018920';">
+                Call (817)701-8920
+            </button>
+            
+        </div>
+        <button class="hamburger md:hidden text-white" onclick="toggleNavbar()">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+        </button>
+    </div>
+</nav>
+
+
+    <!-- Sidebar for small screens -->
+    <div id="sidebar" class="sidebar">
+        <button class="absolute top-4 right-4 text-white" onclick="toggleNavbar()">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+        <div class="flex flex-col p-4 text-white ml-2"> 
+            <a href="../index.html" class="py-3 text-lg hoverTEXT-brand-color mb-2 problem-creator ">Home</a><hr class="dynamic-hr mb-2" />
+            <div class="relative mb-4">
+                <a href="#" onclick="toggleDropdown('landscapingDropdownSidebar'); event.stopPropagation();" class="flex items-center py-3 text-lg hoverTEXT-brand-color mb-2">
+                    Landscaping
+                    <img src="https://img.icons8.com/?size=100&id=99977&format=png&color=FFFFFF" class="w-4 h-4 ml-2 align-middle" alt="Icon" />
+                </a>
+                <ul id="landscapingDropdownSidebar" class="dropdown-content bg-black text-white py-2 mt-1 rounded shadow-lg px-2">
+                    <li class="flex items-center py-1">
+                        <!-- <img src="https://img.icons8.com/material-outlined/24/FFFFFF/landscape.png" alt="Landscape Icon" class="w-5 h-5 mr-2"/> -->
+                        <a href="#" class="block hover:bg-gray-600 px-4 py-1">Landscape Design</a>
+                    </li>
+                    <li class="flex items-center py-1">
+                        <!-- <img src="https://img.icons8.com/material-outlined/24/FFFFFF/lamp.png" alt="Lighting Icon" class="w-5 h-5 mr-2"/> -->
+                        <a href="#" class="block hover:bg-gray-600 px-4 py-1">Landscape Lighting</a>
+                    </li>
+                    <li class="flex items-center py-1">
+                        <!-- <img src="https://img.icons8.com/material-outlined/24/FFFFFF/plant.png" alt="Plant Icon" class="w-5 h-5 mr-2"/> -->
+                        <a href="#" class="block hover:bg-gray-600 px-4 py-1">Plant Installation</a>
+                    </li>
+                </ul>
+                <hr class="dynamic-hr mb-2" />
+            </div>
+            
+            
+            <div class="relative mb-2">
+                <a href="#" onclick="toggleDropdown('drainageDropdownSidebar'); event.stopPropagation();" class="flex items-center py-3 text-lg hoverTEXT-brand-color mb-2">
+                    Drainage
+                    <img src="https://img.icons8.com/?size=100&id=99977&format=png&color=FFFFFF" class="w-4 h-4 ml-2 align-middle" alt="Icon" />
+                </a>
+                <ul id="drainageDropdownSidebar" class="dropdown-content bg-black text-white py-2 mt-1 rounded shadow-lg px-2">
+                    <li class="flex items-center py-1">
+                        <!-- <img src="https://img.icons8.com/material-outlined/24/FFFFFF/drainage.png" alt="Drainage Icon" class="w-5 h-5 mr-2"/> -->
+                        <a href="#" class="block hover:bg-gray-600 px-4 py-1">French Drains</a>
+                    </li>
+                    <li class="flex items-center py-1">
+                        <!-- <img src="https://img.icons8.com/material-outlined/24/FFFFFF/drain.png" alt="Channel Icon" class="w-5 h-5 mr-2"/> -->
+                        <a href="#" class="block hover:bg-gray-600 px-4 py-1">Channel Drains</a>
+                    </li>
+                    <li class="flex items-center py-1">
+                        <!-- <img src="https://img.icons8.com/material-outlined/24/FFFFFF/sump-pump.png" alt="Sump Pump Icon" class="w-5 h-5 mr-2"/> -->
+                        <a href="#" class="block hover:bg-gray-600 px-4 py-1">Sump Pumps</a>
+                    </li>
+                </ul>
+                <hr class="dynamic-hr mb-2" />
+            </div>
+            
+            
+            <div class="relative mb-2">
+                <a href="#" onclick="toggleDropdown('irrigationDropdownSidebar'); event.stopPropagation();" class="flex items-center py-3 text-lg hoverTEXT-brand-color mb-2">
+                    Sprinkler & Irrigation
+                    <img src="https://img.icons8.com/?size=100&id=99977&format=png&color=FFFFFF" class="w-4 h-4 ml-2 align-middle" alt="Icon" />
+                </a>
+                <ul id="irrigationDropdownSidebar" class="dropdown-content bg-black text-white py-2 mt-1 rounded shadow-lg px-2">
+                    <li class="flex items-center py-1">
+                        <!-- <img src="https://img.icons8.com/material-outlined/24/FFFFFF/sprinkler.png" alt="Sprinkler Icon" class="w-5 h-5 mr-2"/> -->
+                        <a href="#" class="block hover:bg-gray-600 px-4 py-1">Sprinkler Installation</a>
+                    </li>
+                    <li class="flex items-center py-1">
+                        <!-- <img src="https://img.icons8.com/material-outlined/24/FFFFFF/water-sprinkler.png" alt="Irrigation Icon" class="w-5 h-5 mr-2"/> -->
+                        <a href="#" class="block hover:bg-gray-600 px-4 py-1">Irrigation Maintenance</a>
+                    </li>
+                    <li class="flex items-center py-1">
+                        <!-- <img src="https://img.icons8.com/material-outlined/24/FFFFFF/winter.png" alt="Winter Icon" class="w-5 h-5 mr-2"/> -->
+                        <a href="#" class="block hover:bg-gray-600 px-4 py-1">Winterization</a>
+                    </li>
+                </ul>
+                <hr class="dynamic-hr mb-2" />
+            </div>
+            
+            <div class="relative mb-2">
+                <a href="#" onclick="toggleDropdown('contactDropdownSidebar'); event.stopPropagation();" class="flex items-center py-3 text-lg hoverTEXT-brand-color mb-2">
+                    Contact
+                    <img src="https://img.icons8.com/?size=100&id=99977&format=png&color=FFFFFF" class="w-4 h-4 ml-2 align-middle" alt="Icon" />
+                </a>
+                <ul id="contactDropdownSidebar" class="dropdown-content bg-black text-white py-2 mt-1 rounded shadow-lg px-2">
+                    <li class="flex items-center py-1">
+                        <!-- <img src="https://img.icons8.com/material-outlined/24/FFFFFF/phone.png" alt="Phone Icon" class="w-5 h-5 mr-2"/> -->
+                        <a href="../pages/contact.html" class="block hover:bg-gray-600 px-4 py-1">Get in touch</a>
+                    </li>
+                    <li class="flex items-center py-1">
+                        <!-- <img src="https://img.icons8.com/material-outlined/24/FFFFFF/email.png" alt="Email Icon" class="w-5 h-5 mr-2"/> -->
+                        <a href="#" class="block hover:bg-gray-600 px-4 py-1">FAQ</a>
+                    </li>
+                    <li class="flex items-center py-1">
+                        <!-- <img src="https://img.icons8.com/material-outlined/24/FFFFFF/location.png" alt="Location Icon" class="w-5 h-5 mr-2"/> -->
+                        <a href="#" class="block hover:bg-gray-600 px-4 py-1">Support</a>
+                    </li>
+                </ul>
+                <hr class="dynamic-hr mb-2" />
+            </div>
+            
+            
+            <div class="relative mb-2">
+                <a href="#" onclick="toggleDropdown('aboutDropdownSidebar'); event.stopPropagation();" class="flex items-center py-3 text-lg hoverTEXT-brand-color mb-2">
+                    About
+                    <img src="https://img.icons8.com/?size=100&id=99977&format=png&color=FFFFFF" class="w-4 h-4 ml-2 align-middle" alt="Icon" />
+                </a>
+                <ul id="aboutDropdownSidebar" class="dropdown-content bg-black text-white py-2 mt-1 rounded shadow-lg px-2">
+                    <li class="flex items-center py-1">
+                        <!-- <img src="https://img.icons8.com/material-outlined/24/FFFFFF/team.png" alt="Team Icon" class="w-5 h-5 mr-2"/> -->
+                        <a href="./about.html" class="block hover:bg-gray-600 px-4 py-1">About us</a>
+                    </li>
+                    <li class="flex items-center py-1">
+                        <!-- <img src="https://img.icons8.com/material-outlined/24/FFFFFF/info.png" alt="Info Icon" class="w-5 h-5 mr-2"/> -->
+                        <a href="../pages/gallery.html" class="block hover:bg-gray-600 px-4 py-1">Our Gallery</a>
+                    </li>
+                    
+                    <li class="flex items-center py-1">
+                        <!-- <img src="https://img.icons8.com/material-outlined/24/FFFFFF/mission.png" alt="Mission Icon" class="w-5 h-5 mr-2"/> -->
+                        <a href="./tipsandtrick.html" class="block hover:bg-gray-600 px-4 py-1">Tips&Tricks</a>
+                    </li>
+                </ul>
+                <hr class="dynamic-hr mb-2" />
+            </div>
+            
+        </div>
+        
+        <a href="tel:8177018920" class="navbar-button brand-dark-background text-white px-4 py-2 rounded-3xl hoverBG-brand-color mt-4 ml-4 problem-creator ">
+            Call (817)701-8920
+        </a>
+        
+    </div>
+    <section class="relative flex items-center justify-center mx-auto w-full max-w-[90%] sm:max-w-[85%] md:max-w-[80%]" style="min-height: 50vh; z-index: 0;" id="text-overlay">
+        <div class="absolute inset-0">
+            <!-- Background image for the hero section -->
+            <img src="https://media.istockphoto.com/id/1254871777/photo/modern-minimalist-family-villa.webp?a=1&b=1&s=612x612&w=0&k=20&c=jh9BiVRnvxs_bm2UIlHdxOLpNl5kwOq9nxKOUAATBqc=" 
+                 alt="Modern home with landscaping" 
+                 class="object-cover w-full h-full" />
+            
+            <!-- Tint overlay to darken the image -->
+            <div class="absolute inset-0 bg-black opacity-40"></div>
+        </div>
+    
+        <div class="absolute z-10 text-center text-white px-4 md:px-8 pb-4" style="z-index: 1;">
+            <!-- Main heading for the hero section -->
+            <h2 class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold mb-4 pt-4">Landscaping  Design</h2>
+    
+            <!-- Horizontal line separator -->
+            <hr class="border-gray-300 opacity-70 my-4">
+    
+            <!-- Service list with tick icons -->
+            <ul class="text-xs sm:text-sm md:text-base lg:text-lg space-y-2 sm:space-y-3 md:space-y-4">
+                <li class="flex items-start sm:items-center justify-center sm:justify-start">
+                    <span class="material-icons brand-green mr-2 flex-shrink-0">check_circle</span>
+                    <span class="text-left leading-tight">Licensed & Certified Landscaping Professionals With Over 30 Years Experience.</span>
+                </li>
+                <li class="flex items-start sm:items-center justify-center sm:justify-start">
+                    <span class="material-icons brand-green mr-2 flex-shrink-0">check_circle</span>
+                    <span class="text-left leading-tight">Free Warranty: If There Are Any Issues, They'll Be Addressed & Fixed For Free.</span>
+                </li>
+                <li class="flex items-start sm:items-center justify-center sm:justify-start">
+                    <span class="material-icons brand-green mr-2 flex-shrink-0">check_circle</span>
+                    <span class="text-left leading-tight">Full Report On What To Expect & Quality Service.</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+    
+</header>
+<section class="flex flex-col lg:flex-row items-center justify-between px-4 py-6 lg:px-10 gap-4 mt-12 lg:ml-48 lg:mr-48">
+    <!-- Form Column (Left Section) -->
+    <div class="w-full lg:w-2/5 md:w-3/5 sm:w-full space-y-4 mx-4 sm:mx-0">
+        <form class="flex flex-col gap-2">
+            <!-- Name Input -->
+            <label for="name" class="text-sm font-semibold">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required class="p-3 border border-gray-300 rounded-md focus:outline-none focus:border-brand-color">
+
+            <!-- Phone Input -->
+            <label for="phone" class="text-sm font-semibold">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required class="p-3 border border-gray-300 rounded-md focus:outline-none focus:border-brand-color">
+
+            <!-- Email Input -->
+            <label for="email" class="text-sm font-semibold">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required class="p-3 border border-gray-300 rounded-md focus:outline-none focus:border-brand-color">
+
+            <!-- Address Input -->
+            <label for="address" class="text-sm font-semibold">Address</label>
+            <input type="text" id="address" name="address" placeholder="Enter your address" class="p-3 border border-gray-300 rounded-md focus:outline-none focus:border-brand-color">
+
+            <!-- Request a Quote Button -->
+            <button type="submit" class="brand-background text-white py-3 px-6 rounded-md font-semibold hoverBG-brand-dark-background transition duration-300">
+                Request a Quote
+            </button>
+        </form>
+    </div>
+
+    <!-- Video Column (Right Section) -->
+    <div class="w-full lg:w-1/2 flex justify-center items-center mt-4 lg:mt-0 mx-4 sm:mx-0">
+        <iframe class="w-full max-w-lg h-56 lg:h-64 sm:max-w-md sm:h-48" src="https://www.youtube.com/embed/example_video_id" title="YouTube video" allowfullscreen></iframe>
+    </div>
+</section>
+
+<section class="flex flex-wrap justify-center gap-8 mt-12 mb-12">
+    <!-- Image 1 -->
+    <img src="https://streamlinelc.com/wp-content/uploads/2024/05/angies-list-super-service-award-2016.png" alt="Angie's List Super Service Award" class="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-xs">
+
+    <!-- Image 2 -->
+    <img src="https://streamlinelc.com/wp-content/uploads/2024/05/bbb-accredited-business-300x167.png" alt="BBB Accredited Business" class="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-xs">
+
+    <!-- Image 3 -->
+    <img src="https://streamlinelc.com/wp-content/uploads/2024/05/good-contractors.png" alt="Good Contractors" class="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-xs">
+
+    <!-- Image 4 -->
+    <img src="https://streamlinelc.com/wp-content/uploads/2024/05/rainbird-300x167.png" alt="Rainbird" class="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-xs">
+
+    <!-- Image 5 -->
+    <img src="https://streamlinelc.com/wp-content/uploads/2024/05/home-services-review-5star-rated.png" alt="Home Services Review 5-Star Rated" class="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-xs">
+</section>
+
+<style>
+    #service-page-service-section {
+      height: 60vh;
+      padding-top: 2rem; 
+      padding-bottom: 38rem;
+    }
+
+    #service-page-service-container {
+      padding: 0;
+    }
+
+    #service-page-service-heading {
+      color: var(--brand-dark-green);
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      transform: translateY(-10px); 
+    }
+
+    #service-page-service-swiper-container {
+      width: 100%;
+      height: calc(100% - 40px);
+      overflow: hidden;
+      position: relative;
+      padding-bottom: 3rem;
+    }
+
+    .service-page-service-swiper-wrapper {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+
+    .service-page-service-swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+    }
+
+    .service-page-service-card:hover {
+      transform: translateY(-5px); 
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    }
+
+    .service-page-service-card {
+      width: 18rem;
+      height: 28rem;
+      transition: transform 0.3s, box-shadow 0.3s;
+      position: relative;
+      overflow: visible;
+      background: var(--offwhite);
+      border-radius: 8px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: center;
+      padding: 1rem;
+      margin-bottom: 20px;
+    }
+
+    .service-page-service-card h2 {
+      color: var(--brand-color);
+      font-size: 1rem;
+      margin-top: 1rem;
+    }
+
+    .service-page-service-learn-more-btn {
+      color: #fff;
+      background-color: var(--brand-color);
+      padding: 0.45rem 0.4rem;
+      border-radius: 50px;
+      font-size: 1rem;
+      max-width: 8rem;
+      transition: background-color 0.3s;
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .service-page-service-learn-more-btn:hover {
+      background-color: var(--brand-dark-green);
+    }
+
+    .service-page-service-icon-container img {
+      width: 100%;
+      height: 10rem;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+  
+    .service-page-service-icon-container {
+      margin-bottom: 1rem;
+    }
+
+    .service-page-service-swiper-pagination .swiper-pagination-bullet {
+      background-color: var(--brand-color) !important;
+    }
+
+    .service-page-service-swiper-pagination .swiper-pagination-bullet-active {
+      background-color: var(--brand-color) !important;
+      opacity: 1;
+    }
+
+    .service-page-service-swiper-pagination {
+      position: absolute;
+      bottom: 15px;
+      width: 100%;
+      text-align: center;
+      z-index: 10;
+    }
+
+    .service-page-service-swiper-button-next, .service-page-service-swiper-button-prev {
+      display: none;
+    }
+
+    @media (max-width: 640px) {
+      .service-page-service-swiper-button-next,
+      .service-page-service-swiper-button-prev {
+        display: none;
+      }
+    }
+  </style>
+
+
+
+
+ <!-- Service Page Service Section -->
+ <section id="service-page-service-section" class="flex flex-col items-center justify-start bg-white">
+    <div id="service-page-service-container" class="container mx-auto px-6">
+      <h2 id="service-page-service-heading" class="text-3xl font-bold text-center mb-4">OUR SERVICES</h2>
+      <!-- Swiper Container -->
+      <div id="service-page-service-swiper-container" class="swiper-container">
+        <div class="swiper-wrapper service-page-service-swiper-wrapper" id="service-page-service-swiper-wrapper">
+          <!-- Cards will be dynamically injected here -->
+        </div>
+        <!-- Pagination -->
+        <div class="swiper-pagination service-page-service-swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    const serviceData = [
+      { 
+        id: 1, 
+        title: 'Service1', 
+        description: 'Lorem ipsum dolor sit amet.', 
+        image: 'https://media.istockphoto.com/id/1869668434/photo/shikaras-boat-on-dale-lake-in-srinagar-jammu-kashmir-india.jpg?s=612x612&w=0&k=20&c=wvLUNrn3wA5Sob69HM4RRB3jWR3cSUoK8uiw9UNU1lY=', 
+        link: 'emergency-service.html' 
+      },
+      { 
+        id: 2, 
+        title: 'Service2', 
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer est urna, convallis eu leo id, feugiat laoreet justo.', 
+        image: 'https://media.istockphoto.com/id/640318118/photo/sunset-over-indian-ocean.jpg?s=612x612&w=0&k=20&c=DLKuEcWW9YwwNid-3ypLu2AJ4uPC4aXoIzyFFjDHUmM=', 
+        link: 'pipe-repair.html' 
+      },
+      { 
+        id: 3, 
+        title: 'Service3', 
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer est urna, convallis eu leo id, feugiat laoreet justo. Morbi enim libero, aliquam non maximus non, finibus id nunc.', 
+        image: 'https://media.istockphoto.com/id/157373207/photo/balanced-stones-on-a-pebble-beach-during-sunset.jpg?s=612x612&w=0&k=20&c=V4Lua2fcDJmGiTb_JQu2EP6XmFLuAo7e3eI3cUXPNec=', 
+        link: 'water-heater-services.html' 
+      },
+      { 
+        id: 4, 
+        title: 'Service4', 
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer est urna, convallis eu leo id, feugiat laoreet justo.', 
+        image: 'https://media.istockphoto.com/id/842983114/photo/confluence-of-two-rivers-alaknanda-and-bhagirathi-give-rise-to-the-holy-river-of-ganga-ganges.jpg?s=612x612&w=0&k=20&c=f3BhyRsXJSHPOIhAnCgUrfDbreDcPCc73FTFGS9Xv_M=', 
+        link: 'drain-cleaning.html' 
+      },
+      { 
+        id: 5, 
+        title: 'Service5', 
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer est urna, convallis eu leo id, feugiat laoreet justo. Morbi enim libero, aliquam non maximus non, finibus id nunc.', 
+        image: 'https://media.istockphoto.com/id/968630976/photo/colorful-landscape-with-high-himalayan-mountains-beautiful-curving-river-green-forest-blue-sky.jpg?s=612x612&w=0&k=20&c=cbrwE0pXqvS_GHEkWSQ7t6jaMbVVjvwqnagOLvNViZ8=', 
+        link: 'sewer-line-services.html' 
+      },
+      { 
+        id: 6, 
+        title: 'Service6', 
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Morbi enim libero, aliquam non maximus non, finibus id nunc.', 
+        image: 'https://media.istockphoto.com/id/537389352/photo/tropical-rainforest.jpg?s=612x612&w=0&k=20&c=Gbweh81zqVDWihcJ5KA_41C0bufuIkgxZkDLc9h4HpI=', 
+        link: 'water-filtration.html' 
+      },
+      { 
+        id: 7, 
+        title: 'Service7', 
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer est urna, convallis eu leo id, feugiat laoreet justo. Morbi enim libero, aliquam non maximus non, finibus id nunc.', 
+        image: 'https://media.istockphoto.com/id/1159182030/photo/mountain-river-winding-through-forest-at-sunset.jpg?s=612x612&w=0&k=20&c=8GeUiHK4dSVZqp25jyRhD9JiOwISR6HSQENdFIE28ys=', 
+        link: 'gas-line-services.html' 
+      }
+    ];
+
+
+    const swiperWrapper = document.getElementById('service-page-service-swiper-wrapper');
+
+    serviceData.forEach(service => {
+      const slide = document.createElement('div');
+      slide.className = 'swiper-slide service-page-service-swiper-slide';
+      slide.innerHTML = `
+        <a href="${service.link}" target="_blank" class="relative service-page-service-card p-6 bg-white rounded-lg shadow-lg text-center">
+          <div class="service-page-service-icon-container mb-4">
+            <img src="${service.image}" alt="${service.title}" class="mx-auto mb-1 mt-8">
+          </div>
+          <h2 class="mt-2 text-lg font-semibold">${service.title}</h2>
+          <p class="text-gray-700 text-sm mb-4">${service.description}</p>
+          <span class="service-page-service-learn-more-btn">LEARN MORE &rarr;</span>
+        </a>
+      `;
+      swiperWrapper.appendChild(slide);
+    });
+
+    const swiper = new Swiper('#service-page-service-swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 5,
+      pagination: {
+        el: '.service-page-service-swiper-pagination',
+        clickable: true,
+      },
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        640: { slidesPerView: 1 },
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 },
+        1280: { slidesPerView: 4 },
+      },
+    });
+  </script>
+       
+
+<section class="mt-12 mb-24 px-8 sm:px-6 md:px-16 lg:px-24">
+    <!-- Image Above Heading -->
+    <div class="flex justify-center mb-6">
+        <img src="https://streamlinelc.com/wp-content/uploads/2023/12/cropped-leaves-1-1.webp" alt="Decorative Leaves" class="w-8 h-8 sm:w-16 sm:h-16 md:w-10 md:h-10 lg:w-12 lg:h-12">
+    </div>
+    
+    <h3 class="text-3xl sm:text-4xl md:text-4xl font-semibold brand-green text-center mb-6">Landscaping Services</h3>
+    
+    <!-- Title with Bold Text -->
+    <div class="text-center mb-6">
+        <p class="font-bold text-lg sm:text-xl md:text-xl text-gray-600">Landscaping Services for Dallas and Fort Worth, TX</p>
+    </div>
+
+    <!-- Paragraph Content -->
+    <p class="text-lg sm:text-lg md:text-xl text-gray-700 mb-4 text-center">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse viverra, dui sed convallis cursus, lectus felis tincidunt orci, a aliquam urna libero a odio. Sed hendrerit vel nibh non condimentum.
+        Nunc sed mi a sem sodales fermentum. Suspendisse ut est et orci viverra molestie et a augue. Sed iaculis tortor nunc, blandit condimentum nibh molestie eget. Pellentesque viverra id urna eu pulvinar. In non interdum tortor.
+        Nam ut neque fermentum, auctor sapien quis, venenatis ante. Quisque mattis aliquam ante, in fermentum urna cursus quis.
+    </p>
+    <p class="text-lg sm:text-lg md:text-xl text-gray-700 mb-4 text-center">
+        Suspendisse in sapien vitae nulla maximus egestas. In dapibus sollicitudin fermentum. In vel mauris urna. Vivamus pellentesque eu diam at lacinia. Proin bibendum pulvinar nisl, nec efficitur est convallis sed. Nullam maximus condimentum nunc non molestie. 
+        Nulla sed libero non dui convallis congue. Maecenas luctus, ligula non vestibulum lacinia, risus urna convallis metus, mattis aliquet quam velit quis purus. Cras rutrum tincidunt tellus in tempus. 
+        Nulla diam nulla, accumsan non ultricies ut, suscipit vel dolor. Suspendisse a neque nisl. Nullam euismod metus dui, in iaculis elit consequat a.
+    </p>
+    <p class="text-base sm:text-lg md:text-xl text-gray-700 text-center mb-24">
+        Contact us today to get started with our premium landscaping services.
+    </p>
+</section>
+
+
+
+<section class="container mx-auto px-6 py-10">
+    <div class="flex flex-col md:flex-row md:space-x-6 lg:space-x-10 items-center justify-center">
+      
+      <!-- Column 1 -->
+      <div class="p-6 md:w-1/2 lg:w-5/12">
+        <h3 class="text-3xl font-semibold mb-4 text-center">Lorem ipsum dolor sit amet</h3>
+        <img src="https://media.istockphoto.com/id/1084198094/photo/lawyer-attorney-signing-a-contract.webp?a=1&b=1&s=612x612&w=0&k=20&c=CYwWF9T4Idh33AGJUB629rhXOmsBWCAZydjVi_DAsPU=" alt="Feature Image" class="w-full h-52 object-cover mb-4 rounded-lg">
+        <p class="text-gray-700 mb-4 text-justify">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in libero consequat, dictum erat eget, suscipit leo. Ut sit amet sem arcu. Fusce pharetra urna et odio convallis blandit. Suspendisse potenti. Nullam nec sem sed velit aliquam feugiat. Praesent malesuada elit eget eros sollicitudin, a commodo ipsum varius. Vivamus in orci vitae odio suscipit accumsan at ac libero. Mauris auctor turpis euismod, facilisis nulla in, fermentum lacus.
+        </p>
+        <ul class="space-y-3 mb-4">
+          <li class="flex items-center">
+            <span class="text-green-500 mr-2">&#10003;</span> Comprehensive Support and Assistance
+          </li>
+          <li class="flex items-center">
+            <span class="text-green-500 mr-2">&#10003;</span> Advanced Technology Solutions
+          </li>
+          <li class="flex items-center">
+            <span class="text-green-500 mr-2">&#10003;</span> Customizable and Scalable Options
+          </li>
+          <li class="flex items-center">
+            <span class="text-green-500 mr-2">&#10003;</span> High-Quality Performance Guarantees
+          </li>
+        </ul>
+        <p class="text-gray-600 text-justify">
+          Donec elementum metus sit amet massa ultricies, sit amet ultricies metus fermentum. Cras a est justo. Nam nec semper ipsum, a elementum arcu. Praesent feugiat ipsum non tellus efficitur, id dictum sem lobortis.
+        </p>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="p-6 mt-8 md:mt-0 md:w-1/2 lg:w-5/12">
+        <h3 class="text-3xl font-semibold mb-4 text-center">Lorem ipsum dolor sit amet</h3>
+        <img src="https://media.istockphoto.com/id/1396067916/photo/real-estate-agent-discussing-about-the-terms-of-the-purchase-agreement-and-sign-the-documents.webp?a=1&b=1&s=612x612&w=0&k=20&c=MUgOggr29Fnc_q20etgEm7KZofaBEiIelSLXr2SyjBg=" alt="Why Choose Us Image" class="w-full h-52 object-cover mb-4 rounded-lg">
+        <p class="text-gray-700 mb-4 text-justify">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fermentum dapibus bibendum. Integer tincidunt, orci ut efficitur bibendum, dolor velit viverra elit, non sagittis orci libero id dui. Sed egestas mi nec orci posuere efficitur. Etiam luctus ligula non turpis tincidunt tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin posuere massa eget nunc fringilla, vitae tempus tortor aliquam.
+        </p>
+        <ul class="space-y-3 mb-4">
+          <li class="flex items-center">
+            <span class="text-green-500 mr-2">&#10003;</span> Trusted by Leading Brands
+          </li>
+          <li class="flex items-center">
+            <span class="text-green-500 mr-2">&#10003;</span> Flexible and User-Centric Solutions
+          </li>
+          <li class="flex items-center">
+            <span class="text-green-500 mr-2">&#10003;</span> Round-the-Clock Customer Support
+          </li>
+          <li class="flex items-center">
+            <span class="text-green-500 mr-2">&#10003;</span> Continuous Innovation and Upgrades
+          </li>
+        </ul>
+        <p class="text-gray-600 text-justify">
+          Nulla facilisi. Sed et lacus nisi. Vivamus facilisis nisi in sem placerat, ac pretium ligula convallis. Mauris imperdiet lorem in volutpat sagittis. Aliquam euismod turpis ac urna varius, at condimentum sem ullamcorper.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="container mx-auto px-6 py-10">
+    <div class="flex flex-col md:flex-row md:space-x-6 lg:space-x-10 items-center justify-center">
+      
+      <!-- Column 1 -->
+      <div class="p-6 md:w-1/2 lg:w-5/12">
+        <h3 class="text-3xl font-semibold mb-4 text-center">Lorem ipsum dolor sit amet</h3>
+        <img src="https://media.istockphoto.com/id/1400865154/photo/insurance-and-risk-management-concept.jpg?s=612x612&w=0&k=20&c=qYIonj5JRDaBZHtJ0oMXJTCazwI2bUw_T7NBFq4rjn4=" alt="Feature Image" class="w-full h-52 object-cover mb-4 rounded-lg">
+        <p class="text-gray-700 mb-4 text-justify">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in libero consequat, dictum erat eget, suscipit leo. Ut sit amet sem arcu. Fusce pharetra urna et odio convallis blandit. Suspendisse potenti. Nullam nec sem sed velit aliquam feugiat. Praesent malesuada elit eget eros sollicitudin, a commodo ipsum varius. Vivamus in orci vitae odio suscipit accumsan at ac libero. Mauris auctor turpis euismod, facilisis nulla in, fermentum lacus.
+        </p>
+        <ul class="space-y-3 mb-4">
+          <li class="flex items-center">
+            <span class="text-green-500 mr-2">&#10003;</span> Comprehensive Support and Assistance
+          </li>
+          <li class="flex items-center">
+            <span class="text-green-500 mr-2">&#10003;</span> Advanced Technology Solutions
+          </li>
+          <li class="flex items-center">
+            <span class="text-green-500 mr-2">&#10003;</span> Customizable and Scalable Options
+          </li>
+          <li class="flex items-center">
+            <span class="text-green-500 mr-2">&#10003;</span> High-Quality Performance Guarantees
+          </li>
+        </ul>
+        <p class="text-gray-600 text-justify">
+          Donec elementum metus sit amet massa ultricies, sit amet ultricies metus fermentum. Cras a est justo. Nam nec semper ipsum, a elementum arcu. Praesent feugiat ipsum non tellus efficitur, id dictum sem lobortis.
+        </p>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="p-6 mt-8 md:mt-0 md:w-1/2 lg:w-5/12">
+        <h3 class="text-3xl font-semibold mb-4 text-center">Lorem ipsum dolor sit amet</h3>
+        <img src="https://media.istockphoto.com/id/95442265/photo/lottery.jpg?s=612x612&w=0&k=20&c=oflKM4MCpA0QxVefGxRiyQLaRJSahMOcfblIggQe9Co=" alt="Why Choose Us Image" class="w-full h-52 object-cover mb-4 rounded-lg">
+        <p class="text-gray-700 mb-4 text-justify">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fermentum dapibus bibendum. Integer tincidunt, orci ut efficitur bibendum, dolor velit viverra elit, non sagittis orci libero id dui. Sed egestas mi nec orci posuere efficitur. Etiam luctus ligula non turpis tincidunt tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin posuere massa eget nunc fringilla, vitae tempus tortor aliquam.
+        </p>
+        <ul class="space-y-3 mb-4">
+          <li class="flex items-center">
+            <span class="text-green-500 mr-2">&#10003;</span> Trusted by Leading Brands
+          </li>
+          <li class="flex items-center">
+            <span class="text-green-500 mr-2">&#10003;</span> Flexible and User-Centric Solutions
+          </li>
+          <li class="flex items-center">
+            <span class="text-green-500 mr-2">&#10003;</span> Round-the-Clock Customer Support
+          </li>
+          <li class="flex items-center">
+            <span class="text-green-500 mr-2">&#10003;</span> Continuous Innovation and Upgrades
+          </li>
+        </ul>
+        <p class="text-gray-600 text-justify">
+          Nulla facilisi. Sed et lacus nisi. Vivamus facilisis nisi in sem placerat, ac pretium ligula convallis. Mauris imperdiet lorem in volutpat sagittis. Aliquam euismod turpis ac urna varius, at condimentum sem ullamcorper.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+
+<section id="landing-section" class="relative w-screen h-auto overflow-hidden mb-12">
+    <img id="landing-bg-image" src="../bg.png" alt="Full Width Test Image" class="w-full h-full object-cover object-center">
+    <div id="landing-content" class="absolute inset-0 flex flex-col justify-center items-center text-center brand-green z-10 px-4 sm:px-6 md:px-8 pb-12 sm:pb-16 md:pb-20">
+        <h2 id="landing-heading" class="text-3xl sm:text-4xl md:text-5xl lg:text-5xl mb-2 pb-2 mt-2">We Handle Everything For You!</h2>
+        <hr id="landing-divider-top" class="w-2/4 mx-auto border-1 brand-border">
+        <p id="landing-description" class="text-black text-base sm:text-lg mt-4 mx-2 sm:mx-4 md:mx-6">Streamline Designs offers custom professional landscaping services in the Greater Dallas Fort Worth Metroplex.</p>
+        <div id="landing-years" class="mt-6">
+            <span class="font-bold text-4xl sm:text-5xl md:text-6xl">30</span><br>
+        </div>
+        <div id="landing-years-text" class="mt-2">
+            <span class="font-bold text-2xl sm:text-3xl md:text-4xl">Plus Years</span>
+        </div>
+        <hr id="landing-divider-bottom" class="mt-4 w-1/4 mx-auto border-1 brand-border">
+        
+        <div id="landing-experience" class="mt-8">
+            <h3 id="landing-experience-heading" class="text-black font-bold text-base sm:text-lg md:text-xl">Experience</h3>
+            <p id="landing-experience-text" class="text-black text-sm sm:text-base mt-2 mx-2 sm:mx-4 md:mx-6 mb-2">Service crews are hired for year-round service.</p>
+            <h3 id="landing-location-heading" class="text-black font-bold text-base sm:text-lg md:text-xl">In The DFW Metroplex</h3>
+            <p id="landing-location-text" class="text-black text-sm sm:text-base mt-2 mx-2 sm:mx-4 md:mx-6 mb-2">Creating professional landscaping services and outdoor needs.</p>
+        </div>
+    </div>
+    <div id="landing-overlay" class="absolute top-0 left-0 w-full h-full bg-white bg-opacity-30 z-5"></div>
+</section>
+
+
+<section id="servicepage">
+    <div id="gallery">
+      <div class="gallery-item"><img src="https://media.istockphoto.com/id/505222100/photo/green-tea-plantations.jpg?s=612x612&w=0&k=20&c=azyxLoe7JMLHpcNgUyrE3P5V7tzSu5LInFpXYBVyceU=" alt="Image 1"></div>
+      <div class="gallery-item"><img src="https://media.istockphoto.com/id/1173732710/photo/the-green-fern.jpg?s=612x612&w=0&k=20&c=sUYCIdOXetPGu9juZXdEeO-Sdtyua7DOp7LI2qVSOiM=" alt="Image 2"></div>
+      <div class="gallery-item"><img src="https://media.istockphoto.com/id/1284671318/photo/meadows-in-the-snow-peak-mountains-of-himalaya.jpg?s=612x612&w=0&k=20&c=UiWDeawpPIV8If3sXuhg82VcnDW77yjqyIxbmVom0FY=" alt="Image 3"></div>
+      <div class="gallery-item"><img src="https://media.istockphoto.com/id/2179556387/photo/mountains-and-roads.jpg?s=612x612&w=0&k=20&c=tIn5rAkrTIY5H8pdhVh2mZzCqBWWwCja3nzKtksnjHs=" alt="Image 4"></div>
+      <div class="gallery-item"><img src="https://media.istockphoto.com/id/1397138451/photo/beautiful-view-of-wenlock-downs-9th-mile-shooting-point-ooty-during-sunset-must-visit-place.jpg?s=612x612&w=0&k=20&c=kNaZSUpEIXIc33XxgXFY-uPJHEwo2b_iJEeGglPFWuY=" alt="Image 5"></div>
+      <div class="gallery-item"><img src="https://media.istockphoto.com/id/467233280/photo/nepal-jungle.jpg?s=612x612&w=0&k=20&c=cYBq-rnlXuxGNOj5-x5Pp5HJNp1Mdn_6Brta2zOyQOE=" alt="Image 6"></div>
+    </div>
+  </section>
+  
+  <script>
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    const gallery = document.getElementById('gallery');
+  
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1
+    };
+  
+    const observerCallback = (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    };
+  
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+  
+    galleryItems.forEach(item => {
+      observer.observe(item);
+    });
+  
+    window.addEventListener('load', () => {
+      gallery.style.opacity = 1;
+    });
+  </script>
+    <style>
+ 
+        #servicepage {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          padding: 20px;
+          margin-top: 50px;
+        }
+    
+        #gallery {
+          opacity: 0;
+          transition: opacity 1s ease-in;
+          width: 100%;
+          max-width: 1200px;
+        }
+    
+        .gallery-item {
+          display: inline-block;
+          margin-bottom: 10px;
+          width: 100%;
+          break-inside: avoid;
+          opacity: 0;
+          transform: translateY(20px);
+          transition: opacity 1s ease-in, transform 1s ease-in;
+        }
+    
+        .gallery-item img {
+          width: 100%;
+          height: auto;
+          display: block;
+          transition: transform 0.3s ease;
+        }
+    
+        .gallery-item:hover img {
+          transform: scale(1.05);
+        }
+    
+        .visible {
+          opacity: 1;
+          transform: translateY(0);
+        }
+    
+        /* Responsive design */
+        @media (min-width: 768px) {
+          #gallery {
+            column-count: 2;
+            column-gap: 15px;
+          }
+    
+          .gallery-item {
+            width: 100%;
+          }
+        }
+    
+        @media (min-width: 1024px) {
+          #gallery {
+            column-count: 3;
+            column-gap: 20px;
+          }
+    
+          .gallery-item {
+            width: 100%;
+          }
+        }
+    
+        @media (max-width: 480px) {
+          #gallery {
+            column-count: 1;
+            column-gap: 10px;
+          }
+    
+          .gallery-item img {
+            width: 100%;
+          }
+        }
+      </style>
+
+
+
+
+
+<section class="mt-12 mb-12 px-8 sm:px-6 md:px-8">
+    <!-- Container for content alignment -->
+    <div class="max-w-7xl mx-auto px-4">
+        <!-- Content Section with paragraphs aligned properly -->
+        <div class="text-center sm:text-left mx-auto max-w-3xl">
+            <p class=" text-justify font-bold text-xl sm:text-2xl md:text-3xl text-black mb-6">
+                Best Residential Landscaping Services
+            </p>
+            <p class="text-sm sm:text-base md:text-lg text-black mb-6 text-justify">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse viverra, dui sed convallis cursus, lectus felis tincidunt orci, a aliquam urna libero a odio. Sed hendrerit vel nibh non condimentum. Nunc sed mi a sem sodales fermentum. Suspendisse ut est et orci viverra molestie et a augue. Sed iaculis tortor nunc, blandit condimentum nibh molestie eget. Pellentesque viverra id urna eu pulvinar. In non interdum tortor.
+            </p>
+            <p class="text-sm sm:text-base md:text-lg text-black text-justify">
+                Nam ut neque fermentum, auctor sapien quis, venenatis ante. Quisque mattis aliquam ante, in fermentum urna cursus quis. Suspendisse in sapien vitae nulla maximus egestas. In dapibus sollicitudin fermentum. In vel mauris urna. Vivamus pellentesque eu diam at lacinia. Proin bibendum pulvinar nisl, nec efficitur est convallis sed. Nulla sed libero non dui convallis congue. Maecenas luctus, ligula non vestibulum lacinia, risus urna convallis metus.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="mt-12 mb-12 px-8 sm:px-6 md:px-8">
+    <!-- Container for content alignment -->
+    <div class="max-w-7xl mx-auto px-4">
+        <!-- Content Section with paragraphs aligned properly -->
+        <div class="text-center sm:text-left mx-auto max-w-3xl">
+            <p class=" text-justify font-bold text-xl sm:text-2xl md:text-3xl text-black mb-6">
+                Commercial Landscaping Services
+            </p>
+            <p class="text-sm sm:text-base md:text-lg text-black mb-6 text-justify">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse viverra, dui sed convallis cursus, lectus felis tincidunt orci, a aliquam urna libero a odio. Sed hendrerit vel nibh non condimentum. Nunc sed mi a sem sodales fermentum. Suspendisse ut est et orci viverra molestie et a augue. Sed iaculis tortor nunc, blandit condimentum nibh molestie eget. Pellentesque viverra id urna eu pulvinar. In non interdum tortor.
+            </p>
+            <p class="text-sm sm:text-base md:text-lg text-black text-justify">
+                Nam ut neque fermentum, auctor sapien quis, venenatis ante. Quisque mattis aliquam ante, in fermentum urna cursus quis. Suspendisse in sapien vitae nulla maximus egestas. In dapibus sollicitudin fermentum. In vel mauris urna. Vivamus pellentesque eu diam at lacinia. Proin bibendum pulvinar nisl, nec efficitur est convallis sed. Nulla sed libero non dui convallis congue. Maecenas luctus, ligula non vestibulum lacinia, risus urna convallis metus.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="mt-12 mb-24 px-8 sm:px-6 md:px-16 lg:px-24">
+    <!-- Section Title and Subheading -->
+    <div class="text-center mb-6">
+        <!-- Icon below the heading -->
+        <div class="flex justify-center mb-6">
+            <img src="https://streamlinelc.com/wp-content/uploads/2023/12/cropped-leaves-1-1.webp" alt="Streamline Icon" class="w-12 h-12">
+        </div>
+        <h3 class="text-3xl sm:text-4xl md:text-4xl font-semibold brand-green mb-6">Why Choose Streamline</h3>
+        <p class="text-lg sm:text-xl md:text-2xl text-gray-600">Why you should choose Streamline for your sprinkler installation</p>
+    </div>
+    <section class="py-10">
+        <!-- Centered container with max-width for spacing control -->
+        <div class="max-w-3xl mx-auto px-4">
+          
+          <!-- Grid container for cards with two columns on medium screens and above -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            
+            <!-- Card 1 -->
+            <div class="bg-gray-100 border border-gray-300 shadow-lg rounded-lg p-4 text-center max-w-xs mx-auto md:max-w-sm lg:max-w-xs">
+                <img src="https://img.icons8.com/?size=100&id=121362&format=png&color=2f855a" alt="Service Icon 2" class="card-icon" style="width: 3rem; height: 3rem; margin: 0 auto;">
+                <h3 class="text-lg font-semibold text-gray-800 mt-4">Expertise and Experience:</h3>
+              <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi libero, aliquam non maximus non.</p>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="bg-gray-100 border border-gray-300 shadow-lg rounded-lg p-4 text-center max-w-xs mx-auto md:max-w-sm lg:max-w-xs">
+                <img src="https://img.icons8.com/?size=100&id=14736&format=png&color=2f855a" alt="Service Icon 2" class="card-icon" style="width: 3rem; height: 3rem; margin: 0 auto;">
+                <h3 class="text-lg font-semibold text-gray-800 mt-4">Customer Satisfaction:</h3>
+              <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi libero, aliquam non maximus non.</p>
+            </div>
+            
+            <!-- Card 3 -->
+            <div class="bg-gray-100 border border-gray-300 shadow-lg rounded-lg p-4 text-center max-w-xs mx-auto md:max-w-sm lg:max-w-xs">
+                <img src="https://img.icons8.com/?size=100&id=ue7F5FVKkFyr&format=png&color=2f855a" alt="Service Icon 2" class="card-icon" style="width: 3rem; height: 3rem; margin: 0 auto;">
+                <h3 class="text-lg font-semibold text-gray-800 mt-4">Competitive Pricing:</h3>
+              <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi libero, aliquam non maximus non.</p>
+            </div>
+            
+            <!-- Card 4 -->
+            <div class="bg-gray-100 border border-gray-300 shadow-lg rounded-lg p-4 text-center max-w-xs mx-auto md:max-w-sm lg:max-w-xs">
+                <img src="https://img.icons8.com/?size=100&id=19099&format=png&color=2f855a" alt="Service Icon 2" class="card-icon" style="width: 3rem; height: 3rem; margin: 0 auto;">
+                <h3 class="text-lg font-semibold text-gray-800 mt-4">Timely Project Completion:</h3>
+              <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi libero, aliquam non maximus non.</p>
+            </div>
+    
+          </div>
+        </div>
+      </section>
+    
+   
+</section>
+
+
+
+
+<section class="mt-12 mb-12 px-8 sm:px-6 md:px-8">
+    <!-- Container for content alignment -->
+    <div class="max-w-7xl mx-auto px-4">
+        <!-- Content Section with paragraphs aligned properly -->
+        <div class="text-center sm:text-left mx-auto max-w-3xl">
+            <p class=" text-justify font-bold text-xl sm:text-2xl md:text-3xl text-black mb-6">
+                What to expect with our sprinkler System Installation services
+            </p>
+            <p class="text-sm sm:text-base md:text-lg text-black mb-6 text-justify">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse viverra, dui sed convallis cursus, lectus felis tincidunt orci, a aliquam urna libero a odio. Sed hendrerit vel nibh non condimentum. Nunc sed mi a sem sodales fermentum. Suspendisse ut est et orci viverra molestie et a augue. Sed iaculis tortor nunc, blandit condimentum nibh molestie eget. Pellentesque viverra id urna eu pulvinar. In non interdum tortor.
+            </p>
+            <p class="text-sm font-bold sm:text-base md:text-lg text-black mb-6 text-justify">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <p class="text-sm sm:text-base md:text-lg text-black text-justify">
+                Nam ut neque fermentum, auctor sapien quis, venenatis ante. Quisque mattis aliquam ante, in fermentum urna cursus quis. Suspendisse in sapien vitae nulla maximus egestas. In dapibus sollicitudin fermentum. In vel mauris urna. Vivamus pellentesque eu diam at lacinia. Proin bibendum pulvinar nisl, nec efficitur est convallis sed. Nulla sed libero non dui convallis congue. Maecenas luctus, ligula non vestibulum lacinia, risus urna convallis metus.
+            </p><br>
+            <p class="text-sm font-bold sm:text-base md:text-lg text-black mb-6 text-justify">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mattis aliquam ante, in fermentum urna cursus quis.
+            </p>
+            <ul class="list-disc text-left text-black ml-4">
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Sed hendrerit vel nibh non condimentum. Nunc sed mi a sem sodales fermentum. 
+                </li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li>orem ipsum dolor sit amet</li>
+                <li>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse viverra, dui sed convallis cursus, lectus felis tincidunt orci, a aliquam urna libero a odio.</li>
+            </ul><br>
+            <p class="text-sm sm:text-base md:text-lg text-black text-justify">
+                Nam ut neque fermentum, auctor sapien quis, venenatis ante. Quisque mattis aliquam ante, in fermentum urna cursus quis. Suspendisse in sapien vitae nulla maximus egestas. In dapibus sollicitudin fermentum. In vel mauris urna. Vivamus pellentesque eu diam at lacinia. Proin bibendum pulvinar nisl, nec efficitur est convallis sed. Nulla sed libero non dui convallis congue. Maecenas luctus, ligula non vestibulum lacinia, risus urna convallis metus.
+            </p>
+        </div>
+    </div>
+</section>
+<!-- Reviews Section starts here-->
+<section class="flex flex-col items-center py-12 px-4">
+    <!-- Icon and Title -->
+    <div class="text-center mb-2">
+        <div class="flex justify-center mb-4">
+            <img src="https://img.icons8.com/?size=100&id=QYjZm4NoXdJ0&format=png&color=2f855a" alt="" class="w-12 h-12">
+        </div>
+        
+        <h2 class="text-3xl font-bold">Our Reviews</h2>
+        <p class="text-gray-700 mx-auto mt-2">Our clients rave about the exceptional quality of Streamline's sprinkler, drainage & landscaping services. <span class="font-semibold">Our team has an unwavering commitment to customer satisfaction.</span></p>
+    </div>
+</section>
+
+<!-- Video Section -->
+<section class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4 pt-2 pb-6 px-4 md:px-8 lg:px-16 xl:px-24">
+    <div class="w-full md:w-1/2 max-w-md">
+        <iframe class="w-full h-64 rounded-md" src="https://www.youtube.com/embed/ocRnyeXdgH0" title="Video Testimonial 1" allowfullscreen></iframe>
+    </div>
+    <div class="w-full md:w-1/2 max-w-md">
+        <iframe class="w-full h-64 rounded-md" src="https://www.youtube.com/embed/a9DQaLtG4c4" title="Video Testimonial 2" allowfullscreen></iframe>
+    </div>
+</section>
+
+<!-- Google Review Summary Section -->
+<section class="w-full md:max-w-4xl mx-auto flex items-center justify-between space-x-4 py-4 bg-white shadow-md rounded-md p-4 md:p-6">
+    <div class="flex items-center space-x-2 text-lg font-medium">
+        <span class="text-blue-600">Google</span>
+        <span class="text-yellow-500">⭐⭐⭐⭐⭐</span>
+        <span class="text-gray-700">4.9 | 58 reviews</span>
+    </div>
+    <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer" 
+   class="bg-blue-500 text-white px-3 py-2 rounded-md hover:bg-blue-600 md:px-4 md:py-2 w-auto md:w-auto text-sm md:text-base">
+    Write a review
+</a>
+
+</section>
+
+<!-- Reviews Cards Section -->
+<section id="reviews" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 p-4 max-w-7xl mx-auto">
+    <!-- Sample card structure -->
+    <div class="card">
+        <img src="https://img.icons8.com/color/48/google-logo.png" alt="google-logo" class="google-logo">
+        <p class="font-semibold">Julie Urubek</p>
+        <p class="text-sm text-gray-600">24 August 2024</p>
+        <p class="text-yellow-500">⭐⭐⭐⭐⭐</p>
+        <div class="text-container">
+            The most AMAZING job we ever had! Streamline went above and beyond to make sure everything was perfect. They were professional, prompt, and very detailed in their work. Thank you again! God bless you and your company!
+        </div>
+        <span class="read-more-button" onclick="toggleReadMore(this)">Read More</span>
+    </div>
+    <div class="card">
+        <img src="https://img.icons8.com/color/48/google-logo.png" alt="google-logo" class="google-logo">
+        <p class="font-semibold">Omar Ahmad</p>
+        <p class="text-sm text-gray-600">23 August 2024</p>
+        <p class="text-yellow-500">⭐⭐⭐⭐</p>
+        <div class="text-container">
+            Great experience, but a little room for improvement. Streamline's team was highly professional, and they completed the job in record time. I wish they had provided more detail on maintenance, but overall, I am very satisfied!
+        </div>
+        <span class="read-more-button" onclick="toggleReadMore(this)">Read More</span>
+    </div>
+    <div class="card">
+        <img src="https://img.icons8.com/color/48/google-logo.png" alt="google-logo" class="google-logo">
+        <p class="font-semibold">Larry Bergstrom</p>
+        <p class="text-sm text-gray-600">21 August 2024</p>
+        <p class="text-yellow-500">⭐⭐⭐⭐⭐</p>
+        <div class="text-container">
+            Streamline Landscape provides exceptional service for big commercial buildings. They took care of all our landscaping needs and made sure everything was pristine. I would definitely recommend them for any large-scale project.
+        </div>
+        <span class="read-more-button" onclick="toggleReadMore(this)">Read More</span>
+    </div>
+    <div class="card">
+        <img src="https://img.icons8.com/color/48/google-logo.png" alt="google-logo" class="google-logo">
+        <p class="font-semibold">Shelly Nichols</p>
+        <p class="text-sm text-gray-600">14 August 2024</p>
+        <p class="text-yellow-500">⭐⭐⭐⭐⭐</p>
+        <div class="text-container">
+            Absolutely amazing! They did an incredible job transforming our backyard into a beautiful, functional space. The quality of work was top-notch, and the customer service was stellar. Highly recommend.
+        </div>
+        <span class="read-more-button" onclick="toggleReadMore(this)">Read More</span>
+    </div>
+</section>
+
+<!-- Load More Button -->
+<div class="flex justify-center py-6">
+    <button id="loadMoreButton" class="brand-dark-background text-white px-6 py-2 rounded-md hoverBG-brand-color">Load More</button>
+</div>
+
+ <!-- review-section ends here -->
+
+
+<section class="heroend relative flex flex-col pb-10 pt-20">
+    <img src="https://media.istockphoto.com/id/1472818295/photo/striped-white-background-grunge-brush-stroke-light-gray-cracked-texture-dye-sparse-grayscale.jpg?s=612x612&w=0&k=20&c=G57w2EQfAaiRrAIh_bcV-J2o8xXgw6azc83X-88kQ9E=" class="object-cover w-full h-screen" />
+    <div class="absolute inset-0"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-0"></div>
+
+    <div class="container mx-auto px-4 relative z-10 flex flex-col justify-center items-center">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
+            <!-- Left Content -->
+            <div class="text-black pt-5 md:pt-0 flex flex-col justify-center items-center md:items-center">
+                <h2 class="text-4xl md:text-6xl font-bold mb-4 text-center">Built Differently</h2>
+                <hr class="w-96 border-t-2 border-gray-400 my-4" /> <!-- Added HR line here -->
+                <h3 class="text-2xl md:text-3xl mb-6 text-center">
+                    <span class="text-black">A </span>
+                    <span id="dynamic-text" class="brand-green fade-element">Professional </span>
+                    <span class="text-black">Approach To Your Outdoor Needs</span>
+                </h3>               
+            </div>
+
+            <!-- Right Form -->
+            <div class="p-6 rounded-lg flex items-center justify-center form-container">
+                <form id="contactForm" class="space-y-4 w-full">
+                    <input type="text" placeholder="Name" class="w-full p-3 border rounded-2xl" />
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <input type="tel" placeholder="Phone" class="w-full p-3 border rounded-2xl" />
+                        <input type="email" placeholder="Email" class="w-full p-3 border rounded-2xl" />
+                    </div>
+                    <input type="text" placeholder="Address" class="w-full p-3 border rounded-2xl" />
+                    <select class="w-full p-3 border rounded-2xl">
+                        <option>Yes, I'm a potential new customer</option>
+                        <option>Existing customer</option>
+                    </select>
+                    <select class="w-full p-3 border rounded-2xl">
+                        <option>Sprinklers</option>
+                        <option>Landscaping</option>
+                        <option>Drainage</option>
+                    </select>
+                    <button type="submit" class="w-full bg-black text-white py-3 rounded-2xl hoverBG-brand-color transition duration-300">
+                        Get In Touch Today
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+<script>
+
+    // review section 
+
+const reviews = [
+    { name: "Julie Urubek", date: "24 August 2024", rating: "⭐⭐⭐⭐⭐", text: "The most AMAZING job we ever had! Streamline went above and beyond to make sure everything was perfect. They were professional, prompt, and very detailed in their work. Thank you again! God bless you and your company!" },
+    { name: "Omar Ahmad", date: "23 August 2024", rating: "⭐⭐⭐⭐", text: "Great experience, but a little room for improvement. Streamline's team was highly professional, and they completed the job in record time. I wish they had provided more detail on maintenance, but overall, I am very satisfied!" },
+    { name: "Larry Bergstrom", date: "21 August 2024", rating: "⭐⭐⭐⭐⭐", text: "Streamline Landscape provides exceptional service for big commercial buildings. They took care of all our landscaping needs and made sure everything was pristine. I would definitely recommend them for any large-scale project." },
+    { name: "Shelly Nichols", date: "14 August 2024", rating: "⭐⭐⭐", text: "Good work but there was a delay in scheduling. While the team did a fantastic job on our lawn, I wish they were a bit more responsive to follow-up queries. Overall, satisfied with the service." },
+    { name: "Rafael Rivera", date: "5 April 2024", rating: "⭐⭐⭐⭐⭐", text: "Jesus, Marco, and Eustacio were a great team! They explained everything in detail, and their professionalism was top-notch. I'm thrilled with the results, and the landscaping looks fantastic." },
+    { name: "Michael Tamer", date: "21 July 2024", rating: "⭐⭐⭐⭐", text: "Quick response and good service. They arrived on time, got the work done efficiently, and left the area clean. A few issues arose, but they resolved them quickly. Happy with the overall experience." },
+    { name: "Sonia R.", date: "30 June 2024", rating: "⭐⭐⭐⭐⭐", text: "Streamline's team was incredibly efficient and knowledgeable. They completed the project well before the deadline, and the quality of work was impeccable. I would recommend them to anyone looking for reliable service." },
+    { name: "Elena Gomez", date: "2 June 2024", rating: "⭐⭐⭐⭐⭐", text: "Exceeded my expectations! The team worked meticulously to ensure everything was perfect. My lawn looks stunning, and I've received so many compliments from neighbors." },
+    { name: "Chris White", date: "5 May 2024", rating: "⭐⭐⭐⭐", text: "Solid work! They were very thorough, and any issues that came up were resolved promptly. I would definitely hire them again for future projects." },
+    { name: "Patricia Black", date: "15 March 2024", rating: "⭐⭐⭐⭐⭐", text: "Streamline is absolutely fantastic. Their dedication to quality and customer satisfaction is clear in their work. My garden has never looked better, and I'm so grateful for their expertise." },
+    { name: "Lucas Hernandez", date: "10 April 2024", rating: "⭐⭐⭐⭐", text: "Overall great experience. I wish they had offered a little more in-depth consultation before the project began, but the end result was impressive. Highly recommend their landscaping services." },
+    { name: "Julia Gomez", date: "1 May 2024", rating: "⭐⭐⭐⭐⭐", text: "The team went above and beyond. They made sure everything was just as I envisioned, and even offered some excellent suggestions to improve the design. Couldn't be happier with their service." },
+    { name: "Paul Denson", date: "12 February 2024", rating: "⭐⭐⭐⭐", text: "Reliable, efficient, and professional. They worked fast, cleaned up well, and their work was high-quality. I'm pleased with how my landscaping turned out." }
+];
+let currentIndex = 0;
+
+function toggleReadMore(button) {
+    const textContainer = button.previousElementSibling;
+    textContainer.classList.toggle('expanded');
+    button.textContent = textContainer.classList.contains('expanded') ? 'Read Less' : 'Read More';
+}
+
+function loadReviews() {
+    const reviewContainer = document.getElementById('reviews');
+    for (let i = currentIndex; i < currentIndex + 4 && i < reviews.length; i++) {
+        const review = reviews[i];
+        const card = document.createElement('div');
+        card.classList.add('card');
+        card.innerHTML = `
+            <img src="https://img.icons8.com/color/48/google-logo.png" alt="google-logo" class="google-logo">
+            <p class="font-semibold">${review.name}</p>
+            <p class="text-sm text-gray-600">${review.date}</p>
+            <p class="text-yellow-500">${review.rating}</p>
+            <div class="text-container">${review.text}</div>
+            <span class="read-more-button" onclick="toggleReadMore(this)">Read More</span>
+        `;
+        reviewContainer.appendChild(card);
+    }
+    currentIndex += 4;
+    if (currentIndex >= reviews.length) {
+        document.getElementById('loadMoreButton').style.display = 'none';
+    }
+}
+
+document.getElementById('loadMoreButton').addEventListener('click', loadReviews);
+
+
+loadReviews();
+
+    const textArray = ["Professional", "Expert", "Skilled", "Qualified"];
+let index = 0;
+const dynamicTextElement = document.getElementById('dynamic-text');
+
+function updateText() {
+    fadeOut(() => {
+        index = (index + 1) % textArray.length;
+        dynamicTextElement.textContent = textArray[index];
+        fadeIn();
+    });
+}
+
+function fadeOut(callback) {
+    let opacity = 1;
+
+    function decreaseOpacity() {
+        opacity -= 0.05;
+        dynamicTextElement.style.opacity = opacity;
+
+        if (opacity <= 0) {
+            callback(); 
+            return;
+        }
+        requestAnimationFrame(decreaseOpacity);
+    }
+    decreaseOpacity();
+}
+
+function fadeIn() {
+    let opacity = 0;
+
+    function increaseOpacity() {
+        opacity += 0.05;
+        dynamicTextElement.style.opacity = opacity;
+
+        if (opacity >= 1) return;
+
+        requestAnimationFrame(increaseOpacity);
+    }
+
+    increaseOpacity();
+}
+
+setInterval(updateText, 3000); 
+
+    // Only apply this for screens smaller than or equal to 391px
+function toggleDropdown(dropdownId) {
+  const dropdown = document.getElementById(dropdownId);
+  const hr = dropdown.nextElementSibling; 
+
+  
+  dropdown.classList.toggle('hidden');
+
+
+  if (!dropdown.classList.contains('hidden')) {
+      dropdown.appendChild(hr);
+  } else {
+      dropdown.parentNode.insertBefore(hr, dropdown.nextElementSibling);
+  }
+}
+window.addEventListener('resize', function() {
+  const screenWidth = window.innerWidth;
+  const hrs = document.querySelectorAll('.dynamic-hr');
+
+  hrs.forEach(hr => {
+      hr.style.display = screenWidth <= 391 ? 'block' : 'none';
+  });
+});
+    function handleSubmit(event) {
+      event.preventDefault(); 
+      alert("Form submitted");
+    }
+    let activeDropdown = null;
+
+    function toggleDropdown(id) {
+        const dropdownToToggle = document.getElementById(id);
+        if (activeDropdown && activeDropdown !== dropdownToToggle) {
+            activeDropdown.classList.remove('show');
+            activeDropdown.classList.add('hidden');
+        }
+        if (dropdownToToggle) {
+            dropdownToToggle.classList.toggle('show');
+            dropdownToToggle.classList.toggle('hidden');
+            activeDropdown = dropdownToToggle.classList.contains('show') ? dropdownToToggle : null;
+        }
+    }
+
+    function closeDropdown(id) {
+        const dropdownToClose = document.getElementById(id);
+        if (dropdownToClose) {
+            dropdownToClose.classList.remove('show');
+            dropdownToClose.classList.add('hidden');
+            activeDropdown = null;
+        }
+    }
+
+    // Adjust this event listener if necessary or remove it if not needed
+    document.querySelectorAll('[onclick^="toggleDropdown"]').forEach(trigger => {
+        trigger.addEventListener('dblclick', () => {
+            const dropdownId = trigger.getAttribute('onclick').match(/'([^']+)'/)[1];
+            closeDropdown(dropdownId);
+        });
+    });
+
+    document.addEventListener('click', (event) => {
+        const dropdowns = document.querySelectorAll('.dropdown-content');
+        dropdowns.forEach(dropdown => {
+            if (!dropdown.contains(event.target) && !event.target.matches('[onclick^="toggleDropdown"]')) {
+                dropdown.classList.remove('show');
+                dropdown.classList.add('hidden');
+            }
+        });
+        activeDropdown = null;
+    });
+
+    function toggleNavbar() {
+        const sidebar = document.getElementById('sidebar');
+        sidebar.classList.toggle('show');
+    }
+
+    document.addEventListener('click', function(event) {
+        const sidebar = document.getElementById('sidebar');
+        if (sidebar.classList.contains('show') && !sidebar.contains(event.target) && !document.querySelector('.hamburger').contains(event.target)) {
+            sidebar.classList.remove('show');
+        }
+    });
+</script>
+
+<div class="flex flex-col">
+
+    <!-- Footer Section at the End of the Page -->
+    <footer class="brand-background text-center py-10">
+      <div class="max-w-screen-xl mx-auto px-4">
+        <!-- Footer Grid Layout -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+          
+          <!-- Brand Section -->
+          <div class="text-center sm:text-left">
+            <h3 class="text-2xl font-bold text-white">STREAMLINE</h3>
+            <p class="mt-2 text-sm text-white">Empowering your business with innovative solutions.</p>
+          </div>
+  
+          <!-- Quick Links Section -->
+          <div class="text-center sm:text-left text-white">
+            <h4 class="text-lg font-semibold text-white">Quick Links</h4>
+            <ul class="mt-2 space-y-2">
+              <li><a href="../index.html" class="hoverTEXT-brand-light-bg">Home</a></li>
+              <li><a href="./about.html" class="hoverTEXT-brand-light-bg">About</a></li>
+              <li><a href="#" class="hoverTEXT-brand-light-bg">Services</a></li>
+              <li><a href="#" class="hoverTEXT-brand-light-bg">Contact</a></li>
+            </ul>
+          </div>
+  
+          <!-- Contact Us Section -->
+          <div class="text-center sm:text-left text-white">
+            <h4 class="text-lg font-semibold text-white">Contact Us</h4>
+            <p class="mt-2 text-sm">123 Main Street, Suite 500</p>
+            <p class="mt-2 text-sm">City, State, ZIP</p>
+            <p class="mt-2 text-sm">Email: <a href="mailto:contact@brand.com" class="text-brand-light-green">contact@brand.com</a></p>
+            <p class="mt-2 text-sm">Phone: +1 (123) 456-7890</p>
+          </div>
+  
+          <!-- Social Media Section -->
+          <div class="text-center sm:text-left text-white">
+            <h5 class="text-lg font-semibold text-white">Follow Us</h5>
+            <div class="mt-4 flex justify-center sm:justify-start space-x-6">
+              <a href="https://facebook.com" target="_blank" class="social-icon">
+                <i class="fab fa-facebook-square text-3xl social-logo"></i>
+              </a>
+              <a href="https://twitter.com" target="_blank" class="social-icon">
+                <i class="fab fa-twitter-square text-3xl social-logo"></i>
+              </a>
+              <a href="https://linkedin.com" target="_blank" class="social-icon">
+                <i class="fab fa-linkedin text-3xl social-logo"></i>
+              </a>
+              <a href="https://instagram.com" target="_blank" class="social-icon">
+                <i class="fab fa-instagram-square text-3xl social-logo"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Footer Bottom Section -->
+        <div class="border-t border-brand-light-green pt-4">
+          <p class="text-sm text-white">© 2024 Brand Name. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+ 
+<script src="../script/script.js"></script>
+   </body>
+   </html>

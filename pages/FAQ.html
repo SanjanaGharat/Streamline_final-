@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css" />
-       
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
 
 <header>
 <!-- Top Bar -->
-<div class="brand-dark-background text-white py-4 px-6 flex flex-col md:flex-row justify-between items-center w-full h-auto">
+<div class="brand-dark-background text-white py-4  px-6 flex flex-col md:flex-row justify-between items-center w-full h-auto">
     <div class="top-bar-icons flex flex-col md:flex-row items-start w-full md:w-auto">
         <div class="flex items-center mb-2 md:mb-0">
             <img src="https://img.icons8.com/?size=100&id=53439&format=png&color=FFFFFF" alt="Phone Icon" class="w-5 h-5 mr-2"/>
@@ -273,7 +273,7 @@
                     
                     <li class="flex items-center py-1">
                         <!-- <img src="https://img.icons8.com/material-outlined/24/FFFFFF/mission.png" alt="Mission Icon" class="w-5 h-5 mr-2"/> -->
-                        <a href="./tipsandtrick.html" class="block hover:bg-gray-600 px-4 py-1">Tips&Trick</a>
+                        <a href="./tipsandtrick.html" class="block hover:bg-gray-600 px-4 py-1">Tips&Tricks</a>
                     </li>
                 </ul>
                 <hr class="dynamic-hr mb-2" />
@@ -294,14 +294,11 @@
         <div class="container mx-auto px-4 relative z-10 flex flex-col justify-center items-center">
             <div class="w-full flex flex-col justify-center items-center pt-5 md:pt-0">
                 <div class="container mx-auto px-4 relative z-10 flex flex-col justify-center items-center">
-                    <div class="w-full flex flex-col justify-center items-center pt-5 md:pt-0">
+                    <div class="w-full flex flex-col justify-center items-center pt-2 md:pt-0 sm:pt-0">
                         <!-- Left Content -->
                         <div class="hero-section flex items-center justify-center text-white">
                             <div class="text-center">
-                                <h1 class="text-4xl md:text-6xl font-bold mb-2">Tips and Tricks</h1> 
-                                <p class="text-lg md:text-xl mb-4"> 
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Curabitur venenatis, velit et ultrices volutpat, lorem eros interdum enim, a tincidunt elit nisi vel augue. Nam tristique bibendum arcu.
-                                </p>
+                                <h1 class="text-4xl md:text-6xl font-bold "> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1> 
                             </div>
                         </div>
                     </div>
@@ -312,18 +309,217 @@
         
     </section>
 </header>
+    <!-- FAQ Section -->
+    <section id="faq-section" class="max-w-2xl mx-auto mt-16 p-8 mb-12 bg-white rounded-lg shadow-lg">
+        <h2 class="text-3xl font-semibold text-center text-gray-800 mb-8">Frequently Asked Questions</h2>
 
-<section class="max-w-5xl mx-auto py-12 px-4">
-    <div id="tips-container" class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <!-- Cards will be dynamically added here -->
-    </div>
-  
-    <div class="flex justify-center mt-8">
-      <button id="load-more-btn" class="px-6 py-2 text-white rounded-lg bg-green-600 hover:bg-green-800">Load More</button>
+        <!-- FAQ Item 1 -->
+        <div class="faq-item border-b border-gray-200 py-4 cursor-pointer">
+            <div class="faq-question flex justify-between items-center">
+                <span class="text-lg font-medium text-gray-700">What is Lorem Ipsum?</span>
+                <span class="faq-toggle text-2xl font-bold text-gray-600 transition-transform transform">+</span>
+            </div>
+            <div class="faq-answer mt-3 text-gray-600 hidden">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod, nisi vel consectetur faucibus, lacus nulla interdum metus, eget dapibus enim leo non nulla.
+            </div>
+        </div>
+
+        <!-- FAQ Item 2 -->
+        <div class="faq-item border-b border-gray-200 py-4 cursor-pointer">
+            <div class="faq-question flex justify-between items-center">
+                <span class="text-lg font-medium text-gray-700">Why do we use it?</span>
+                <span class="faq-toggle text-2xl font-bold text-gray-600 transition-transform transform">+</span>
+            </div>
+            <div class="faq-answer mt-3 text-gray-600 hidden">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum convallis nibh vel massa interdum, at sagittis justo aliquet. Fusce accumsan ipsum at mi aliquam, at egestas ipsum fermentum.
+            </div>
+        </div>
+
+        <!-- FAQ Item 3 -->
+        <div class="faq-item border-b border-gray-200 py-4 cursor-pointer">
+            <div class="faq-question flex justify-between items-center">
+                <span class="text-lg font-medium text-gray-700">Where can I get some?</span>
+                <span class="faq-toggle text-2xl font-bold text-gray-600 transition-transform transform">+</span>
+            </div>
+            <div class="faq-answer mt-3 text-gray-600 hidden">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. Nullam aliquam ligula eget odio consectetur, a aliquam leo accumsan.
+            </div>
+        </div>
+
+        <!-- FAQ Item 4 -->
+        <div class="faq-item border-b border-gray-200 py-4 cursor-pointer">
+            <div class="faq-question flex justify-between items-center">
+                <span class="text-lg font-medium text-gray-700">How does Lorem Ipsum work?</span>
+                <span class="faq-toggle text-2xl font-bold text-gray-600 transition-transform transform">+</span>
+            </div>
+            <div class="faq-answer mt-3 text-gray-600 hidden">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis, purus at tincidunt consectetur, magna justo viverra urna, et ultrices sapien metus a ligula.
+            </div>
+        </div>
+
+        <!-- FAQ Item 5 -->
+        <div class="faq-item border-b border-gray-200 py-4 cursor-pointer">
+            <div class="faq-question flex justify-between items-center">
+                <span class="text-lg font-medium text-gray-700">Is Lorem Ipsum safe to use?</span>
+                <span class="faq-toggle text-2xl font-bold text-gray-600 transition-transform transform">+</span>
+            </div>
+            <div class="faq-answer mt-3 text-gray-600 hidden">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas consequat turpis vitae ligula faucibus, non ullamcorper ligula dignissim.
+            </div>
+        </div>
+
+        <!-- FAQ Item 6 -->
+        <div class="faq-item border-b border-gray-200 py-4 cursor-pointer">
+            <div class="faq-question flex justify-between items-center">
+                <span class="text-lg font-medium text-gray-700">What are the benefits of Lorem Ipsum?</span>
+                <span class="faq-toggle text-2xl font-bold text-gray-600 transition-transform transform">+</span>
+            </div>
+            <div class="faq-answer mt-3 text-gray-600 hidden">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel urna nec ligula ultricies dictum in a augue. Vivamus laoreet augue eget turpis dapibus varius.
+            </div>
+        </div>
+
+        <!-- FAQ Item 7 -->
+        <div class="faq-item py-4 cursor-pointer">
+            <div class="faq-question flex justify-between items-center">
+                <span class="text-lg font-medium text-gray-700">How do I create my own Lorem Ipsum?</span>
+                <span class="faq-toggle text-2xl font-bold text-gray-600 transition-transform transform">+</span>
+            </div>
+            <div class="faq-answer mt-3 text-gray-600 hidden">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget leo eget purus facilisis faucibus ac nec mauris. Donec fermentum justo at neque fringilla convallis.
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // JavaScript for toggling FAQ answer visibility
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.addEventListener('click', () => {
+                item.querySelector('.faq-answer').classList.toggle('hidden');
+                item.querySelector('.faq-toggle').classList.toggle('rotate-45');
+            });
+        });
+    </script>
+
+
+<section id="servicepage">
+    <div id="gallery">
+      <div class="gallery-item"><img src="https://media.istockphoto.com/id/505222100/photo/green-tea-plantations.jpg?s=612x612&w=0&k=20&c=azyxLoe7JMLHpcNgUyrE3P5V7tzSu5LInFpXYBVyceU=" alt="Image 1"></div>
+      <div class="gallery-item"><img src="https://media.istockphoto.com/id/1173732710/photo/the-green-fern.jpg?s=612x612&w=0&k=20&c=sUYCIdOXetPGu9juZXdEeO-Sdtyua7DOp7LI2qVSOiM=" alt="Image 2"></div>
+      <div class="gallery-item"><img src="https://media.istockphoto.com/id/1284671318/photo/meadows-in-the-snow-peak-mountains-of-himalaya.jpg?s=612x612&w=0&k=20&c=UiWDeawpPIV8If3sXuhg82VcnDW77yjqyIxbmVom0FY=" alt="Image 3"></div>
+      <div class="gallery-item"><img src="https://media.istockphoto.com/id/2179556387/photo/mountains-and-roads.jpg?s=612x612&w=0&k=20&c=tIn5rAkrTIY5H8pdhVh2mZzCqBWWwCja3nzKtksnjHs=" alt="Image 4"></div>
+      <div class="gallery-item"><img src="https://media.istockphoto.com/id/1397138451/photo/beautiful-view-of-wenlock-downs-9th-mile-shooting-point-ooty-during-sunset-must-visit-place.jpg?s=612x612&w=0&k=20&c=kNaZSUpEIXIc33XxgXFY-uPJHEwo2b_iJEeGglPFWuY=" alt="Image 5"></div>
+      <div class="gallery-item"><img src="https://media.istockphoto.com/id/467233280/photo/nepal-jungle.jpg?s=612x612&w=0&k=20&c=cYBq-rnlXuxGNOj5-x5Pp5HJNp1Mdn_6Brta2zOyQOE=" alt="Image 6"></div>
     </div>
   </section>
   
-  <section class="heroend relative flex flex-col pb-10 pt-20">
+  <script>
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    const gallery = document.getElementById('gallery');
+  
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1
+    };
+  
+    const observerCallback = (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    };
+  
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+  
+    galleryItems.forEach(item => {
+      observer.observe(item);
+    });
+  
+    window.addEventListener('load', () => {
+      gallery.style.opacity = 1;
+    });
+  </script>
+    <style>
+ 
+        #servicepage {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          padding: 20px;
+          margin-top: 50px;
+        }
+    
+        #gallery {
+          opacity: 0;
+          transition: opacity 1s ease-in;
+          width: 100%;
+          max-width: 1200px;
+        }
+    
+        .gallery-item {
+          display: inline-block;
+          margin-bottom: 10px;
+          width: 100%;
+          break-inside: avoid;
+          opacity: 0;
+          transform: translateY(20px);
+          transition: opacity 1s ease-in, transform 1s ease-in;
+        }
+    
+        .gallery-item img {
+          width: 100%;
+          height: auto;
+          display: block;
+          transition: transform 0.3s ease;
+        }
+    
+        .gallery-item:hover img {
+          transform: scale(1.05);
+        }
+    
+        .visible {
+          opacity: 1;
+          transform: translateY(0);
+        }
+    
+        /* Responsive design */
+        @media (min-width: 768px) {
+          #gallery {
+            column-count: 2;
+            column-gap: 15px;
+          }
+    
+          .gallery-item {
+            width: 100%;
+          }
+        }
+    
+        @media (min-width: 1024px) {
+          #gallery {
+            column-count: 3;
+            column-gap: 20px;
+          }
+    
+          .gallery-item {
+            width: 100%;
+          }
+        }
+    
+        @media (max-width: 480px) {
+          #gallery {
+            column-count: 1;
+            column-gap: 10px;
+          }
+    
+          .gallery-item img {
+            width: 100%;
+          }
+        }
+      </style>
+<section class="heroend relative flex flex-col pb-10 pt-20">
     <img src="https://media.istockphoto.com/id/1472818295/photo/striped-white-background-grunge-brush-stroke-light-gray-cracked-texture-dye-sparse-grayscale.jpg?s=612x612&w=0&k=20&c=G57w2EQfAaiRrAIh_bcV-J2o8xXgw6azc83X-88kQ9E=" class="object-cover w-full h-screen" />
     <div class="absolute inset-0"></div>
     <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-0"></div>
@@ -372,9 +568,8 @@
 
 
 
-  <script>
-
-const textArray = ["Professional", "Expert", "Skilled", "Qualified"];
+<script>
+    const textArray = ["Professional", "Expert", "Skilled", "Qualified"];
 let index = 0;
 const dynamicTextElement = document.getElementById('dynamic-text');
 
@@ -419,139 +614,6 @@ function fadeIn() {
 
 setInterval(updateText, 3000); 
 
-
-
-    const tipsContainer = document.getElementById('tips-container');
-    const loadMoreBtn = document.getElementById('load-more-btn');
-  
-    // Array of tip data for each card with unique links
-    const tipsData = [
-      { 
-        title: "Lorem ipsum 1", 
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat nisl sed metus sollicitudin.", 
-        image: "https://media.istockphoto.com/id/1157430259/photo/creating-effective-content-on-sticky-notes-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=abmA2J_EbqPPryGgxRAvZClLpPgxIIopR8gzmlQu2hM=", 
-        date: "December 20, 2023",
-        link: "../pages/post1.html"
-      },
-      { 
-        title: "Lorem ipsum 2", 
-        description: "Suspendisse potenti. Ut accumsan urna et lorem ullamcorper, in egestas eros eleifend.", 
-        image: "https://media.istockphoto.com/id/1154073003/photo/ready-for-travel.jpg?s=612x612&w=0&k=20&c=Pl7jiUeZ1iMGmJlur8xDu9dQOHJH5ieB0Uegpn5no_0=", 
-        date: "December 21, 2023",
-        link: "../pages/post2.html"
-      },
-      { 
-        title: "Lorem ipsum 3", 
-        description: "Vestibulum nec urna ac lacus commodo cursus. Curabitur efficitur sapien ut orci fermentum, at ultricies urna laoreet.", 
-        image: "https://media.istockphoto.com/id/2153699317/photo/an-photographer-equipment-on-colorful-background-side-view-with-copy-space.jpg?s=612x612&w=0&k=20&c=zroxQYkQVrbGGudYVtGFn5Xu5olmpRqSWHnwe_9n9Kw=", 
-        date: "December 22, 2023",
-        link: "../pages/post3.html"
-      },
-        { 
-        title: "Lorem ipsum 4", 
-        description: "Sed viverra mauris non sapien tincidunt, in faucibus nisl fermentum. Praesent non ligula in eros ultrices.", 
-        image: "https://media.istockphoto.com/id/1094171214/photo/silhouette-of-a-computer-on-a-table-clear-blue-tropical-water-as-background.jpg?s=612x612&w=0&k=20&c=MyykDjRKWT8reuh4HxU4ZL7IBV_Idm8GAGrj2dyeWj8=", 
-        date: "December 23, 2023" ,
-        link: "../pages/post4.html"
-    },
-    { 
-        title: "Tip #5", 
-        description: "Nullam ac justo non metus sodales fermentum sit amet non lorem. Integer vel velit volutpat, sagittis neque at, posuere.", 
-        image: "https://media.istockphoto.com/id/1424001698/photo/social-media-chat-icon-pastel-soft.jpg?s=612x612&w=0&k=20&c=p82WvZdAEM1eJXmrlpeZX2yqQDxZ-4b_tJSp39f98xU=", 
-        date: "December 24, 2023" ,
-        link: "../pages/post1.html"
-    },
-    { 
-        title: "Tip #6", 
-        description: "Proin id augue a lorem mollis sollicitudin. Nulla aliquam risus sit amet dui suscipit, vel dapibus lorem tristique.", 
-        image: "https://media.istockphoto.com/id/1146554418/photo/retro-blog-bookshelf-with-cozy-interior.jpg?s=612x612&w=0&k=20&c=oh0qhFKxWX8e3SnuUGZSvK4dg9SeIkOSf47hgudOVpY=", 
-        date: "December 25, 2023" ,
-        link: "../pages/post1.html"
-    },
-    { 
-        title: "Tip #7", 
-        description: "Mauris auctor nisi ut erat convallis, sed convallis magna vehicula. Suspendisse vel ante eget felis gravida tincidunt.", 
-        image: "https://media.istockphoto.com/id/1312418309/photo/visual-contents-concept-social-networking-service-streaming-video-communication-network-3d.jpg?s=612x612&w=0&k=20&c=2wop2q3V2_nHCc4X7ISInzRA3Bp52UHAX0tTgKNWeBQ=", 
-        date: "December 26, 2023",
-        link: "../pages/post1.html" 
-    },
-    { 
-        title: "Tip #8", 
-        description: "Etiam consectetur magna in justo malesuada, id vestibulum turpis varius. Nam feugiat massa ac diam gravida.", 
-        image: "https://media.istockphoto.com/id/1776879677/photo/close-up-young-man-hand-hold-smartphone-and-use-application-of-e-commerce-to-working-about.jpg?s=612x612&w=0&k=20&c=EMgXZ6cXxDFHYWtlEbZMRFo7qft1TZRfJDANYEwTmXg=", 
-        date: "December 27, 2023",
-        link: "../pages/post1.html" 
-    },
-    { 
-        title: "Tip #9", 
-        description: "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.", 
-        image: "https://media.istockphoto.com/id/517899146/photo/chat-symbol-and-quotation-mark.jpg?s=612x612&w=0&k=20&c=pobhizbEsZs273ZvHLxDRgCP_CT0oxItTvQ27ndKvlw=", 
-        date: "December 28, 2023" ,
-        link: "../pages/post1.html"
-    },
-    { 
-        title: "Tip #10", 
-        description: "Sed ultrices, ligula non egestas faucibus, felis ipsum efficitur nisi, vitae convallis libero turpis eu nibh.", 
-        image: "https://media.istockphoto.com/id/1185009965/photo/social-networking-service-concept-influencer-marketing.jpg?s=612x612&w=0&k=20&c=9Ya-z9zPaRzHO_itnZycfEuisFX49ukABXOnaKJz9Vg=", 
-        date: "December 29, 2023",
-        link: "../pages/post1.html" 
-    },
-    { 
-        title: "Tip #11", 
-        description: "Curabitur sit amet ante ut ipsum pharetra varius at non ligula. Cras a mauris vel sem vehicula pellentesque.", 
-        image: "https://media.istockphoto.com/id/1300164549/photo/get-organised-get-it-done.jpg?s=612x612&w=0&k=20&c=r1zdN48ovoOqDlPm_2X5RLj1hoTxD8r2Z-QCI1MCDnI=", 
-        date: "December 30, 2023",
-        link: "../pages/post1.html" 
-    },
-    { 
-        title: "Tip #12", 
-        description: "Vivamus tincidunt, leo vel tincidunt pharetra, enim magna ullamcorper leo, sed vulputate felis lacus et mauris.", 
-        image: "https://media.istockphoto.com/id/480187760/photo/female-novelist-writing-on-the-laptop.jpg?s=612x612&w=0&k=20&c=xcmnzlkoTIE00DX8MvuRZPAKCNV8-gxBBVcZNJRq_uU=", 
-        date: "December 31, 2023" ,
-        link: "../pages/post1.html"
-    }
-        ];
-  
-    let cardCount = 0;
-  
-    function loadCards() {
-      const cardsToLoad = 4; // Number of cards to load on each click
-      for (let i = 0; i < cardsToLoad && cardCount < tipsData.length; i++) {
-        const tip = tipsData[cardCount];
-        const card = document.createElement('div');
-        card.className = 'bg-white rounded-lg shadow-lg overflow-hidden h-[500px] max-w-md w-full mx-auto card';
-  
-        card.innerHTML = `
-          <img src="${tip.image}" alt="Image for ${tip.title}" class="w-full h-60 object-cover">
-          <div class="p-6">
-            <h3 class="text-lg font-semibold mb-2 text-green-600">${tip.title}</h3>
-            <p class="text-gray-600 mb-4 text-justify">${tip.description}</p>
-            <a href="${tip.link}" class="text-green-700 font-semibold hover:text-green-900" target="_blank" rel="noopener noreferrer">Read more &rarr;</a>
-            <p class="text-gray-500 text-sm mt-2">${tip.date}</p>
-          </div>
-        `;
-  
-        tipsContainer.appendChild(card);
-        cardCount++;
-      }
-  
-      if (cardCount >= tipsData.length) {
-        loadMoreBtn.style.display = 'none';
-      }
-    }
-  
-    loadCards();
-    loadMoreBtn.addEventListener('click', loadCards);
-  </script>
-  
-  <style>
-    .card {
-      transition: transform 0.3s ease;
-    }
-  </style>
-  
-
-<script>
     // Only apply this for screens smaller than or equal to 391px
 function toggleDropdown(dropdownId) {
   const dropdown = document.getElementById(dropdownId);

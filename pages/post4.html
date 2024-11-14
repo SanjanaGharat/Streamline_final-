@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css" />
-       
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
 
 <header>
 <!-- Top Bar -->
-<div class="brand-dark-background text-white py-4 px-6 flex flex-col md:flex-row justify-between items-center w-full h-auto">
+<div class="brand-dark-background text-white py-4  px-6 flex flex-col md:flex-row justify-between items-center w-full h-auto">
     <div class="top-bar-icons flex flex-col md:flex-row items-start w-full md:w-auto">
         <div class="flex items-center mb-2 md:mb-0">
             <img src="https://img.icons8.com/?size=100&id=53439&format=png&color=FFFFFF" alt="Phone Icon" class="w-5 h-5 mr-2"/>
@@ -273,7 +273,7 @@
                     
                     <li class="flex items-center py-1">
                         <!-- <img src="https://img.icons8.com/material-outlined/24/FFFFFF/mission.png" alt="Mission Icon" class="w-5 h-5 mr-2"/> -->
-                        <a href="./tipsandtrick.html" class="block hover:bg-gray-600 px-4 py-1">Tips&Trick</a>
+                        <a href="./tipsandtrick.html" class="block hover:bg-gray-600 px-4 py-1">Tips&Tricks</a>
                     </li>
                 </ul>
                 <hr class="dynamic-hr mb-2" />
@@ -294,14 +294,11 @@
         <div class="container mx-auto px-4 relative z-10 flex flex-col justify-center items-center">
             <div class="w-full flex flex-col justify-center items-center pt-5 md:pt-0">
                 <div class="container mx-auto px-4 relative z-10 flex flex-col justify-center items-center">
-                    <div class="w-full flex flex-col justify-center items-center pt-5 md:pt-0">
+                    <div class="w-full flex flex-col justify-center items-center pt-2 md:pt-0 sm:pt-0">
                         <!-- Left Content -->
                         <div class="hero-section flex items-center justify-center text-white">
                             <div class="text-center">
-                                <h1 class="text-4xl md:text-6xl font-bold mb-2">Tips and Tricks</h1> 
-                                <p class="text-lg md:text-xl mb-4"> 
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Curabitur venenatis, velit et ultrices volutpat, lorem eros interdum enim, a tincidunt elit nisi vel augue. Nam tristique bibendum arcu.
-                                </p>
+                                <h1 class="text-5xl md:text-5xl font-bold "> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1> 
                             </div>
                         </div>
                     </div>
@@ -312,244 +309,115 @@
         
     </section>
 </header>
+<style>
+    .horizontal-line {
+            border-top: 1px solid var(--brand-dark-green);
+            margin: 20px 0;
+        }
+</style>
+<section class="max-w-7xl mt-8 mx-auto px-8 py-6 bg-offwhite text-gray-800">
 
-<section class="max-w-5xl mx-auto py-12 px-4">
-    <div id="tips-container" class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <!-- Cards will be dynamically added here -->
-    </div>
-  
-    <div class="flex justify-center mt-8">
-      <button id="load-more-btn" class="px-6 py-2 text-white rounded-lg bg-green-600 hover:bg-green-800">Load More</button>
-    </div>
-  </section>
-  
-  <section class="heroend relative flex flex-col pb-10 pt-20">
-    <img src="https://media.istockphoto.com/id/1472818295/photo/striped-white-background-grunge-brush-stroke-light-gray-cracked-texture-dye-sparse-grayscale.jpg?s=612x612&w=0&k=20&c=G57w2EQfAaiRrAIh_bcV-J2o8xXgw6azc83X-88kQ9E=" class="object-cover w-full h-screen" />
-    <div class="absolute inset-0"></div>
-    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-0"></div>
-
-    <div class="container mx-auto px-4 relative z-10 flex flex-col justify-center items-center">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
-            <!-- Left Content -->
-            <div class="text-black pt-5 md:pt-0 flex flex-col justify-center items-center md:items-center">
-                <h2 class="text-4xl md:text-6xl font-bold mb-4 text-center">Built Differently</h2>
-                <hr class="w-96 border-t-2 border-gray-400 my-4" /> <!-- Added HR line here -->
-                <h3 class="text-2xl md:text-3xl mb-6 text-center">
-                    <span class="text-black">A </span>
-                    <span id="dynamic-text" class="brand-green fade-element">Professional </span>
-                    <span class="text-black">Approach To Your Outdoor Needs</span>
-                </h3>               
-            </div>
-
-            <!-- Right Form -->
-            <div class="p-6 rounded-lg flex items-center justify-center form-container">
-                <form id="contactForm" class="space-y-4 w-full">
-                    <input type="text" placeholder="Name" class="w-full p-3 border rounded-2xl" />
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <input type="tel" placeholder="Phone" class="w-full p-3 border rounded-2xl" />
-                        <input type="email" placeholder="Email" class="w-full p-3 border rounded-2xl" />
-                    </div>
-                    <input type="text" placeholder="Address" class="w-full p-3 border rounded-2xl" />
-                    <select class="w-full p-3 border rounded-2xl">
-                        <option>Yes, I'm a potential new customer</option>
-                        <option>Existing customer</option>
-                    </select>
-                    <select class="w-full p-3 border rounded-2xl">
-                        <option>Sprinklers</option>
-                        <option>Landscaping</option>
-                        <option>Drainage</option>
-                    </select>
-                    <button type="submit" class="w-full bg-black text-white py-3 rounded-2xl hoverBG-brand-color transition duration-300">
-                        Get In Touch Today
-                    </button>
-                </form>
+    <div class="flex flex-col lg:flex-row gap-8">
+        
+        <!-- Current Post Section (Left) -->
+        <div class="lg:w-3/4 w-full p-8">
+            <h1 class="text-4xl font-semibold mb-4 brand-green">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+            <p class="text-gray-600 text-sm mb-8">Published on November 13, 2024</p>
+            <img src="https://media.istockphoto.com/id/1094171214/photo/silhouette-of-a-computer-on-a-table-clear-blue-tropical-water-as-background.jpg?s=612x612&w=0&k=20&c=MyykDjRKWT8reuh4HxU4ZL7IBV_Idm8GAGrj2dyeWj8=" alt="Post Image" class="w-full h-64 object-cover mb-6">
+            <p class="text-lg leading-relaxed mb-6">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus metus vel eros volutpat, in efficitur velit feugiat. Suspendisse potenti. Morbi non ante metus. Nulla facilisi. Sed dapibus magna in neque ultrices, eget ultrices magna elementum.
+            </p>
+            <p class="text-lg leading-relaxed mb-6">
+                Mauris consequat, justo a varius egestas, lectus odio bibendum nisi, ac gravida felis elit non ligula. Ut ut libero et elit sodales ultricies. Nullam volutpat magna eget dolor vestibulum, nec posuere nisi auctor.
+            </p>
+            <p class="text-lg leading-relaxed mb-6">
+                Quisque efficitur, ante eget condimentum sollicitudin, velit sapien interdum metus, a mollis arcu elit vel mi. Curabitur vitae justo erat. Sed volutpat augue ac enim vehicula, eget gravida nulla laoreet. Etiam in felis ut purus aliquam volutpat.
+            </p>
+            <p class="text-lg leading-relaxed mb-6">
+                Quisque efficitur, ante eget condimentum sollicitudin, velit sapien interdum metus, a mollis arcu elit vel mi. Curabitur vitae justo erat. Sed volutpat augue ac enim vehicula, eget gravida nulla laoreet. Etiam in felis ut purus aliquam volutpat.
+            </p>
+            <p class="text-lg leading-relaxed mb-6">
+                Donec et hendrerit ipsum, a bibendum urna. Fusce suscipit felis in leo suscipit, sed auctor elit pretium. Nulla gravida justo eget dolor congue, ac tincidunt nisl hendrerit. Etiam dictum risus euismod, convallis arcu nec, tincidunt nisl. Integer malesuada purus at sollicitudin faucibus.
+            </p>
+            <div class="flex justify-between mt-10">
+                <a href="../pages/post3.html" class="text-brand-dark-green hoverTEXT-brand-dark-background font-medium flex items-center">
+                    <i class="fas fa-chevron-left mr-2"></i> Previous Post
+                </a>
+                <a href="../pages/post1.html" class="text-brand-dark-green hoverTEXT-brand-dark-background font-medium flex items-center">
+                    Next Post <i class="fas fa-chevron-right ml-2"></i> 
+                </a>
             </div>
         </div>
+
+        <!-- Sidebar (Right) -->
+        <div class="lg:w-1/4 w-full space-y-8">
+            
+            <!-- Other Posts Section -->
+            <div>
+                <h2 class="text-2xl font-semibold mb-4">Other Posts</h2>
+                
+                <div class="flex items-center mb-4">
+                    <img src="https://media.istockphoto.com/id/1154073003/photo/ready-for-travel.jpg?s=612x612&w=0&k=20&c=Pl7jiUeZ1iMGmJlur8xDu9dQOHJH5ieB0Uegpn5no_0=" alt="Other Post Image" class="w-16 h-16 object-cover mr-4">
+                    <a href="post1.html" class="text-lg font-medium text-brand-dark-green hoverTEXT-brand-dark-background">Lorem ipsum 1.</a>
+                </div>
+
+                <div class="flex items-center mb-4">
+                    <img src="https://media.istockphoto.com/id/2153699317/photo/an-photographer-equipment-on-colorful-background-side-view-with-copy-space.jpg?s=612x612&w=0&k=20&c=zroxQYkQVrbGGudYVtGFn5Xu5olmpRqSWHnwe_9n9Kw=" alt="Other Post Image" class="w-16 h-16 object-cover mr-4">
+                    <a href="post2.html" class="text-lg font-medium text-brand-dark-green hoverTEXT-brand-dark-background">Lorem ipsum 2.</a>
+                </div>
+
+                <div class="flex items-center mb-4">
+                    <img src="https://media.istockphoto.com/id/1094171214/photo/silhouette-of-a-computer-on-a-table-clear-blue-tropical-water-as-background.jpg?s=612x612&w=0&k=20&c=MyykDjRKWT8reuh4HxU4ZL7IBV_Idm8GAGrj2dyeWj8=" alt="Other Post Image" class="w-16 h-16 object-cover mr-4">
+                    <a href="post3.html" class="text-lg font-medium text-brand-dark-green hoverTEXT-brand-dark-background">Lorem ipsum 3.</a>
+                </div>
+            </div>
+
+            <!-- Horizontal Line -->
+            <div class="horizontal-line"></div>
+
+            <!-- Social Links Section -->
+            <div>
+                <h2 class="text-2xl font-semibold mb-4">Follow Us</h2>
+                <div class="flex space-x-4 mb-6 text-2xl text-gray-600">
+                    <a href="https://facebook.com" class="brand-green hoverTEXT-brand-dark-background"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com" class="brand-green hoverTEXT-brand-dark-background"><i class="fab fa-twitter"></i></a>
+                    <a href="https://linkedin.com" class="brand-green hoverTEXT-brand-dark-background"><i class="fab fa-instagram"></i></a>
+                    <a href="https://instagram.com" class="brand-green hoverTEXT-brand-dark-background"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="horizontal-line"></div>
+            
+            <!-- Contact Form Section -->
+            <div>
+                <h2 class="text-2xl font-semibold mb-4">Send a Message</h2>
+                <form action="#" method="POST" class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                        <input type="text" id="name" name="name" class="mt-1 p-2 w-full border border-brand-dark-green focus:ring-brand-dark-green focus:border-brand-dark-green" placeholder="Your Name" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                        <input type="email" id="email" name="email" class="mt-1 p-2 w-full border border-brand-dark-green focus:ring-brand-dark-green focus:border-brand-dark-green" placeholder="Your Email" required>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                        <textarea id="message" name="message" rows="4" class="mt-1 p-2 w-full border border-brand-dark-green focus:ring-brand-dark-green focus:border-brand-dark-green" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="brand-background text-white py-2 px-6 rounded-md hoverBG-brand-dark-background">Submit</button>
+                </form>
+            </div>
+
+        </div>
+
     </div>
+
 </section>
 
 
 
 
 
-  <script>
 
-const textArray = ["Professional", "Expert", "Skilled", "Qualified"];
-let index = 0;
-const dynamicTextElement = document.getElementById('dynamic-text');
-
-function updateText() {
-    fadeOut(() => {
-        index = (index + 1) % textArray.length;
-        dynamicTextElement.textContent = textArray[index];
-        fadeIn();
-    });
-}
-
-function fadeOut(callback) {
-    let opacity = 1;
-
-    function decreaseOpacity() {
-        opacity -= 0.05;
-        dynamicTextElement.style.opacity = opacity;
-
-        if (opacity <= 0) {
-            callback(); 
-            return;
-        }
-        requestAnimationFrame(decreaseOpacity);
-    }
-    decreaseOpacity();
-}
-
-function fadeIn() {
-    let opacity = 0;
-
-    function increaseOpacity() {
-        opacity += 0.05;
-        dynamicTextElement.style.opacity = opacity;
-
-        if (opacity >= 1) return;
-
-        requestAnimationFrame(increaseOpacity);
-    }
-
-    increaseOpacity();
-}
-
-setInterval(updateText, 3000); 
-
-
-
-    const tipsContainer = document.getElementById('tips-container');
-    const loadMoreBtn = document.getElementById('load-more-btn');
-  
-    // Array of tip data for each card with unique links
-    const tipsData = [
-      { 
-        title: "Lorem ipsum 1", 
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat nisl sed metus sollicitudin.", 
-        image: "https://media.istockphoto.com/id/1157430259/photo/creating-effective-content-on-sticky-notes-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=abmA2J_EbqPPryGgxRAvZClLpPgxIIopR8gzmlQu2hM=", 
-        date: "December 20, 2023",
-        link: "../pages/post1.html"
-      },
-      { 
-        title: "Lorem ipsum 2", 
-        description: "Suspendisse potenti. Ut accumsan urna et lorem ullamcorper, in egestas eros eleifend.", 
-        image: "https://media.istockphoto.com/id/1154073003/photo/ready-for-travel.jpg?s=612x612&w=0&k=20&c=Pl7jiUeZ1iMGmJlur8xDu9dQOHJH5ieB0Uegpn5no_0=", 
-        date: "December 21, 2023",
-        link: "../pages/post2.html"
-      },
-      { 
-        title: "Lorem ipsum 3", 
-        description: "Vestibulum nec urna ac lacus commodo cursus. Curabitur efficitur sapien ut orci fermentum, at ultricies urna laoreet.", 
-        image: "https://media.istockphoto.com/id/2153699317/photo/an-photographer-equipment-on-colorful-background-side-view-with-copy-space.jpg?s=612x612&w=0&k=20&c=zroxQYkQVrbGGudYVtGFn5Xu5olmpRqSWHnwe_9n9Kw=", 
-        date: "December 22, 2023",
-        link: "../pages/post3.html"
-      },
-        { 
-        title: "Lorem ipsum 4", 
-        description: "Sed viverra mauris non sapien tincidunt, in faucibus nisl fermentum. Praesent non ligula in eros ultrices.", 
-        image: "https://media.istockphoto.com/id/1094171214/photo/silhouette-of-a-computer-on-a-table-clear-blue-tropical-water-as-background.jpg?s=612x612&w=0&k=20&c=MyykDjRKWT8reuh4HxU4ZL7IBV_Idm8GAGrj2dyeWj8=", 
-        date: "December 23, 2023" ,
-        link: "../pages/post4.html"
-    },
-    { 
-        title: "Tip #5", 
-        description: "Nullam ac justo non metus sodales fermentum sit amet non lorem. Integer vel velit volutpat, sagittis neque at, posuere.", 
-        image: "https://media.istockphoto.com/id/1424001698/photo/social-media-chat-icon-pastel-soft.jpg?s=612x612&w=0&k=20&c=p82WvZdAEM1eJXmrlpeZX2yqQDxZ-4b_tJSp39f98xU=", 
-        date: "December 24, 2023" ,
-        link: "../pages/post1.html"
-    },
-    { 
-        title: "Tip #6", 
-        description: "Proin id augue a lorem mollis sollicitudin. Nulla aliquam risus sit amet dui suscipit, vel dapibus lorem tristique.", 
-        image: "https://media.istockphoto.com/id/1146554418/photo/retro-blog-bookshelf-with-cozy-interior.jpg?s=612x612&w=0&k=20&c=oh0qhFKxWX8e3SnuUGZSvK4dg9SeIkOSf47hgudOVpY=", 
-        date: "December 25, 2023" ,
-        link: "../pages/post1.html"
-    },
-    { 
-        title: "Tip #7", 
-        description: "Mauris auctor nisi ut erat convallis, sed convallis magna vehicula. Suspendisse vel ante eget felis gravida tincidunt.", 
-        image: "https://media.istockphoto.com/id/1312418309/photo/visual-contents-concept-social-networking-service-streaming-video-communication-network-3d.jpg?s=612x612&w=0&k=20&c=2wop2q3V2_nHCc4X7ISInzRA3Bp52UHAX0tTgKNWeBQ=", 
-        date: "December 26, 2023",
-        link: "../pages/post1.html" 
-    },
-    { 
-        title: "Tip #8", 
-        description: "Etiam consectetur magna in justo malesuada, id vestibulum turpis varius. Nam feugiat massa ac diam gravida.", 
-        image: "https://media.istockphoto.com/id/1776879677/photo/close-up-young-man-hand-hold-smartphone-and-use-application-of-e-commerce-to-working-about.jpg?s=612x612&w=0&k=20&c=EMgXZ6cXxDFHYWtlEbZMRFo7qft1TZRfJDANYEwTmXg=", 
-        date: "December 27, 2023",
-        link: "../pages/post1.html" 
-    },
-    { 
-        title: "Tip #9", 
-        description: "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.", 
-        image: "https://media.istockphoto.com/id/517899146/photo/chat-symbol-and-quotation-mark.jpg?s=612x612&w=0&k=20&c=pobhizbEsZs273ZvHLxDRgCP_CT0oxItTvQ27ndKvlw=", 
-        date: "December 28, 2023" ,
-        link: "../pages/post1.html"
-    },
-    { 
-        title: "Tip #10", 
-        description: "Sed ultrices, ligula non egestas faucibus, felis ipsum efficitur nisi, vitae convallis libero turpis eu nibh.", 
-        image: "https://media.istockphoto.com/id/1185009965/photo/social-networking-service-concept-influencer-marketing.jpg?s=612x612&w=0&k=20&c=9Ya-z9zPaRzHO_itnZycfEuisFX49ukABXOnaKJz9Vg=", 
-        date: "December 29, 2023",
-        link: "../pages/post1.html" 
-    },
-    { 
-        title: "Tip #11", 
-        description: "Curabitur sit amet ante ut ipsum pharetra varius at non ligula. Cras a mauris vel sem vehicula pellentesque.", 
-        image: "https://media.istockphoto.com/id/1300164549/photo/get-organised-get-it-done.jpg?s=612x612&w=0&k=20&c=r1zdN48ovoOqDlPm_2X5RLj1hoTxD8r2Z-QCI1MCDnI=", 
-        date: "December 30, 2023",
-        link: "../pages/post1.html" 
-    },
-    { 
-        title: "Tip #12", 
-        description: "Vivamus tincidunt, leo vel tincidunt pharetra, enim magna ullamcorper leo, sed vulputate felis lacus et mauris.", 
-        image: "https://media.istockphoto.com/id/480187760/photo/female-novelist-writing-on-the-laptop.jpg?s=612x612&w=0&k=20&c=xcmnzlkoTIE00DX8MvuRZPAKCNV8-gxBBVcZNJRq_uU=", 
-        date: "December 31, 2023" ,
-        link: "../pages/post1.html"
-    }
-        ];
-  
-    let cardCount = 0;
-  
-    function loadCards() {
-      const cardsToLoad = 4; // Number of cards to load on each click
-      for (let i = 0; i < cardsToLoad && cardCount < tipsData.length; i++) {
-        const tip = tipsData[cardCount];
-        const card = document.createElement('div');
-        card.className = 'bg-white rounded-lg shadow-lg overflow-hidden h-[500px] max-w-md w-full mx-auto card';
-  
-        card.innerHTML = `
-          <img src="${tip.image}" alt="Image for ${tip.title}" class="w-full h-60 object-cover">
-          <div class="p-6">
-            <h3 class="text-lg font-semibold mb-2 text-green-600">${tip.title}</h3>
-            <p class="text-gray-600 mb-4 text-justify">${tip.description}</p>
-            <a href="${tip.link}" class="text-green-700 font-semibold hover:text-green-900" target="_blank" rel="noopener noreferrer">Read more &rarr;</a>
-            <p class="text-gray-500 text-sm mt-2">${tip.date}</p>
-          </div>
-        `;
-  
-        tipsContainer.appendChild(card);
-        cardCount++;
-      }
-  
-      if (cardCount >= tipsData.length) {
-        loadMoreBtn.style.display = 'none';
-      }
-    }
-  
-    loadCards();
-    loadMoreBtn.addEventListener('click', loadCards);
-  </script>
-  
-  <style>
-    .card {
-      transition: transform 0.3s ease;
-    }
-  </style>
-  
 
 <script>
     // Only apply this for screens smaller than or equal to 391px

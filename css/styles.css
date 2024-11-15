@@ -132,7 +132,7 @@
     
        
         
-        @media (max-width: 1317px) {
+        @media (max-width: 1024px) {
             .navbar-menu {
                 display: none; 
             }
@@ -158,7 +158,7 @@
             }
         }
     
-        @media (min-width: 1317px) {
+        @media (min-width: 1024px) {
             .sidebar {
                 display: none; 
             }

@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+       
 </head>
-<body>
+<body class="bg-gray-50">
 
 <header>
 <!-- Top Bar -->
-<div class="brand-dark-background text-white py-4  px-6 flex flex-col md:flex-row justify-between items-center w-full h-auto">
+<div class="brand-dark-background text-white py-4 px-6 flex flex-col md:flex-row justify-between items-center w-full h-auto">
     <div class="top-bar-icons flex flex-col md:flex-row items-start w-full md:w-auto">
         <div class="flex items-center mb-2 md:mb-0">
             <img src="https://img.icons8.com/?size=100&id=53439&format=png&color=FFFFFF" alt="Phone Icon" class="w-5 h-5 mr-2"/>
@@ -36,14 +36,13 @@
 
 
 
- 
- <!-- Navigation -->
- <nav class="bg-black  text-white py-4  w-full ">
+    <!-- Navigation -->
+<nav class="bg-black  text-white py-4  w-full ">
     <div class="container mx-auto flex justify-between  px-4">
         <div class="text-2xl font-bold">STREAMLINE</div>
         <div class="navbar-menu hidden md:flex items-center space-x-6 text-white relative">
             <a href="../index.html" class="hoverTEXT-brand-color">Home</a>
-            <a href="./serviceareas.html" class="hoverTEXT-brand-color">Service Areas</a>
+            <a href="serviceareas.html" class="hoverTEXT-brand-color">Service Areas</a>
             <div class="relative inline-block">
                 <a href="#" onclick="toggleDropdown('landscapingDropdown'); event.stopPropagation();" class="flex items-center hoverTEXT-brand-color">
                     Services
@@ -122,7 +121,7 @@
         </button>
         <div class="flex flex-col p-4 text-white ml-2"> 
             <a href="../index.html" class="py-3 text-lg hoverTEXT-brand-color mb-2 problem-creator ">Home</a><hr class="dynamic-hr mb-2" />
-            <a href="./serviceareas.html" class="py-3 text-lg hoverTEXT-brand-color mb-2 problem-creator">Services Areas</a> <hr class="dynamic-hr mb-2" />
+            <a href="serviceareas.html" class="py-3 text-lg hoverTEXT-brand-color mb-2 problem-creator">Services Areas</a> <hr class="dynamic-hr mb-2" />
 
             <div class="relative mb-4">
                 <a href="#" onclick="toggleDropdown('landscapingDropdownSidebar'); event.stopPropagation();" class="flex items-center py-3 text-lg hoverTEXT-brand-color mb-2">
@@ -173,35 +172,49 @@
                 </a>
                 <ul id="contactDropdownSidebar" class="dropdown-content bg-black text-white py-2 mt-1 rounded shadow-lg px-2">
                     <li class="flex items-center py-1">
+                        <!-- <img src="https://img.icons8.com/material-outlined/24/FFFFFF/phone.png" alt="Phone Icon" class="w-5 h-5 mr-2"/> -->
                         <a href="../pages/contact.html" class="block hover:bg-gray-600 px-4 py-1">Get in touch</a>
                     </li>
                     <li class="flex items-center py-1">
+                        <!-- <img src="https://img.icons8.com/material-outlined/24/FFFFFF/email.png" alt="Email Icon" class="w-5 h-5 mr-2"/> -->
                         <a href="./FAQ.html" class="block hover:bg-gray-600 px-4 py-1">FAQ</a>
                     </li>
                 </ul>
                 <hr class="dynamic-hr mb-2" />
             </div>
+            
+            
+           
+            
         </div>
-        
         
         <a href="tel:8177018920" class="navbar-button brand-dark-background text-white px-4 py-2 rounded-3xl hoverBG-brand-color mt-4 ml-4 problem-creator ">
             Call (817)701-8920
         </a>
         
     </div>
-    <section class="hero relative flex flex-col pb-10 pt-20">
+    <section class="hero relative flex flex-col  pt-20">
         <img src="https://media.istockphoto.com/id/1254871777/photo/modern-minimalist-family-villa.webp?a=1&b=1&s=612x612&w=0&k=20&c=jh9BiVRnvxs_bm2UIlHdxOLpNl5kwOq9nxKOUAATBqc=" alt="Modern home with landscaping" class="object-cover w-full h-screen" />
         <div class="absolute inset-0 bg-black opacity-50"></div>
         <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-30"></div>
         
         <div class="container mx-auto px-4 relative z-10 flex flex-col justify-center items-center">
-            <div class="w-full flex flex-col justify-center items-center pt-5 md:pt-0">
+            <div class="w-full flex flex-col justify-center items-center  md:pt-0">
                 <div class="container mx-auto px-4 relative z-10 flex flex-col justify-center items-center">
-                    <div class="w-full flex flex-col justify-center items-center pt-2 md:pt-0 sm:pt-0">
+                    <div class="w-full flex flex-col justify-center items-center  md:pt-0">
                         <!-- Left Content -->
                         <div class="hero-section flex items-center justify-center text-white">
                             <div class="text-center">
-                                <h1 class="text-4xl md:text-6xl font-bold "> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1> 
+                                <h1 class="text-3xl md:text-5xl font-bold pt-4">Dublin, Columbus, Ohio</h1> 
+                                <div class="flex justify-center mb-6 ">
+                                    <a href="./contact.html">
+                                        <button class="brand-dark-background mt-8 text-white px-4 py-2 rounded-lg hoverBG-brand-color transition-all duration-300 sm:px-8 sm:py-3 sm:text-base text-xs">
+                                            BOOK DUBLIN PLUMBING SERVICES
+                                        </button>
+                                    </a>
+                                    
+                                    
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -212,267 +225,223 @@
         
     </section>
 </header>
-    <!-- FAQ Section -->
-    <section id="faq-section" class="max-w-2xl mx-auto mt-16 p-8 mb-12 bg-white rounded-lg shadow-lg">
-        <h2 class="text-3xl font-semibold text-center text-gray-800 mb-8">Frequently Asked Questions</h2>
-
-        <!-- FAQ Item 1 -->
-        <div class="faq-item border-b border-gray-200 py-4 cursor-pointer">
-            <div class="faq-question flex justify-between items-center">
-                <span class="text-lg font-medium text-gray-700">What is Lorem Ipsum?</span>
-                <span class="faq-toggle text-2xl font-bold text-gray-600 transition-transform transform">+</span>
-            </div>
-            <div class="faq-answer mt-3 text-gray-600 hidden">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod, nisi vel consectetur faucibus, lacus nulla interdum metus, eget dapibus enim leo non nulla.
-            </div>
-        </div>
-
-        <!-- FAQ Item 2 -->
-        <div class="faq-item border-b border-gray-200 py-4 cursor-pointer">
-            <div class="faq-question flex justify-between items-center">
-                <span class="text-lg font-medium text-gray-700">Why do we use it?</span>
-                <span class="faq-toggle text-2xl font-bold text-gray-600 transition-transform transform">+</span>
-            </div>
-            <div class="faq-answer mt-3 text-gray-600 hidden">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum convallis nibh vel massa interdum, at sagittis justo aliquet. Fusce accumsan ipsum at mi aliquam, at egestas ipsum fermentum.
-            </div>
-        </div>
-
-        <!-- FAQ Item 3 -->
-        <div class="faq-item border-b border-gray-200 py-4 cursor-pointer">
-            <div class="faq-question flex justify-between items-center">
-                <span class="text-lg font-medium text-gray-700">Where can I get some?</span>
-                <span class="faq-toggle text-2xl font-bold text-gray-600 transition-transform transform">+</span>
-            </div>
-            <div class="faq-answer mt-3 text-gray-600 hidden">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. Nullam aliquam ligula eget odio consectetur, a aliquam leo accumsan.
-            </div>
-        </div>
-
-        <!-- FAQ Item 4 -->
-        <div class="faq-item border-b border-gray-200 py-4 cursor-pointer">
-            <div class="faq-question flex justify-between items-center">
-                <span class="text-lg font-medium text-gray-700">How does Lorem Ipsum work?</span>
-                <span class="faq-toggle text-2xl font-bold text-gray-600 transition-transform transform">+</span>
-            </div>
-            <div class="faq-answer mt-3 text-gray-600 hidden">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis, purus at tincidunt consectetur, magna justo viverra urna, et ultrices sapien metus a ligula.
-            </div>
-        </div>
-
-        <!-- FAQ Item 5 -->
-        <div class="faq-item border-b border-gray-200 py-4 cursor-pointer">
-            <div class="faq-question flex justify-between items-center">
-                <span class="text-lg font-medium text-gray-700">Is Lorem Ipsum safe to use?</span>
-                <span class="faq-toggle text-2xl font-bold text-gray-600 transition-transform transform">+</span>
-            </div>
-            <div class="faq-answer mt-3 text-gray-600 hidden">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas consequat turpis vitae ligula faucibus, non ullamcorper ligula dignissim.
-            </div>
-        </div>
-
-        <!-- FAQ Item 6 -->
-        <div class="faq-item border-b border-gray-200 py-4 cursor-pointer">
-            <div class="faq-question flex justify-between items-center">
-                <span class="text-lg font-medium text-gray-700">What are the benefits of Lorem Ipsum?</span>
-                <span class="faq-toggle text-2xl font-bold text-gray-600 transition-transform transform">+</span>
-            </div>
-            <div class="faq-answer mt-3 text-gray-600 hidden">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel urna nec ligula ultricies dictum in a augue. Vivamus laoreet augue eget turpis dapibus varius.
-            </div>
-        </div>
-
-        <!-- FAQ Item 7 -->
-        <div class="faq-item py-4 cursor-pointer">
-            <div class="faq-question flex justify-between items-center">
-                <span class="text-lg font-medium text-gray-700">How do I create my own Lorem Ipsum?</span>
-                <span class="faq-toggle text-2xl font-bold text-gray-600 transition-transform transform">+</span>
-            </div>
-            <div class="faq-answer mt-3 text-gray-600 hidden">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget leo eget purus facilisis faucibus ac nec mauris. Donec fermentum justo at neque fringilla convallis.
-            </div>
-        </div>
-    </section>
-
-    <script>
-        // JavaScript for toggling FAQ answer visibility
-        document.querySelectorAll('.faq-item').forEach(item => {
-            item.addEventListener('click', () => {
-                item.querySelector('.faq-answer').classList.toggle('hidden');
-                item.querySelector('.faq-toggle').classList.toggle('rotate-45');
-            });
-        });
-    </script>
-
-
-<section id="servicepage">
-    <div id="gallery">
-      <div class="gallery-item"><img src="https://media.istockphoto.com/id/505222100/photo/green-tea-plantations.jpg?s=612x612&w=0&k=20&c=azyxLoe7JMLHpcNgUyrE3P5V7tzSu5LInFpXYBVyceU=" alt="Image 1"></div>
-      <div class="gallery-item"><img src="https://media.istockphoto.com/id/1173732710/photo/the-green-fern.jpg?s=612x612&w=0&k=20&c=sUYCIdOXetPGu9juZXdEeO-Sdtyua7DOp7LI2qVSOiM=" alt="Image 2"></div>
-      <div class="gallery-item"><img src="https://media.istockphoto.com/id/1284671318/photo/meadows-in-the-snow-peak-mountains-of-himalaya.jpg?s=612x612&w=0&k=20&c=UiWDeawpPIV8If3sXuhg82VcnDW77yjqyIxbmVom0FY=" alt="Image 3"></div>
-      <div class="gallery-item"><img src="https://media.istockphoto.com/id/2179556387/photo/mountains-and-roads.jpg?s=612x612&w=0&k=20&c=tIn5rAkrTIY5H8pdhVh2mZzCqBWWwCja3nzKtksnjHs=" alt="Image 4"></div>
-      <div class="gallery-item"><img src="https://media.istockphoto.com/id/1397138451/photo/beautiful-view-of-wenlock-downs-9th-mile-shooting-point-ooty-during-sunset-must-visit-place.jpg?s=612x612&w=0&k=20&c=kNaZSUpEIXIc33XxgXFY-uPJHEwo2b_iJEeGglPFWuY=" alt="Image 5"></div>
-      <div class="gallery-item"><img src="https://media.istockphoto.com/id/467233280/photo/nepal-jungle.jpg?s=612x612&w=0&k=20&c=cYBq-rnlXuxGNOj5-x5Pp5HJNp1Mdn_6Brta2zOyQOE=" alt="Image 6"></div>
-    </div>
-  </section>
-  
-  <script>
-    const galleryItems = document.querySelectorAll('.gallery-item');
-    const gallery = document.getElementById('gallery');
-  
-    const observerOptions = {
-      root: null,
-      rootMargin: '0px',
-      threshold: 0.1
-    };
-  
-    const observerCallback = (entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    };
-  
-    const observer = new IntersectionObserver(observerCallback, observerOptions);
-  
-    galleryItems.forEach(item => {
-      observer.observe(item);
-    });
-  
-    window.addEventListener('load', () => {
-      gallery.style.opacity = 1;
-    });
-  </script>
-    <style>
- 
-        #servicepage {
-          width: 100%;
-          display: flex;
-          justify-content: center;
-          padding: 20px;
-          margin-top: 50px;
-        }
-    
-        #gallery {
-          opacity: 0;
-          transition: opacity 1s ease-in;
-          width: 100%;
-          max-width: 1200px;
-        }
-    
-        .gallery-item {
-          display: inline-block;
-          margin-bottom: 10px;
-          width: 100%;
-          break-inside: avoid;
-          opacity: 0;
-          transform: translateY(20px);
-          transition: opacity 1s ease-in, transform 1s ease-in;
-        }
-    
-        .gallery-item img {
-          width: 100%;
-          height: auto;
-          display: block;
-          transition: transform 0.3s ease;
-        }
-    
-        .gallery-item:hover img {
-          transform: scale(1.05);
-        }
-    
-        .visible {
-          opacity: 1;
-          transform: translateY(0);
-        }
-    
-        /* Responsive design */
-        @media (min-width: 768px) {
-          #gallery {
-            column-count: 2;
-            column-gap: 15px;
-          }
-    
-          .gallery-item {
-            width: 100%;
-          }
-        }
-    
-        @media (min-width: 1024px) {
-          #gallery {
-            column-count: 3;
-            column-gap: 20px;
-          }
-    
-          .gallery-item {
-            width: 100%;
-          }
-        }
-    
-        @media (max-width: 480px) {
-          #gallery {
-            column-count: 1;
-            column-gap: 10px;
-          }
-    
-          .gallery-item img {
-            width: 100%;
-          }
-        }
-      </style>
-<section class="heroend relative flex flex-col pb-10 pt-20">
-    <img src="https://media.istockphoto.com/id/1472818295/photo/striped-white-background-grunge-brush-stroke-light-gray-cracked-texture-dye-sparse-grayscale.jpg?s=612x612&w=0&k=20&c=G57w2EQfAaiRrAIh_bcV-J2o8xXgw6azc83X-88kQ9E=" class="object-cover w-full h-screen" />
-    <div class="absolute inset-0"></div>
-    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-0"></div>
-
-    <div class="container mx-auto px-4 relative z-10 flex flex-col justify-center items-center">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
-            <!-- Left Content -->
-            <div class="text-black pt-5 md:pt-0 flex flex-col justify-center items-center md:items-center">
-                <h2 class="text-4xl md:text-6xl font-bold mb-4 text-center">Built Differently</h2>
-                <hr class="w-96 border-t-2 border-gray-400 my-4" /> <!-- Added HR line here -->
-                <h3 class="text-2xl md:text-3xl mb-6 text-center">
-                    <span class="text-black">A </span>
-                    <span id="dynamic-text" class="brand-green fade-element">Professional </span>
-                    <span class="text-black">Approach To Your Outdoor Needs</span>
-                </h3>               
-            </div>
-
-            <!-- Right Form -->
-            <div class="p-6 rounded-lg flex items-center justify-center form-container">
-                <form id="contactForm" class="space-y-4 w-full">
-                    <input type="text" placeholder="Name" class="w-full p-3 border rounded-2xl" />
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <input type="tel" placeholder="Phone" class="w-full p-3 border rounded-2xl" />
-                        <input type="email" placeholder="Email" class="w-full p-3 border rounded-2xl" />
+<section class="flex flex-wrap px-8 py-12 bg-gray-50">
+    <!-- Card Container -->
+    <div class="w-full lg:w-3/4 mx-auto bg-white p-8 rounded-lg shadow-lg">
+        <div class="flex flex-col lg:flex-row">
+            <!-- Left Column (Locations List) -->
+            <div class="w-full lg:w-1/4 lg:pr-8 order-2 lg:order-1">
+                <h2 class="text-xl mr-12 lg:text-2xl font-semibold text-center text-gray-800 mb-6 whitespace-nowrap">
+                    Our Locations
+                </h2>
+                <div class="flex flex-col space-y-6">
+                    <div class="p-4">
+                        <a href="./location1.html" class="block text-lg font-medium brand-green  flex items-center">
+                            Dublin, Columbus, Ohio
+                        </a>
+                        <p class="text-sm text-gray-500 mt-2">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non.
+                        </p>
+                        <hr class="border-t-2 border-gray-300 mt-4">
                     </div>
-                    <input type="text" placeholder="Address" class="w-full p-3 border rounded-2xl" />
-                    <select class="w-full p-3 border rounded-2xl">
-                        <option>Yes, I'm a potential new customer</option>
-                        <option>Existing customer</option>
-                    </select>
-                    <select class="w-full p-3 border rounded-2xl">
-                        <option>Sprinklers</option>
-                        <option>Landscaping</option>
-                        <option>Drainage</option>
-                    </select>
-                    <button type="submit" class="w-full bg-black text-white py-3 rounded-2xl hoverBG-brand-color transition duration-300">
-                        Get In Touch Today
-                    </button>
-                </form>
+            
+                    <div class="p-4">
+                        <a href="./location2.html" class="block text-lg font-medium text-black hoverTEXT-brand-dark-background hover:underline">
+                            Downtown Columbus, Columbus, Ohio
+                        </a>
+                        <p class="text-sm text-gray-500 mt-2">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                        <hr class="border-t-2 border-gray-300 mt-4">
+                    </div>
+            
+                    <div class="p-4">
+                        <a href="./location3.html" class="block text-lg font-medium text-black hoverTEXT-brand-dark-background hover:underline">
+                            Clintonville, Columbus, Ohio
+                        </a>
+                        <p class="text-sm text-gray-500 mt-2">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tortor.
+                        </p>
+                        <hr class="border-t-2 border-gray-300 mt-4">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right Column (Current Location) -->
+            <div class="w-full lg:w-3/4 mb-8 lg:mb-0 order-1 lg:order-2">
+                <!-- Current Location Image -->
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Samuel_Beckett_Bridge_At_Sunset_Dublin_Ireland_%2897037639%29_%28cropped%29.jpeg" alt="Current Location" class="w-full h-72 object-cover rounded-lg shadow-md mb-6">
+
+                <!-- Booking Button -->
+                <div class="flex justify-center mb-6 ">
+                    <a href="./contact.html">
+                        <button class="brand-background mt-8 text-white px-4 py-2 rounded-lg hoverBG-brand-dark-background transition-all duration-300 sm:px-8 sm:py-3 sm:text-base text-xs">
+                            BOOK DUBLIN PLUMBING SERVICES
+                        </button>
+                    </a>
+                    
+                    
+                </div>
+
+                <!-- Current Location Description -->
+                <h2 class="text-3xl font-semibold text-gray-800 mb-4">Dublin, Columbus, Ohio</h2>
+                <p class="text-lg text-gray-700 mb-6">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula scelerisque commodo. In hac habitasse platea dictumst. Aliquam dictum luctus nibh, in sagittis mauris semper id. Praesent sit amet sollicitudin ligula, a iaculis tellus.
+                     Donec lobortis nulla a eros feugiat, id egestas nunc lacinia. Nunc vel iaculis libero. Suspendisse id commodo mauris, nec egestas lorem. Ut eget consequat risus. Donec a luctus nisl. Praesent malesuada auctor augue sit amet condimentum. Nulla et sapien non dui scelerisque aliquet. Vivamus sit amet dignissim arcu.
+                     Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce dictum turpis semper maximus ultrices..
+                </p>
+                <p class="text-lg text-gray-700 mb-6">
+                    
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut venenatis arcu. Proin sollicitudin consectetur nibh, ac scelerisque dolor accumsan et.
+                Proin facilisis lorem et libero ultrices suscipit.
+                In hac habitasse platea dictumst. Pellentesque condimentum risus id libero tempor tempus. 
+                Cras consectetur interdum mauris, ut imperdiet risus eleifend id. Nulla.
+                </p>
+
+                <!-- Bullet Points -->
+                <ul class="list-disc list-inside text-gray-700 mb-6">
+                    <li class="mb-2">State-of-the-art facilities</li>
+                    <li class="mb-2">Expert and friendly staff</li>
+                    <li class="mb-2">Convenient access and parking</li>
+                    <li class="mb-2">Comprehensive service options</li>
+                </ul>
+
+                <!-- Why Choose Us Section -->
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Why Choose Us</h3>
+                <p class="text-lg text-gray-700 mb-6">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel pellentesque eros. Nam cursus ornare eros vitae ultricies. 
+                    Integer vel euismod libero, a hendrerit odio. Cras in massa bibendum, varius quam et, porttitor turpis. Nam non arcu mauris. Integer auctor est vitae varius molestie. Vivamus ultricies eleifend magna. 
+                </p>
+
+                <!-- Call Now Button -->
+                <div class="flex justify-center mt-8">
+                    <a href="tel:+18177018920">
+                        <button class="brand-background text-white px-6 py-3 rounded-lg hoverBG-brand-dark-background transition-all duration-300 sm:px-10 sm:py-4 sm:text-base text-sm">
+                            Call Now ((817)701-8920)
+                        </button>
+                    </a>
+                    
+                    
+                </div>
             </div>
         </div>
     </div>
 </section>
+<section class="mt-10 px-5 ">
+    <div class="relative w-full h-96 mt-5 mb-10">
+      <!-- Google Map iframe -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97641.22227248742!2d-83.2283247565462!3d40.11358049038385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8838ecc4d450a11f%3A0xc2176815689028!2sDublin%2C%20OH%2C%20USA!5e0!3m2!1sen!2sin!4v1731673699028!5m2!1sen!2sin" 
+              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+  <section class="max-w-5xl mx-auto py-12 px-4">
 
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Card 1 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden h-[500px] max-w-md w-full mx-auto">
+            <img src="https://media.istockphoto.com/id/1342229204/photo/a-lake-in-the-shape-of-a-recycling-sign-in-the-middle-of-untouched-nature-an-ecological.jpg?s=612x612&w=0&k=20&c=AENL8ZdXCJQN_q0hxCYEG1LxoOckfCezV8W206WB3k4=" alt="Christmas Decorations" class="w-full h-60 object-cover">
+            <div class="p-6">
+                <h3 class="text-lg font-semibold mb-2 brand-green">How to use Christmas Decorations to create an outstanding holiday display</h3>
+                <p class="text-gray-600 mb-4 text-justify">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin dui id felis dapibus blandit. Suspendisse orci ex, semper quis accumsan in, consequat in ex. </p>
+                <a href="./post1.html" class="text-brand-darkgreen font-semibold hoverTEXT-brand-color">Read more &rarr;</a>
+                <p class="text-gray-500 text-sm mt-2">December 20, 2023</p>
+            </div>
+        </div>
 
+        <!-- Card 2 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden h-[500px] max-w-md w-full mx-auto">
+            <img src="https://media.istockphoto.com/id/1817775414/photo/sunrays.jpg?s=612x612&w=0&k=20&c=LmbefUwgzTNwtkc0c6GOCp0ItuXjvRUfuxtQvh6X3LE=" alt="Texas Winter Flowers" class="w-full h-60 object-cover">
+            <div class="p-6">
+                <h3 class="text-lg font-semibold mb-2 brand-green">Beautify Your Lawn with Texas Winter Flowers</h3>
+                <p class="text-gray-600 mb-4 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin dui id felis dapibus blandit. Suspendisse orci ex, semper quis accumsan in, consequat in ex. </p>
+                <a href="./post2.html" class="text-brand-darkgreen font-semibold hoverTEXT-brand-color">Read more &rarr;</a>
+                <p class="text-gray-500 text-sm mt-2">December 20, 2023</p>
+            </div>
+        </div>
 
+        <!-- Card 3 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden h-[500px] max-w-md w-full mx-auto">
+            <img src="https://media.istockphoto.com/id/2164074727/photo/aerial-view-of-lush-green-tea-plantation-on-sri-lanka.jpg?s=612x612&w=0&k=20&c=BjIz6E8KeS0F98Q44AGEs2GxF1PBaq1aeqfPQPPPk-M=" alt="Winter Landscaping" class="w-full h-60 object-cover">
+            <div class="p-6">
+                <h3 class="text-lg font-semibold mb-2 brand-green">Winter Landscaping Projects for a Better Spring</h3>
+                <p class="text-gray-600 mb-4 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin dui id felis dapibus blandit. Suspendisse orci ex, semper quis accumsan in, consequat in ex.</p>
+                <a href="./post3.html" class="text-brand-darkgreen font-semibold hoverTEXT-brand-color">Read more &rarr;</a>
+                <p class="text-gray-500 text-sm mt-2">December 20, 2023</p>
+            </div>
+        </div>
 
+        <!-- Card 4 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden h-[500px] max-w-md w-full mx-auto">
+            <img src="https://media.istockphoto.com/id/507707260/photo/tea-plantation-in-india.webp?a=1&b=1&s=612x612&w=0&k=20&c=Ad6PrpXqMMSXGcKMcCJhHrokfK8EDIj7M-D7_0hH-dg=" alt="Landscape Lighting" class="w-full h-60 object-cover">
+            <div class="p-6">
+                <h3 class="text-lg font-semibold mb-2 brand-green">The Benefits of Landscape Lighting</h3>
+                <p class="text-gray-600 mb-4 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin dui id felis dapibus blandit. Suspendisse orci ex, semper quis accumsan in, consequat in ex. </p>
+                <a href=".post4.html" class="text-brand-darkgreen font-semibold hoverTEXT-brand-color">Read more &rarr;</a>
+                <p class="text-gray-500 text-sm mt-2">December 20, 2023</p>
+            </div>
+        </div>
+    </div>
 
+    <div class="flex justify-center mt-8">
+        <a href="./tipsandtrick.html" class="px-6 py-2 text-white rounded-lg hoverBG-brand-dark-background brand-background">See More Blogs</a>
+    </div>
+</section>
+
+   <!-- tips and tricks section ends -->
+    <!-- just form section starts -->
+
+    
+    <section class="heroend relative flex flex-col pb-10 pt-20">
+        <img src="https://media.istockphoto.com/id/1472818295/photo/striped-white-background-grunge-brush-stroke-light-gray-cracked-texture-dye-sparse-grayscale.jpg?s=612x612&w=0&k=20&c=G57w2EQfAaiRrAIh_bcV-J2o8xXgw6azc83X-88kQ9E=" class="object-cover w-full h-screen" />
+        <div class="absolute inset-0"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-0"></div>
+    
+        <div class="container mx-auto px-4 relative z-10 flex flex-col justify-center items-center">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
+                <!-- Left Content -->
+                <div class="text-black pt-5 md:pt-0 flex flex-col justify-center items-center md:items-center">
+                    <h2 class="text-4xl md:text-6xl font-bold mb-4 text-center">Built Differently</h2>
+                    <hr class="w-96 border-t-2 border-gray-400 my-4" /> 
+                    <h3 class="text-2xl md:text-3xl mb-6 text-center">
+                        <span class="text-black">A </span>
+                        <span id="dynamic-text" class="brand-green fade-element">Professional </span>
+                        <span class="text-black">Approach To Your Outdoor Needs</span>
+                    </h3>               
+                </div>
+    
+                <!-- Right Form -->
+                <div class="p-6 rounded-lg flex items-center justify-center form-container">
+                    <form id="contactForm" class="space-y-4 w-full">
+                        <input type="text" placeholder="Name" class="w-full p-3 border rounded-2xl" />
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <input type="tel" placeholder="Phone" class="w-full p-3 border rounded-2xl" />
+                            <input type="email" placeholder="Email" class="w-full p-3 border rounded-2xl" />
+                        </div>
+                        <input type="text" placeholder="Address" class="w-full p-3 border rounded-2xl" />
+                        <select class="w-full p-3 border rounded-2xl">
+                            <option>Yes, I'm a potential new customer</option>
+                            <option>Existing customer</option>
+                        </select>
+                        <select class="w-full p-3 border rounded-2xl">
+                            <option>Sprinklers</option>
+                            <option>Landscaping</option>
+                            <option>Drainage</option>
+                        </select>
+                        <button type="submit" class="w-full bg-black text-white py-3 rounded-2xl hoverBG-brand-color transition duration-300">
+                            Get In Touch Today
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
 <script>
-    const textArray = ["Professional", "Expert", "Skilled", "Qualified"];
+
+
+const textArray = ["Professional", "Expert", "Skilled", "Qualified"];
 let index = 0;
 const dynamicTextElement = document.getElementById('dynamic-text');
 
@@ -516,7 +485,7 @@ function fadeIn() {
 }
 
 setInterval(updateText, 3000); 
-
+ 
     // Only apply this for screens smaller than or equal to 391px
 function toggleDropdown(dropdownId) {
   const dropdown = document.getElementById(dropdownId);
@@ -619,10 +588,10 @@ window.addEventListener('resize', function() {
             <h4 class="text-lg font-semibold text-white">Quick Links</h4>
             <ul class="mt-2 space-y-2">
               <li><a href="../index.html" class="hoverTEXT-brand-light-bg">Home</a></li>
-              <li><a href="./about.html" class="hoverTEXT-brand-light-bg">About</a></li>
-              <li><a href="./services.html" class="hoverTEXT-brand-light-bg">Services</a></li>
-              <li><a href="./serviceareas.html" class="hoverTEXT-brand-light-bg">Service Areas</a></li>
-              <li><a href="./contact.html" class="hoverTEXT-brand-light-bg">Contact</a></li>
+              <li><a href="about.html" class="hoverTEXT-brand-light-bg">About</a></li>
+              <li><a href="services.html" class="hoverTEXT-brand-light-bg">Services</a></li>
+              <li><a href="serviceareas.html" class="hoverTEXT-brand-light-bg">Service Areas</a></li>
+              <li><a href="contact.html" class="hoverTEXT-brand-light-bg">Contact</a></li>
             </ul>
           </div>
   
@@ -658,7 +627,7 @@ window.addEventListener('resize', function() {
         <!-- Footer Bottom Section -->
         <div class="border-t border-brand-light-green pt-4">
             <div class="flex justify-center items-center">
-              <p class="text-sm text-white">© 2024 Brand Name. All rights reserved.</p>
+              <p class="text-sm text-white">© 2024 Brand Name. All rights reserved</p>
               <a href="./Privacy.html" class="text-sm text-white mx-2">| Privacy Policy</a>
               <a href="./terms.html" class="text-sm text-white">| Terms & Conditions</a>
             </div>

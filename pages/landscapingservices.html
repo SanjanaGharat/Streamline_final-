@@ -471,7 +471,7 @@
       const slide = document.createElement('div');
       slide.className = 'swiper-slide service-page-service-swiper-slide';
       slide.innerHTML = `
-        <a href="${service.link}" target="_blank" class="relative service-page-service-card p-6 bg-white rounded-lg shadow-lg text-center">
+        <a href="${service.link}" target="_self" class="relative service-page-service-card p-6 bg-white rounded-lg shadow-lg text-center">
           <div class="service-page-service-icon-container mb-4">
             <img src="${service.image}" alt="${service.title}" class="mx-auto mb-1 mt-8">
           </div>
@@ -1033,7 +1033,7 @@
             <!-- Left Content -->
             <div class="text-black pt-5 md:pt-0 flex flex-col justify-center items-center md:items-center">
                 <h2 class="text-4xl md:text-6xl font-bold mb-4 text-center">Built Differently</h2>
-                <hr class="w-96 border-t-2 border-gray-400 my-4" /> <!-- Added HR line here -->
+                <hr class="w-96 border-t-2 border-gray-400 my-4" /> 
                 <h3 class="text-2xl md:text-3xl mb-6 text-center">
                     <span class="text-black">A </span>
                     <span id="dynamic-text" class="brand-green fade-element">Professional </span>

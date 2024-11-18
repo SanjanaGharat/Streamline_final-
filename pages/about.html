@@ -238,19 +238,79 @@
 
 
   <!-- About Page Service Section -->
-  <section id="about-page-service-section" class="flex flex-col items-center justify-start bg-white">
+  <!-- <section id="about-page-service-section" class="flex flex-col items-center justify-start bg-white">
     <div id="about-page-service-container" class="container mx-auto px-6">
       <h2 id="about-page-service-heading" class="text-3xl font-bold text-center mb-8">OUR SERVICES</h2>
-      <!-- Swiper Container -->
       <div id="about-page-service-swiper-container" class="swiper-container">
         <div class="swiper-wrapper" id="about-page-service-swiper-wrapper">
-          <!-- Cards will be dynamically injected here -->
         </div>
-        <!-- Pagination should be inside the swiper container but below the swiper slides -->
         <div class="swiper-pagination about-page-service-swiper-pagination"></div>
       </div>
     </div>
+  </section> -->
+
+
+
+
+  <section class="py-12 bg-white">
+    <h2 id="service-heading" class="text-3xl font-bold text-center">OUR SERVICES</h2>
+
+    <div class="container mx-auto px-4 mt-4">
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 justify-items-center">
+        <!-- Card 1 -->
+        <div class="card bg-gray-50 rounded-lg shadow-lg p-6 w-full max-w-sm text-center flex flex-col">
+          <div class="image-wrapper h-48 w-full overflow-hidden mb-4">
+            <img src="https://media.istockphoto.com/id/180819399/photo/val-dorcia-hillside-sunset-in-tuscany-italy.webp?a=1&b=1&s=612x612&w=0&k=20&c=LF3JaAzas3NJJF_KsiYpUmiHDpmixGT2wRs3Wf9_pUk=" 
+                 alt="Card Image 1" 
+                 class="w-full h-full object-cover rounded">
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Landscaping</h3>
+          <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a href="landscaping.html" target="_self" rel="noopener noreferrer">
+            <button class="text-white px-4 py-2 rounded brand-dark-background hoverBG-brand-color mt-auto">
+              Learn More
+            </button>
+          </a>
+          
+        </div>
+        <!-- Card 2 -->
+        <div class="card bg-gray-50 rounded-lg shadow-lg p-6 w-full max-w-sm text-center flex flex-col">
+          <div class="image-wrapper h-48 w-full overflow-hidden mb-4">
+            <img src="https://media.istockphoto.com/id/1414964255/photo/installed-pvc-water-pipes-in-trench-at-summer-cottage.jpg?s=612x612&w=0&k=20&c=fTv_rbBEnaEv8vcbynmwsekSBKad0ounzB0xNj4LiHw=" 
+                 alt="Card Image 2" 
+                 class="w-full h-full object-cover rounded">
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Drainage</h3>
+          <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a href="Drainage.html" target="_self" rel="noopener noreferrer">
+            <button class="text-white px-4 py-2 rounded brand-dark-background hoverBG-brand-color mt-auto">
+              Learn More
+            </button>
+          </a>
+          
+        </div>
+        <!-- Card 3 -->
+        <div class="card bg-gray-50 rounded-lg shadow-lg p-6 w-full max-w-sm text-center flex flex-col">
+          <div class="image-wrapper h-48 w-full overflow-hidden mb-4">
+            <img src="https://media.istockphoto.com/id/155372894/photo/irrigation-sprinkler-watering-crops-on-fertile-farm-land.webp?a=1&b=1&s=612x612&w=0&k=20&c=HDUIo3iTf86mYayKmsiDRfbLyoD1MSCWi2oqh5RX6bE=" 
+                 alt="Card Image 3" 
+                 class="w-full h-full object-cover rounded">
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Sprinkler & Irrigation</h3>
+          <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a href="s&i.html" target="_self" rel="noopener noreferrer">
+            <button class="text-white px-4 py-2 rounded brand-dark-background hoverBG-brand-color mt-auto">
+              Learn More
+            </button>
+          </a>
+          
+        </div>
+      </div>
+    </div>
   </section>
+
+
 
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script>
@@ -312,7 +372,7 @@
       const slide = document.createElement('div');
       slide.className = 'swiper-slide about-page-service-swiper-slide';
       slide.innerHTML = `
-        <a href="${service.link}" target="_blank" class="relative about-page-service-card p-6 bg-white rounded-lg shadow-lg text-center">
+        <a href="${service.link}" target="_self" class="relative about-page-service-card p-6 bg-white rounded-lg shadow-lg text-center">
           <div class="about-page-service-icon-container mb-4">
             <img src="${service.image}" alt="${service.title}" class="h-16 w-16 mx-auto mb-1 mt-8">
           </div>

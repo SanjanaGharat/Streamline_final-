@@ -99,95 +99,95 @@ let activeDropdown = null;
 
 //  SERVICE-SECTION START
 
-const serviceData = [
-  { 
-    id: 1, 
-    title: 'Service1', 
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer est urna, convallis eu leo id, feugiat laoreet justo. Morbi enim libero, aliquam non maximus non, finibus id nunc.', 
-    image: 'https://img.icons8.com/?size=100&id=82444&format=png&color=2f855a', 
-    link: 'emergency-service.html' 
-  },
-  { 
-    id: 2, 
-    title: 'Service2', 
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Morbi enim libero, aliquam non maximus non, finibus id nunc.', 
-    image: 'https://img.icons8.com/?size=100&id=2171&format=png&color=2f855a', 
-    link: 'pipe-repair.html' 
-  },
-  { 
-    id: 3, 
-    title: 'Service3', 
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Morbi enim libero, aliquam non maximus non, finibus id nunc.', 
-    image: 'https://img.icons8.com/?size=100&id=SIK-MaQikAy4&format=png&color=2f855a', 
-    link: 'water-heater-services.html' 
-  },
-  { 
-    id: 4, 
-    title: 'Service4', 
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer est urna, convallis eu leo id, feugiat laoreet justo. Morbi enim libero, aliquam non maximus non, finibus id nunc.', 
-    image: 'https://img.icons8.com/?size=100&id=R5wtOu4JoZbm&format=png&color=2f855a', 
-    link: 'drain-cleaning.html' 
-  },
-  { 
-    id: 5, 
-    title: 'Service5', 
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer est urna, convallis eu leo id, feugiat laoreet justo. Morbi enim libero, aliquam non maximus non, finibus id nunc.', 
-    image: 'https://img.icons8.com/?size=100&id=ScAViD0I8h4B&format=png&color=2f855a', 
-    link: 'sewer-line-services.html' 
-  },
-  { 
-    id: 6, 
-    title: 'Service6', 
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ', 
-    image: 'https://img.icons8.com/?size=100&id=OrcIpbU7fPgZ&format=png&color=2f855a', 
-    link: 'water-filtration.html' 
-  },
-  { 
-    id: 7, 
-    title: 'Service7', 
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer est urna, convallis eu leo id, feugiat laoreet justo. Morbi enim libero, aliquam non maximus non, finibus id nunc.', 
-    image: 'https://img.icons8.com/?size=100&id=48232&format=png&color=2f855a', 
-    link: 'gas-line-services.html' 
-  }
-];
+// const serviceData = [
+//   { 
+//     id: 1, 
+//     title: 'Service1', 
+//     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer est urna, convallis eu leo id, feugiat laoreet justo. Morbi enim libero, aliquam non maximus non, finibus id nunc.', 
+//     image: 'https://img.icons8.com/?size=100&id=82444&format=png&color=2f855a', 
+//     link: 'emergency-service.html' 
+//   },
+//   { 
+//     id: 2, 
+//     title: 'Service2', 
+//     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Morbi enim libero, aliquam non maximus non, finibus id nunc.', 
+//     image: 'https://img.icons8.com/?size=100&id=2171&format=png&color=2f855a', 
+//     link: 'pipe-repair.html' 
+//   },
+//   { 
+//     id: 3, 
+//     title: 'Service3', 
+//     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Morbi enim libero, aliquam non maximus non, finibus id nunc.', 
+//     image: 'https://img.icons8.com/?size=100&id=SIK-MaQikAy4&format=png&color=2f855a', 
+//     link: 'water-heater-services.html' 
+//   },
+//   { 
+//     id: 4, 
+//     title: 'Service4', 
+//     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer est urna, convallis eu leo id, feugiat laoreet justo. Morbi enim libero, aliquam non maximus non, finibus id nunc.', 
+//     image: 'https://img.icons8.com/?size=100&id=R5wtOu4JoZbm&format=png&color=2f855a', 
+//     link: 'drain-cleaning.html' 
+//   },
+//   { 
+//     id: 5, 
+//     title: 'Service5', 
+//     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer est urna, convallis eu leo id, feugiat laoreet justo. Morbi enim libero, aliquam non maximus non, finibus id nunc.', 
+//     image: 'https://img.icons8.com/?size=100&id=ScAViD0I8h4B&format=png&color=2f855a', 
+//     link: 'sewer-line-services.html' 
+//   },
+//   { 
+//     id: 6, 
+//     title: 'Service6', 
+//     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ', 
+//     image: 'https://img.icons8.com/?size=100&id=OrcIpbU7fPgZ&format=png&color=2f855a', 
+//     link: 'water-filtration.html' 
+//   },
+//   { 
+//     id: 7, 
+//     title: 'Service7', 
+//     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer est urna, convallis eu leo id, feugiat laoreet justo. Morbi enim libero, aliquam non maximus non, finibus id nunc.', 
+//     image: 'https://img.icons8.com/?size=100&id=48232&format=png&color=2f855a', 
+//     link: 'gas-line-services.html' 
+//   }
+// ];
 
-const swiperWrapper = document.getElementById('service-swiper-wrapper');
+// const swiperWrapper = document.getElementById('service-swiper-wrapper');
 
-serviceData.forEach(service => {
-  const slide = document.createElement('div');
-  slide.className = 'swiper-slide service-swiper-slide';
-  slide.innerHTML = `
-    <a href="${service.link}" target="_blank" class="relative service-card p-6 bg-white rounded-lg shadow-lg text-center">
-      <div class="service-icon-container mb-4">
-        <img src="${service.image}" alt="${service.title}" class="h-16 w-16 mx-auto mb-1 mt-8">
-      </div>
-      <h2 class="mt-2 text-lg font-semibold">${service.title}</h2>
-      <p class="text-gray-700 text-sm mb-4">${service.description}</p>
-      <span class="service-learn-more-btn">LEARN MORE &rarr;</span>
-    </a>
-  `;
-  swiperWrapper.appendChild(slide);
-});
+// serviceData.forEach(service => {
+//   const slide = document.createElement('div');
+//   slide.className = 'swiper-slide service-swiper-slide';
+//   slide.innerHTML = `
+//     <a href="${service.link}" target="_blank" class="relative service-card p-6 bg-white rounded-lg shadow-lg text-center">
+//       <div class="service-icon-container mb-4">
+//         <img src="${service.image}" alt="${service.title}" class="h-16 w-16 mx-auto mb-1 mt-8">
+//       </div>
+//       <h2 class="mt-2 text-lg font-semibold">${service.title}</h2>
+//       <p class="text-gray-700 text-sm mb-4">${service.description}</p>
+//       <span class="service-learn-more-btn">LEARN MORE &rarr;</span>
+//     </a>
+//   `;
+//   swiperWrapper.appendChild(slide);
+// });
 
-const swiper = new Swiper('#service-swiper-container', {
-  slidesPerView: 1,
-  spaceBetween: 5,
-  pagination: {
-    el: '.service-swiper-pagination',
-    clickable: true,
-  },
-  loop: true,
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
-  breakpoints: {
-    640: { slidesPerView: 1 },
-    768: { slidesPerView: 2 },
-    1024: { slidesPerView: 3 },
-    1280: { slidesPerView: 4 },
-  },
-});
+// const swiper = new Swiper('#service-swiper-container', {
+//   slidesPerView: 1,
+//   spaceBetween: 5,
+//   pagination: {
+//     el: '.service-swiper-pagination',
+//     clickable: true,
+//   },
+//   loop: true,
+//   autoplay: {
+//     delay: 3000,
+//     disableOnInteraction: false,
+//   },
+//   breakpoints: {
+//     640: { slidesPerView: 1 },
+//     768: { slidesPerView: 2 },
+//     1024: { slidesPerView: 3 },
+//     1280: { slidesPerView: 4 },
+//   },
+// });
 
 
 // gallery section 

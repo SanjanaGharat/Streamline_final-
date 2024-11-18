@@ -381,127 +381,7 @@
           <img src="https://img.icons8.com/?size=100&id=SgKf9u814Pci&format=png&color=FFFFFF" class="w-8 h-8" alt="Right Arrow">
         </button>
       </div>
-    <script>
-        (function() {
-  const imageModalImages = [
-    'https://media.istockphoto.com/id/1499019570/photo/roof-garden.jpg?s=612x612&w=0&k=20&c=RZgcJAPvFJpWCnPofWSdLbypePbPvqPB46vnU3bBnYQ=',
-    'https://media.istockphoto.com/id/1802417528/photo/top-view-of-a-modern-school-with-sloped-terraces-and-roof-gardens.jpg?s=612x612&w=0&k=20&c=B14qBvR-43_npggPcCsmsTcsyqA-hZitM4uAXsfwBA0=',
-    'https://media.istockphoto.com/id/1318519526/photo/green-building.jpg?s=612x612&w=0&k=20&c=7rD6NQB7dmHqGV_sDxquaZ4ehA0hv0qAJIXcx80lrso=',
-    'https://media.istockphoto.com/id/2158823214/photo/duplex-house-swmming-pool-exterior-design-3d-rendering-interior-design.jpg?s=612x612&w=0&k=20&c=MDbjDJHClBQtEcZjsoCTF7lteX1zL6bqWZfydYwxw2Q=',
-    'https://media.istockphoto.com/id/1408135287/photo/aerial-shot-of-rooftop-garden.jpg?s=612x612&w=0&k=20&c=lK70nGJinV2ltzSJU8cNA5hX7e3uRiM1P4q9iexndaQ=',
-    'https://media.istockphoto.com/id/1329757808/photo/green-building.jpg?s=612x612&w=0&k=20&c=aP9hDI9b1rQPArU_AS7v96DIrpyaRcW9nz7jO0lLHfM=',
-    'https://media.istockphoto.com/id/1365678881/photo/green-buildings.jpg?s=612x612&w=0&k=20&c=HAbi74mkR3hRor-fR2B4qqDFcG3DnK-WKVEUpTwuHX4=',
-    'https://media.istockphoto.com/id/2148894060/photo/modern-green-building.jpg?s=612x612&w=0&k=20&c=oum3a-jSgcJOvC7vHmaorodPgrYiklzSe1GQCcOrCzk=',
-    'https://media.istockphoto.com/id/1445285707/photo/modern-eco-house-with-solar-panels-and-windmills-to-use-alternative-energy.jpg?s=612x612&w=0&k=20&c=pYYOZufg2oE3rzFg2RhvvRudIncappPcJlIDwE5acDw='
-  ];
-  
-const galleryElement = document.getElementById('image-modal-gallery');
-imageModalImages.forEach((src, index) => {
-const imgElement = document.createElement('img');
-imgElement.src = src;
-imgElement.classList.add('cursor-pointer', 'w-full', 'h-48', 'object-cover', 'rounded-md');
-imgElement.onclick = () => openImageModal(index);
-galleryElement.appendChild(imgElement);
-});
-
-let currentImageIndex = 0;
-let currentZoomLevel = 1;
-
-function openImageModal(index) {
-currentImageIndex = index;
-currentZoomLevel = 1; 
-const modal = document.getElementById('image-modal-container');
-const modalImage = document.getElementById('image-modal-image');
-const zoomControls = document.getElementById('image-modal-zoom-controls');
-
-modalImage.src = imageModalImages[currentImageIndex];
-modal.style.display = 'flex';
-zoomControls.classList.remove('hidden');
-
-modalImage.onload = () => {
-modalImage.classList.remove('opacity-0');
-modalImage.classList.add('opacity-100');
-};
-
-document.addEventListener('keydown', handleKeyboardNavigation);
-
-modal.addEventListener('click', (event) => {
-if (event.target === modal) { 
-    closeImageModal();
-}
-});
-}
-
-function closeImageModal() {
-const modal = document.getElementById('image-modal-container');
-const modalImage = document.getElementById('image-modal-image');
-const zoomControls = document.getElementById('image-modal-zoom-controls');
-
-modalImage.classList.remove('opacity-100');
-modalImage.classList.add('opacity-0');
-
-setTimeout(() => {
-modal.style.display = 'none';
-zoomControls.classList.add('hidden');
-}, 300);
-
-document.removeEventListener('keydown', handleKeyboardNavigation);
-}
-
-function handleKeyboardNavigation(event) {
-if (event.key === 'Escape') {
-closeImageModal();
-} else if (event.key === 'ArrowLeft') {
-goToPreviousImage();
-} else if (event.key === 'ArrowRight') {
-goToNextImage();
-}
-}
-
-function goToPreviousImage() {
-currentImageIndex = (currentImageIndex - 1 + imageModalImages.length) % imageModalImages.length;
-updateImageModalImage();
-}
-
-function goToNextImage() {
-currentImageIndex = (currentImageIndex + 1) % imageModalImages.length;
-updateImageModalImage();
-}
-
-function updateImageModalImage() {
-const modalImage = document.getElementById('image-modal-image');
-modalImage.classList.add('opacity-0');
-setTimeout(() => {
-modalImage.src = imageModalImages[currentImageIndex];
-modalImage.classList.remove('opacity-0');
-modalImage.classList.add('opacity-100');
-}, 300);
-}
-
-function zoomInImage() {
-if (currentZoomLevel < 2) {
-currentZoomLevel += 0.1;
-const modalImage = document.getElementById('image-modal-image');
-modalImage.style.transform = `scale(${currentZoomLevel})`;
-}
-}
-
-function zoomOutImage() {
-if (currentZoomLevel > 1) {
-currentZoomLevel -= 0.1;
-const modalImage = document.getElementById('image-modal-image');
-modalImage.style.transform = `scale(${currentZoomLevel})`;
-}
-}
-
-document.getElementById('image-modal-prevBtn').onclick = goToPreviousImage;
-document.getElementById('image-modal-nextBtn').onclick = goToNextImage;
-document.getElementById('image-modal-close-btn').onclick = closeImageModal;
-
-document.getElementById('image-modal-zoomInBtn').onclick = zoomInImage;
-document.getElementById('image-modal-zoomOutBtn').onclick = zoomOutImage;
-})();
-    </script>  
+     
   <!-- end of gallery section    -->
       
    <!-- Why Choose Us Section -->
@@ -854,7 +734,7 @@ document.getElementById('image-modal-zoomOutBtn').onclick = zoomOutImage;
   </div>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-<script src="./script/script.js"></script>
+<script src="script/script.js"></script>
 
 </body>
 </html>
